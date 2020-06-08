@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="Prueba Textos2013.svg">
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       refY="0.0"
+       refX="0.0"
+       orient="auto"
+       id="DistanceX">
+      <path
+         id="path817"
+         style="stroke:#000000; stroke-width:0.5"
+         d="M 3,-3 L -3,3 M 0,-5 L  0,5" />
+    </marker>
+    <pattern
+       y="0"
+       x="0"
+       width="8"
+       patternUnits="userSpaceOnUse"
+       id="Hatch"
+       height="8">
+      <path
+         id="path820"
+         stroke-width="0.25"
+         stroke="#000000"
+         linecap="square"
+         d="M8 4 l-4,4" />
+      <path
+         id="path822"
+         stroke-width="0.25"
+         stroke="#000000"
+         linecap="square"
+         d="M6 2 l-4,4" />
+      <path
+         id="path824"
+         stroke-width="0.25"
+         stroke="#000000"
+         linecap="square"
+         d="M4 0 l-4,4" />
+    </pattern>
+    <symbol
+       id="*Model_Space" />
+    <symbol
+       id="*Paper_Space" />
+    <symbol
+       id="*Paper_Space0" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.29667969"
+     inkscape:cx="-211.44721"
+     inkscape:cy="986.76065"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="via">
+    <g
+       style=""
+       id="g1018"
+       transform="matrix(0.26458333,0,0,0.26458333,-472.06429,83.026292)">
+      <g
+         id="g860"
+         inkscape:label="0">
+        <text
+           id="text834"
+           y="359.04807"
+           x="1794.1023"
+           style="font-size:13.19999981px;font-family:Calibri;fill:#000000">
+          <tspan
+             id="tspan832"
+             sodipodi:role="line"
+             x="1794.1023"
+             y="359.04807">Texto 1</tspan>
+        </text>
+        <text
+           id="text838"
+           y="569.40887"
+           x="2155.7808"
+           style="font-size:13.19999981px;font-family:Calibri;fill:#000000">
+          <tspan
+             id="tspan836"
+             sodipodi:role="line"
+             x="2155.7808"
+             y="569.40887">Texto 1</tspan>
+        </text>
+        <text
+           id="text842"
+           y="377.42914"
+           x="2703.4529"
+           style="font-size:13.19999981px;font-family:Calibri;fill:#000000">
+          <tspan
+             id="tspan840"
+             sodipodi:role="line"
+             x="2703.4529"
+             y="377.42914">Texto 1</tspan>
+        </text>
+        <text
+           id="text846"
+           y="198.71254"
+           x="3040.6279"
+           style="font-size:13.19999981px;font-family:Calibri;fill:#000000">
+          <tspan
+             id="tspan844"
+             sodipodi:role="line"
+             x="3040.6279"
+             y="198.71254">Texto 1</tspan>
+        </text>
+        <text
+           id="text850"
+           y="95.586502"
+           x="3452.3992"
+           style="font-size:13.19999981px;font-family:Calibri;fill:#000000">
+          <tspan
+             id="tspan848"
+             sodipodi:role="line"
+             x="3452.3992"
+             y="95.586502">Texto 1</tspan>
+        </text>
+        <text
+           id="text854"
+           y="-94.350922"
+           x="3939.761"
+           style="font-size:13.19999981px;font-family:Calibri;fill:#000000">
+          <tspan
+             id="tspan852"
+             sodipodi:role="line"
+             x="3939.761"
+             y="-94.350922">Texto 1</tspan>
+        </text>
+        <text
+           id="text858"
+           y="-284.28836"
+           x="4374.4985"
+           style="font-size:13.19999981px;font-family:Calibri;fill:#000000">
+          <tspan
+             id="tspan856"
+             sodipodi:role="line"
+             x="4374.4985"
+             y="-284.28836">Texto 1</tspan>
+        </text>
+      </g>
+      <g
+         id="g912"
+         inkscape:label="Texto A">
+        <text
+           id="text864"
+           y="1070.6285"
+           x="25.476694"
+           style="font-size:9.39999962px;font-family:Calibri;fill:#ff00ff">
+          <tspan
+             id="tspan862"
+             sodipodi:role="line"
+             x="25.476694"
+             y="1070.6285">Texto 1</tspan>
+        </text>
+        <text
+           id="text868"
+           y="1032.8333"
+           x="25.476694"
+           style="font-size:9.39999962px;font-family:Calibri;fill:#ff00ff">
+          <tspan
+             id="tspan866"
+             sodipodi:role="line"
+             x="25.476694"
+             y="1032.8333">Texto 1</tspan>
+        </text>
+        <path
+           id="path870"
+           style="fill:none;stroke:#ff00ff"
+           d="m 22.451929,1020.5223 h 49.414139 v 15.0306 H 22.451929 Z"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path872"
+           style="fill:none;stroke:#ff00ff"
+           d="m 22.451929,1058.3176 h 49.414139 v 15.0306 H 22.451929 Z"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path874"
+           style="fill:none;stroke:#ff00ff"
+           d="m 71.866068,1035.5529 v 3.867"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path876"
+           style="fill:none;stroke:#ff00ff"
+           d="M 71.866068,1039.4199 H 195.80247"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path878"
+           style="fill:none;stroke:#ff00ff"
+           d="m 195.80247,1039.4199 v -3.867"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path880"
+           style="fill:none;stroke:#ff00ff"
+           d="m 245.21661,1035.5529 v 3.867"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path882"
+           style="fill:none;stroke:#ff00ff"
+           d="m 245.21661,1039.4199 h 123.9364"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path884"
+           style="fill:none;stroke:#ff00ff"
+           d="m 369.15301,1039.4199 v -3.867"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path886"
+           style="fill:none;stroke:#ff00ff"
+           d="m 418.56715,1035.5529 v 3.867"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path888"
+           style="fill:none;stroke:#ff00ff"
+           d="m 418.56715,1039.4199 h 123.9364"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path890"
+           style="fill:none;stroke:#ff00ff"
+           d="m 542.50355,1039.4199 v -3.867"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path892"
+           style="fill:none;stroke:#ff00ff"
+           d="m 591.91769,1035.5529 v 3.867"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path894"
+           style="fill:none;stroke:#ff00ff"
+           d="M 591.91769,1039.4199 H 715.8541"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path896"
+           style="fill:none;stroke:#ff00ff"
+           d="m 715.8541,1039.4199 v -3.867"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path898"
+           style="fill:#ff00ff"
+           d="m 4377.4478,-261.72483 a 23.72745,23.72745 0 0 0 -47.4549,0 23.72745,23.72745 0 0 0 47.4549,0 z"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path900"
+           style="fill:#ff00ff"
+           d="m 3942.7102,-71.787405 a 23.72745,23.72745 0 0 0 -47.4549,0 23.72745,23.72745 0 0 0 47.4549,0 z"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path902"
+           style="fill:#ff00ff"
+           d="m 3455.3483,118.15002 a 23.72745,23.72745 0 0 0 -47.4549,0 23.72745,23.72745 0 0 0 47.4549,0 z"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path910"
+           style="fill:#ff00ff"
+           d="m 1797.0514,381.61159 a 23.72745,23.72745 0 0 0 -47.4549,0 23.72745,23.72745 0 0 0 47.4549,0 z"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         id="g944"
+         inkscape:label="Texto B">
+        <path
+           id="path942"
+           style="fill:#ff0000;stroke:#ff0000;fill-opacity:1"
+           d="m 4675.0721,-271.17365 v 18.89764 H 4032.3686 A 103.93701,103.93701 0 0 0 3928.4316,-148.339 V 4.764192 A 122.83465,122.83465 0 0 1 3805.5969,127.59884 h -747.9521 a 28.346457,28.346457 0 0 0 -28.3464,28.34645 v 130.66152 a 122.83465,122.83465 0 0 1 -122.8347,122.83465 h -447.5782 a 103.93701,103.93701 0 0 0 -103.937,103.93701 v 40.79864 a 47.244094,47.244094 0 0 1 -47.2441,47.24409 h -345.404 A 198.4252,198.4252 0 0 1 1763.8752,402.99601 V 360.22717 A 179.52756,179.52756 0 0 0 1584.3476,180.69961 h -342.8175 v -18.89764 h 342.8175 a 198.4252,198.4252 0 0 1 198.4252,198.4252 v 42.76884 a 179.52756,179.52756 0 0 0 179.5276,179.52755 h 345.404 a 28.346457,28.346457 0 0 0 28.3465,-28.34645 v -40.79864 a 122.83465,122.83465 0 0 1 122.8346,-122.83465 h 447.5782 a 103.93701,103.93701 0 0 0 103.937,-103.93701 V 155.94529 a 47.244094,47.244094 0 0 1 47.2441,-47.24409 h 747.9521 A 103.93701,103.93701 0 0 0 3909.5339,4.764192 V -148.339 a 122.83465,122.83465 0 0 1 122.8347,-122.83465 z"
+           inkscape:connector-curvature="0" />
+        <text
+           id="text916"
+           y="1089.5262"
+           x="25.476694"
+           style="font-size:9.39999962px;font-family:Calibri;fill:#ff0000">
+          <tspan
+             id="tspan914"
+             sodipodi:role="line"
+             x="25.476694"
+             y="1089.5262">Texto 1</tspan>
+        </text>
+        <text
+           id="text920"
+           y="1051.731"
+           x="25.476694"
+           style="font-size:9.39999962px;font-family:Calibri;fill:#ff0000">
+          <tspan
+             id="tspan918"
+             sodipodi:role="line"
+             x="25.476694"
+             y="1051.731">Texto 1</tspan>
+        </text>
+        <path
+           id="path922"
+           style="fill:none;stroke:#ff0000"
+           d="m 22.451929,1039.4199 h 49.414139 v 15.0307 H 22.451929 Z"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path924"
+           style="fill:none;stroke:#ff0000"
+           d="m 22.451929,1077.2152 h 49.414139 v 15.0306 H 22.451929 Z"
+           inkscape:connector-curvature="0" />
+        <text
+           id="text928"
+           y="1032.8333"
+           x="198.82724"
+           style="font-size:9.39999962px;font-family:Calibri;fill:#ff0000">
+          <tspan
+             id="tspan926"
+             sodipodi:role="line"
+             x="198.82724"
+             y="1032.8333">Texto 1</tspan>
+        </text>
+        <text
+           id="text932"
+           y="1032.8333"
+           x="372.17776"
+           style="font-size:9.39999962px;font-family:Calibri;fill:#ff0000">
+          <tspan
+             id="tspan930"
+             sodipodi:role="line"
+             x="372.17776"
+             y="1032.8333">Texto 1</tspan>
+        </text>
+        <text
+           id="text936"
+           y="1032.8333"
+           x="545.52832"
+           style="font-size:9.39999962px;font-family:Calibri;fill:#ff0000">
+          <tspan
+             id="tspan934"
+             sodipodi:role="line"
+             x="545.52832"
+             y="1032.8333">Texto 1</tspan>
+        </text>
+        <text
+           id="text940"
+           y="1032.8333"
+           x="718.87885"
+           style="font-size:9.39999962px;font-family:Calibri;fill:#ff0000">
+          <tspan
+             id="tspan938"
+             sodipodi:role="line"
+             x="718.87885"
+             y="1032.8333">Texto 1</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       transform="matrix(0.26458333,0,0,0.26458333,-472.06429,83.026292)"
+       id="path908"
+       style="fill:#ff00ff"
+       d="m 2158.7298,591.97238 a 23.72745,23.72745 0 0 0 -47.4549,0 23.72745,23.72745 0 0 0 47.4549,0 z"
+       inkscape:connector-curvature="0" />
+    <path
+       transform="matrix(0.26458333,0,0,0.26458333,-472.06429,83.026292)"
+       id="path906"
+       style="fill:#ff00ff"
+       d="m 2706.4021,399.99264 a 23.72745,23.72745 0 0 0 -47.4549,0 23.72745,23.72745 0 0 0 47.4549,0 z"
+       inkscape:connector-curvature="0" />
+    <path
+       transform="matrix(0.26458333,0,0,0.26458333,-472.06429,83.026292)"
+       id="path904"
+       style="fill:#ff00ff"
+       d="m 3043.577,221.27606 a 23.72745,23.72745 0 0 0 -47.4549,0 23.72745,23.72745 0 0 0 47.4549,0 z"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

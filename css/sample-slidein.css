@@ -1,0 +1,33 @@
+/*
+ * jQuery Slidein Plugin - https://github.com/pete-rai/jquery-slidein
+ *
+ * This CSS file is for the SAMPLE PAGE ONLY, you DON'T need it to use
+ * the widget, but it does demonstrate how to customise the widget
+ * appearance and operations.
+ *
+ */
+
+/* the panel and grab handle */
+
+.slidein
+{
+    background : LightSteelBlue;
+}
+
+/* the panel only */
+
+.slidein-panel
+{
+    overflow : hidden;
+    padding  : 20px;
+    /* don't add width or height, use 'breadth' widget option as it works for horz and vert */
+}
+
+/* the handle only */
+
+.slidein-handle
+{
+    color : DimGray;
+}
+
+/* the sample page */

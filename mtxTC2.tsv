@@ -1,0 +1,476 @@
+bls	d0	d1	d2	d3	d4	d5	d6	d7	d8	d9	sec
+10201	path932-1										once
+10202	path932-6										once
+10203	path932-4										once
+10204	path932-7										once
+10205	path932										once
+10206	path934-43										once
+10207	path934-6										once
+10208	path934-4										once
+10209	path934-0										once
+10210	path934										once
+201	path1064	path1205	path931	path1209							once
+202	path1062										once
+203	path1060										once
+204	path1058										once
+205	path936										once
+10213	path1197	path1199	path1201	path1217							once
+10212	path1203	path1201	path1217								once
+10211	path1211	path1225									once
+10214	path1215	path1195	path1193	path1221	path1227						once
+10215	path1189	path1193									once
+10218	path1179	path1181	path1177								once
+10216	path1223	path1227									once
+10217	path1191	path1181	path1177								once
+10220	path1173	path1177									once
+10219	path1229										once
+206	path1231	path1233									once
+10236	path1183										once
+208	path1067										once
+209	path967										once
+207	path1005	path1008	path1025								once
+10226	path1027	path1487									once
+10224	path1063	path1487									once
+10221	path1128										once
+10230	path1084	path1088	path1086								once
+10225	path1092	path1090	path1352	path1354							once
+10228	path1206										once
+211	path1204										once
+215	path1262										once
+213	path1264	path1266	path1270	path1272							once
+210	path1392										once
+212	path1268	path1270									once
+217	path1396										once
+10229	path1394										once
+302	path4720										caballito
+304	path4716										caballito
+219	path4718										caballito
+301	path4757										caballito
+10314	path4722										caballito
+303	path4836										caballito
+306	path4841										caballito
+305	path4839										caballito
+308	path4845										caballito
+10311	path4956										caballito
+10301	path4958										caballito
+10316	path4843										caballito
+310	path5029										caballito
+312	path5031										caballito
+10302	path5085										caballito
+309	path5033										caballito
+307	path5035										caballito
+10305	path5162										caballito
+314	path5091										caballito
+10303	path5088										caballito
+316	path5222										caballito
+313	path5446	path5473	path5475	path5477	path5448	path570	path5371	path582			caballito
+311	path5336	path564	path568	path5283	path5300						caballito
+318	path5281	path5319	path5354								caballito
+320	path5467	path5300									caballito
+10306	path566	path564	path568	path5283	path5300						caballito
+10304	path580	path570	path5371	path5477	path582						caballito
+10309	path5469	path5388									caballito
+10307	path5450	path5388									caballito
+315	path5411										caballito
+322	path5428										caballito
+10308	path5479										caballito
+324	path5786										caballito
+326	path5661										caballito
+317	path5741										caballito
+328	path5703										caballito
+10310	path5825										caballito
+319	path5828										caballito
+330	path5830										caballito
+10312	path5909										caballito
+321	path5907										caballito
+332	path6002										caballito
+334	path5989	path5994	path5992	path6000	path6044	path6004	path6046				caballito
+323	path5998	path6000	path6044	path6004	path6046						caballito
+336	path6042	path6046									caballito
+325	path6117										caballito
+402	path6120										flores
+327	path6117-8										flores
+404	path6117-5										flores
+401	path6117-3										flores
+406	path6282										flores
+403	path6284										flores
+408	path6353-3										flores
+405	path6353										flores
+410	path6353-82										flores
+407	path6353-4										flores
+412	path6353-1										flores
+409	path6353-8										flores
+414	path6353-34										flores
+411	path6353-6	path6632	path6705	path6634							flores
+502	path6636	path6705									floresta
+501	path6707	path6670									floresta
+10502	path6640										floresta
+504	path6663	path6672	path6666	path6670							floresta
+503	path6730										floresta
+506	path6736										floresta
+505	path6738										floresta
+508	path6769										floresta
+507	path6767										floresta
+509	path6775										floresta
+510	path6773										floresta
+512	path6911										floresta
+511	path6929										luro
+602	path6962	path6966	path6968								luro
+601	path6970										luro
+604	path584										luro
+603	path586										luro
+606	path584-9										liniers
+605	path686	path688	path690	path692							liniers
+10712	path630										liniers
+702	path664	path666	path674	path684	path670	path672					liniers
+10701	path676	path678									liniers
+10704	path631										liniers
+10702	path633										liniers
+703	path679										liniers
+705	path681										liniers
+10703	path635										liniers
+704	path4452										liniers
+706	path4446	path4450									liniers
+10705	path637										liniers
+707	path4442	path4448	path4444	path4450							liniers
+711	path4456										liniers
+713	path4458										liniers
+709	path4461										liniers
+710	path4475										liniers
+10706	path4465										liniers
+10707	path4463										liniers
+10709	path4481										liniers
+712	path4487	path4509	path4489								liniers
+10711	path4467	path4469	path4473								liniers
+10713	path4471	path4473									liniers
+802	path4493	path4505									liniers
+801	path4477	path4503	path4485								liniers
+10803	path4483	path4495	path4507	path4497							liniers
+10801	path4479	path4495	path4497	path4507							liniers
+10804	path4491	path4505									liniers
+10802	path4528										liniers
+10807	path4501	path4511									liniers
+10805	path4499	path4511									liniers
+804	path4530										liniers
+803	path4534	path4554	path4536								liniers
+805	path4542										liniers
+806	path4548	path4552									liniers
+808	path4532	path4550	path4544								liniers
+10808	path4546	path4552									liniers
+10811	path4540	path4558									liniers
+10809	path4538	path4558									liniers
+10806	path4556										liniers
+10810	path4564										liniers
+807	path4560										liniers
+810	path4562										liniers
+811	path4604										liniers
+809	path4610										liniers
+812	path4606										liniers
+814	path4608										liniers
+815	path4616										liniers
+902	path4612										ciudadela
+904	path4635										ciudadela
+813	path4614										liniers
+10904	path4637										ciudadela
+10815	path4618										ciudadela
+901	path4655										ciudadela
+903	path4641										ciudadela
+906	path4657										ciudadela
+908	path4639										ciudadela
+10906	path4659										ciudadela
+10903	path4643										ciudadela
+907	path4665										ciudadela
+905	path4663										ciudadela
+10910	path4661										ciudadela
+910	path4667										ciudadela
+912	path4673										ciudadela
+909	path4669										ciudadela
+10905	path4671										ciudadela
+914	path4675										ciudadela
+911	path4683										ciudadela
+913	path4677										ciudadela
+10912	path4679										ciudadela
+916	path4681										ciudadela
+10907	path4685										ciudadela
+918	path4687										ciudadela
+920	path4689										ciudadela
+915	path4691										ciudadela
+917	path4705										ciudadela
+1002	path4693	path674-2	path4695								rmejia
+1004	path4699	path4723									rmejia
+919	path4701										ciudadela
+11004	path4697	path4723									rmejia
+11002	path4725										rmejia
+10909	path4703										rmejia
+1001	path4846										rmejia
+1003	path4731										rmejia
+1008	path4733										rmejia
+1006	path4735										rmejia
+11003	path4844										rmejia
+11006	path4840										rmejia
+1010	path4848										rmejia
+1012	path4850										rmejia
+1007	path4854										rmejia
+1005	path4852										rmejia
+1014	path4864										rmejia
+1016	path4860										rmejia
+1009	path4866										rmejia
+1011	path4862										rmejia
+1020	path4874										rmejia
+1015	path4868										rmejia
+1018	path4872										rmejia
+1013	path4870										rmejia
+1019	path4876										rmejia
+1017	path4878										rmejia
+1022	path4880										rmejia
+1102	path4882										haedo
+1003	path4884										rmejia
+1101	path4890										haedo
+1002	path4904	path4912	path4906								haedo
+1106	path4910	path4920	path4924	path4932	path4926						haedo
+1105	path4886										haedo
+11101	path4888										haedo
+1109	path4892	path4942	path4894								haedo
+1107	path4898										haedo
+11105	path4900	path4902									haedo
+11104	path4908	path4920	path4924	path4932	path4926						haedo
+11103	path4896	path4902									haedo
+11102	path4922										haedo
+11107	path4914										haedo
+1011	path4916	path4936	path4918	path4924	path4932	path4926					haedo
+1108	path4930	path4938									haedo
+11108	path4928	path4938									haedo
+11106	path4934										haedo
+1110	path4940										haedo
+1113	path4988										haedo
+1112	path4944										haedo
+1114	path4946										haedo
+1115	path4990										haedo
+11110	path4986										haedo
+11112	path4984										haedo
+1118	path4992	path5008	path4936-1								haedo
+1116	path4996	path4994	path5008	path4936-1							haedo
+1117	path5006	path5004									haedo
+1119	path4998										haedo
+11111	path5000	path5010									haedo
+11109	path5002	path5010									haedo
+1121	path1210										moron
+1120	path1210-3										moron
+11113	path1212										moron
+1122	path1216										moron
+1123	path1218										moron
+1124	path1220										moron
+1125	path1222										moron
+1126	path1228	path1230									moron
+1127	path1224	path1232	path1226	path1230							moron
+1128	path1234										moron
+1129	path1236										moron
+1202	path1238										moron
+1201	path1240										moron
+1204	path1263										moron
+1203	path1265										moron
+1206	path1267										moron
+1205	path1269										moron
+1208	path1271										moron
+1207	path1273										moron
+1210	path1275										moron
+1209	path1277										moron
+1212	path1279										moron
+1211	path1281										moron
+1214	path1283	path1285	path1287								moron
+1213	path1303	path5133	path1301	path1311	path1325	path1313	path1315	path1329			castelar
+1302	path1289	path1305	path1291								castelar
+11304	path1293	path1295	path1311	path1325	path1313	path1315	path1329				castelar
+11302	path1307	path1309	path1321	path1323	path1319						castelar
+11308	path1317	path1329									castelar
+11306	path1353										castelar
+1306	path1327										castelar
+11312	path1357										castelar
+1304	path1331										castelar
+1301	path5135										castelar
+11310	path1348										castelar
+11366	path1355										castelar
+11368	path1350										castelar
+11370	path1359										castelar
+1308	path1375	path1377	path1381	path1379							castelar
+1310	path1367	path1369	path1373	path1377	path1379	path1381					castelar
+1312	path1361	path1371	path1363	path1365							castelar
+11318	path5113										castelar
+11316	path5099	path5101	path5105	path5107	path5115						castelar
+11322	path1383	path5097	path5117	path5255							castelar
+11326	path5103	path5105	path5115	path5107							castelar
+11320	path5151										castelar
+1348	path5257	path5263	path5259								castelar
+11330	path5111	path5125	path5143	path5127							castelar
+11372	path5265										castelar
+11328	path5109	path5125	path5143	path5127							castelar
+11382	path5261										castelar
+11332	path5121										castelar
+1318	path5119										castelar
+11301	path5131	path5139	path5141	path5153							castelar
+11303	path5129	path5139	path5141	path5153							castelar
+11336	path5147										castelar
+1324	path5123										castelar
+11338	path5155										castelar
+1326	path5145										castelar
+11340	path5159										castelar
+11374	path5149										castelar
+1320	path5165	path5167	path5171								castelar
+1322	path5161	path5173-8	path5173	path5183	path5187	path5197					castelar
+11380	path5155-2										castelar
+1303	path5181										castelar
+1328	path5175	path5183	path5187	path5197							castelar
+11344	path5169	path5173	path5183	path5187	path5197						castelar
+11342	path5177	path5179									castelar
+1305	path5217										castelar
+1330	path5185										castelar
+11350	path5191	path5193									castelar
+11348	path5189	path5193									castelar
+11346	path5219-3										castelar
+1332	path5195										castelar
+11354	path5199										castelar
+11378	path5213										castelar
+1338	path5219										castelar
+1350	path5211	path5209									castelar
+11376	path5201										castelar
+1336	path5203										castelar
+1307	path5243										castelar
+11358	path5205	path5221	path5223	path5229							castelar
+11356	path5207	path5221	path5223	path5229							castelar
+1340	path5227	path5231	path5245	path1291-8							castelar
+11362	path5225	path5231	path5245	path1291-8							castelar
+11360	path5237										castelar
+11305	path5241	path5247									castelar
+1342	path5239										castelar
+11307	path1293-9	path5247									castelar
+11364	path5249										castelar
+1344	path2882										castelar
+1309	path2886										castelar
+1346	path2884										castelar
+1402	path2913										ituzaingo
+1311	path2888										castelar
+1401	path2905										ituzaingo
+11401	path2907										ituzaingo
+1403	path2909	path2921	path2911	path2917							ituzaingo
+1404	path2915	path2917									ituzaingo
+1406	path2919										ituzaingo
+11402	path2923										ituzaingo
+1405	path2925										ituzaingo
+1408	path2927										ituzaingo
+1407	path2929										ituzaingo
+1410	path2931										ituzaingo
+11403	path2935										ituzaingo
+11404	path2933										ituzaingo
+1412	path2941										ituzaingo
+1409	path2937										ituzaingo
+11405	path2939										ituzaingo
+1411	path2943										ituzaingo
+11406	path2945										ituzaingo
+11407	path2947										ituzaingo
+1414	path2949										ituzaingo
+1413	path3047										padua
+1416	path2951										padua
+1415	path3049										padua
+11501	path3051										padua
+1502	path3057	path3059									padua
+1501	path3053	path3061	path3055	path3059							padua
+1503	path3088										padua
+1504	path3063										padua
+11502	path3080										padua
+1506	path3082	path3092	path3084								padua
+11503	path3090	path3094									padua
+11504	path3086	path3094									padua
+1508	path3098										padua
+1505	path3096										padua
+1507	path3102										padua
+1510	path3100										padua
+11506	path3104										padua
+1509	path3106										padua
+1512	path3112										padua
+11505	path3108										padua
+1511	path3114										padua
+1514	path3116										padua
+1513	path3118										padua
+1602	path3120	path3312	path3186								merlo
+1601	path3190	path3192	path3194	path3198	path3208						merlo
+11604	path3188	path3196	path3202	path3206							merlo
+11602	path3316										merlo
+11601	path3290	path3296	path3300	path3318	path3302	path3322					merlo
+11603	path3292	path3296	path3300	path3318	path3302	path3322					merlo
+11606	path3210										merlo
+1603	path3308	path3322									merlo
+1604	path3353										merlo
+1606	path3310	path3318									merlo
+1608	path3320										merlo
+11608	path3351										merlo
+1605	path3324										merlo
+11615	path3347										merlo
+11605	path3349										merlo
+1612	path3359	path3357	path3367								merlo
+1610	path3355	path3367									merlo
+1607	path3361	path3363									merlo
+1609	path3365	path3369	path3381	path3371	path3375						merlo
+1614	path3373	path3375									merlo
+1616	path3377										merlo
+11612	path3379										merlo
+1618	path3383										merlo
+1611	path3385										merlo
+1620	path3387										merlo
+1613	path3389										merlo
+11614	path3391										merlo
+11609	path3393										merlo
+1622	path3395										merlo
+1615	path3397										merlo
+1624	path3399										merlo
+1617	path3401										merlo
+11616	path3403										merlo
+11611	path3405										merlo
+1626	path3407										merlo
+1619	path3415	path3419									merlo
+1702	path3409	path3417	path3411								prey
+11613	path3413	path3419									prey
+11702	path3448										prey
+1701	path3421										prey
+11705	path3444										prey
+11701	path3446										prey
+1704	path3454	path3458									prey
+1703	path3450	path3456	path3452	path3458							prey
+1705	path3464										prey
+1706	path3460										prey
+11704	path3462										prey
+1708	path3466										prey
+1707	path3468										prey
+1710	path3470										prey
+1709	path3472										prey
+1712	path3474										prey
+1711	path3476										prey
+1714	path3482										prey
+1713	path3478										prey
+11703	path3480										prey
+1715	path3484										moreno
+1802	path3486										moreno
+1801	path3488										moreno
+1804	path3494	path3510	path3498	path3512	path3514	path3516					moreno
+11829	path3490										moreno
+1803	path3492	path3496	path3502								moreno
+11803	path3504	path3522	path3506								moreno
+11801	path3500	path3512	path3514	path3516							moreno
+11821	path3508	path3524									moreno
+1815	path3526										moreno
+11823	path3557										moreno
+11809	path3520	path3532									moreno
+11807	path3518	path3532									moreno
+11805	path3528										moreno
+1805	path3530										moreno
+11811	path3561										moreno
+1807	path3534										moreno
+11813	path3559										moreno
+11825	path3565	path3567	path3595	path3569	path3573						moreno
+1811	path3571	path3573									moreno
+11827	path3563										moreno
+1809	path3577										moreno
+11817	path3579	path3583	path3581	path3585							moreno
+11815	path3575	path3585									moreno
+1813	path3587										moreno
+11819	path3589										moreno
+11831	path3591										moreno

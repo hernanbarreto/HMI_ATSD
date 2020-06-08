@@ -1,0 +1,4235 @@
+﻿
+^司机钥匙开关1,2 首尾维护配置LCOM_1 
+首尾维护配置RCOM_1 
+
+read_fram_ok
+OnboardATP正式版v1.8.5@19:07:31,Sep 11 2015
+
+map:0E，line08 SVN ctrl Revision:$Revision: 11043 $ 19:07:31
+
+ BTM serial ERR,收到27,本机0
+CRC校验错误,crc_fsm为2
+^紧急制动反馈1,2 
+^切除牵引反馈4 
+^OBCU激活反馈8 
+^零速信号（停稳信号）反馈9 
+^列车外部紧急状态15,16 
+ATO 双路故障判定
+ TWC_OUTPUT 双路故障
+ TWC_INPUT 双路故障
+^允许开左门反馈5 
+^允许开右门反馈6 
+ 尾端ATP故障
+从输入板得到的车轮方向 2(2正,1反) 128
+车轮方向变化 2(2正转,1反转),total_s 1_MOVE forward
+FORE: cur.rollback_s 0, total_s 1, origin_s 1
+^允许开左门反馈5 
+^允许开右门反馈6 
+系统非零速
+^零速信号（停稳信号）反馈9 
+
+ 2018-11-13  12:13:27
+收到BLS Id:11811,上一BLS:0.
+接收时 offset_s 0  total_s 1397  speed 263;
+本应答器距上次校准时的距离1397。
+
+雷达脉冲0.Q_SIGNALASPECT:0
+
+ 更新应答器，位置 1397,可走行距离 175200
+@RM B11811
+ total_s 1397 speed 263; offset_s:0 ->
+time_stamp 4145934 com_offset_s 0 956
+target_brake 15->0
+ total_s 1397 speed 263; offset_s:956 ->
+time_stamp 4145934 com_offset_s 0 24653
+target_brake 0->3
+RM next balise list, current B11811
+B1809, 24021
+B1809, 24021
+B1809, 24021
+B1805, 339
+B1805, 339
+B1805, 339
+Index 0, 1809
+向在数组rm_blocks中第0个元素插入轨13
+
+
+ 2018-11-13  12:13:28
+收到BLS Id:1805,上一BLS:11811.
+接收时 offset_s 24653  total_s 1738  speed 260;
+本应答器距上次校准时的距离341。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1738,可走行距离 175200
+@RM B1805
+is_second_balise_avail
+
+is_second_balise_avail i:3
+
+@RM 第二个应答器距第一个 341 应在 -267 到 945内
+确定行驶方向 fsm_ini_dir  1
+@RM第2个应答器 方向 下行
+向在数组rm_blocks中第1个元素插入轨13
+
+ total_s 1738 speed 260; offset_s:24653 ->
+time_stamp 4147257 com_offset_s 0 24992
+target_brake 3->16
+升pos时当前轨13,偏移24992,额外轨道数2
+
+依次压入23
+
+依次压入17
+
+ total_s 1738 speed 260; offset_s:24992 ->
+time_stamp 4147257 com_offset_s 11 25003
+target_brake 16->16
+升pos时当前轨13,偏移25003,额外轨道数2
+
+依次压入23
+
+依次压入17
+
+@未升级校位 1213G offset_s 25003 old_s -23265, base_s 0
+*轨道1213G, 偏移25003,下一个应答器11805,位置4416,绝对位置 29114
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 1207G 轨长 8945 base_s 24999 total_s1764 
+
+
+ 2018-11-13  12:13:44
+收到BLS Id:11805,上一BLS:1805.
+接收时 offset_s 4443  total_s 6177  speed 296;
+本应答器距上次校准时的距离4439。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 6177,可走行距离 175200
+@RM B11805
+ total_s 6177 speed 296; offset_s:4443 ->
+time_stamp 4163123 com_offset_s 0 4420
+target_brake 14->15
+ total_s 6177 speed 296; offset_s:4420 ->
+time_stamp 4163123 com_offset_s 0 4420
+target_brake 15->15
+@未升级2校正后 1207G offset_s 4420 old_s 1757, base_s 24999
+*轨道1207G, 偏移4420,下一个应答器11801,位置11452,绝对位置 40566
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 1203G 轨长 12860 base_s 33944 total_s10726 
+
+
+ 2018-11-13  12:14:16
+收到BLS Id:11801,上一BLS:11805.
+接收时 offset_s 7002  total_s 17704  speed 419;
+本应答器距上次校准时的距离11527。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 17704,可走行距离 175200
+@RM B11801
+ total_s 17704 speed 419; offset_s:7002 ->
+time_stamp 4194752 com_offset_s 0 6927
+target_brake 14->15
+ total_s 17704 speed 419; offset_s:6927 ->
+time_stamp 4194752 com_offset_s 0 6927
+target_brake 15->15
+@未升级2校正后 1203G offset_s 6927 old_s 10777, base_s 33944
+*轨道1203G, 偏移6927,下一个应答器1803,位置6545,绝对位置 47111
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 1201G 轨长 7985 base_s 46804 total_s23646 
+
+
+ 2018-11-13  12:14:31
+收到BLS Id:1803,上一BLS:11801.
+接收时 offset_s 621  total_s 24258  speed 437;
+本应答器距上次校准时的距离6554。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ cur.lamp:RED  OverLap: 0 1-Y
+ 更新应答器，位置 24258,可走行距离 175200
+@RM B1803
+ total_s 24258 speed 437; offset_s:621 ->
+time_stamp 4210100 com_offset_s 0 612
+target_brake 14->15
+ total_s 24258 speed 437; offset_s:612 ->
+time_stamp 4210100 com_offset_s 0 612
+target_brake 15->15
+@未升级2校正后 1201G offset_s 612 old_s 23646, base_s 46804
+*轨道1201G, 偏移612,下一个应答器1801,位置7412,绝对位置 54523
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 1117G 轨长 34176 base_s 54789 total_s31703 
+
+
+ 2018-11-13  12:14:43
+收到BLS Id:1801,上一BLS:1803.
+接收时 offset_s 72  total_s 31703  speed 755;
+本应答器距上次校准时的距离7445。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 31703,可走行距离 175200
+@RM B1801
+ total_s 31703 speed 755; offset_s:72 ->
+time_stamp 4222781 com_offset_s 14 8038
+target_brake 14->16
+ total_s 31703 speed 755; offset_s:8038 ->
+time_stamp 4222781 com_offset_s 14 8038
+target_brake 16->16
+@未升级2校正后 1201G offset_s 8038 old_s 23665, base_s 46804
+*轨道1201G, 偏移8038,下一个应答器1715,位置34169,绝对位置 88706
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 1117G 轨长 34176 base_s 54789 total_s31780 
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 1115G 轨长 53677 base_s 88965 total_s65871 
+
+
+ 2018-11-13  12:15:13
+收到BLS Id:1715,上一BLS:1801.
+接收时 offset_s 369  total_s 66195  speed 1594;
+本应答器距上次校准时的距离34492。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 66195,可走行距离 175200
+@RM B1715
+ total_s 66195 speed 1594; offset_s:369 ->
+time_stamp 4251824 com_offset_s 0 34222
+target_brake 14->15
+ total_s 66195 speed 1594; offset_s:34222 ->
+time_stamp 4251824 com_offset_s 0 34222
+target_brake 15->15
+@未升级2校正后 1117G offset_s 34222 old_s 31973, base_s 54789
+*轨道1117G, 偏移34222,下一个应答器11703,位置27138,绝对位置 115844
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 1115G 轨长 53677 base_s 88965 total_s66355 
+
+
+ 2018-11-13  12:15:28
+收到BLS Id:11703,上一BLS:1715.
+接收时 offset_s 27359  total_s 93508  speed 1785;
+本应答器距上次校准时的距离27313。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 93508,可走行距离 175200
+@RM B11703
+ total_s 93508 speed 1785; offset_s:27359 ->
+time_stamp 4267624 com_offset_s 0 27184
+target_brake 14->15
+ total_s 93508 speed 1785; offset_s:27184 ->
+time_stamp 4267624 com_offset_s 0 27184
+target_brake 15->15
+@未升级2校正后 1115G offset_s 27184 old_s 66324, base_s 88965
+*轨道1115G, 偏移27184,下一个应答器1713,位置26470,绝对位置 142314
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 1113G 轨长 38952 base_s 142642 total_s120115 
+
+
+ 2018-11-13  12:15:42
+收到BLS Id:1713,上一BLS:11703.
+接收时 offset_s 114  total_s 120115  speed 1803;
+本应答器距上次校准时的距离26607。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 120115,可走行距离 175200
+@RM B1713
+ total_s 120115 speed 1803; offset_s:114 ->
+time_stamp 4282449 com_offset_s 0 53654
+target_brake 14->16
+ total_s 120115 speed 1803; offset_s:53654 ->
+time_stamp 4282449 com_offset_s 0 53654
+target_brake 16->16
+@未升级2校正后 1115G offset_s 53654 old_s 66461, base_s 88965
+*轨道1115G, 偏移53654,下一个应答器1711,位置38970,绝对位置 181284
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 1113G 轨长 38952 base_s 142642 total_s120301 
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 1111G 轨长 37407 base_s 181594 total_s159223 
+
+
+ 2018-11-13  12:16:4
+收到BLS Id:1711,上一BLS:1713.
+接收时 offset_s 315  total_s 159405  speed 1815;
+本应答器距上次校准时的距离39290。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 159405,可走行距离 175200
+@RM B1711
+ total_s 159405 speed 1815; offset_s:315 ->
+time_stamp 4304114 com_offset_s 0 38947
+target_brake 14->15
+ total_s 159405 speed 1815; offset_s:38947 ->
+time_stamp 4304114 com_offset_s 0 38947
+target_brake 15->15
+@未升级2校正后 1113G offset_s 38947 old_s 120458, base_s 142642
+*轨道1113G, 偏移38947,下一个应答器1709,位置37428,绝对位置 218712
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 1111G 轨长 37407 base_s 181594 total_s159585 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 1109G 轨长 23450 base_s 219001 total_s196949 
+
+
+ 2018-11-13  12:16:26
+收到BLS Id:1709,上一BLS:1711.
+接收时 offset_s 132  total_s 196949  speed 1605;
+本应答器距上次校准时的距离37544。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 196949,可走行距离 175200
+@RM B1709
+ total_s 196949 speed 1605; offset_s:132 ->
+time_stamp 4325801 com_offset_s 0 37423
+target_brake 13->15
+ total_s 196949 speed 1605; offset_s:37423 ->
+time_stamp 4325801 com_offset_s 0 37423
+target_brake 15->15
+@未升级2校正后 1111G offset_s 37423 old_s 159526, base_s 181594
+*轨道1111G, 偏移37423,下一个应答器1707,位置23461,绝对位置 242173
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 1109G 轨长 23450 base_s 219001 total_s197108 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 1107G 轨长 22257 base_s 242451 total_s220491 
+
+
+ 2018-11-13  12:16:44
+收到BLS Id:1707,上一BLS:1709.
+接收时 offset_s 222  total_s 220605  speed 1157;
+本应答器距上次校准时的距离23656。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 220605,可走行距离 175200
+@RM B1707
+ total_s 220605 speed 1157; offset_s:222 ->
+time_stamp 4342664 com_offset_s 41 23518
+target_brake 13->15
+ total_s 220605 speed 1157; offset_s:23518 ->
+time_stamp 4342664 com_offset_s 41 23518
+target_brake 15->15
+@未升级2校正后 1109G offset_s 23518 old_s 197087, base_s 219001
+*轨道1109G, 偏移23518,下一个应答器1705,位置22235,绝对位置 264449
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 1107G 轨长 22257 base_s 242451 total_s220719 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 1105G 轨长 8072 base_s 264708 total_s242847 
+
+
+ 2018-11-13  12:17:8
+收到BLS Id:1705,上一BLS:1707.
+接收时 offset_s 305  total_s 243099  speed 840;
+本应答器距上次校准时的距离22494。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 243099,可走行距离 175200
+@RM B1705
+ total_s 243099 speed 840; offset_s:305 ->
+time_stamp 4366909 com_offset_s 0 22303
+target_brake 13->15
+ total_s 243099 speed 840; offset_s:22303 ->
+time_stamp 4366909 com_offset_s 0 22303
+target_brake 15->15
+@未升级2校正后 1107G offset_s 22303 old_s 220796, base_s 242451
+*轨道1107G, 偏移22303,下一个应答器1703,位置8682,绝对位置 273131
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 1105G 轨长 8072 base_s 264708 total_s243182 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 1103G 轨长 23137 base_s 272780 total_s251203 
+
+
+ 2018-11-13  12:17:18
+收到BLS Id:1703,上一BLS:1705.
+接收时 offset_s 670  total_s 251795  speed 847;
+本应答器距上次校准时的距离8696。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ cur.lamp:RED  OverLap: 0 1-Y
+ 更新应答器，位置 251795,可走行距离 175200
+@RM B1703
+ total_s 251795 speed 847; offset_s:670 ->
+time_stamp 4377271 com_offset_s 24 680
+target_brake 13->14
+ total_s 251795 speed 847; offset_s:680 ->
+time_stamp 4377271 com_offset_s 24 680
+target_brake 14->14
+@未升级2校正后 1103G offset_s 680 old_s 251115, base_s 272780
+*轨道1103G, 偏移680,下一个应答器11701,位置403,绝对位置 273558
+
+
+ 2018-11-13  12:17:18
+收到BLS Id:11701,上一BLS:1703.
+接收时 offset_s 1107  total_s 252222  speed 849;
+本应答器距上次校准时的距离427。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ 更新应答器，位置 252222,可走行距离 175200
+@RM B11701
+ total_s 252222 speed 849; offset_s:1107 ->
+time_stamp 4377770 com_offset_s 25 1108
+target_brake 14->16
+ total_s 252222 speed 849; offset_s:1108 ->
+time_stamp 4377770 com_offset_s 25 1108
+target_brake 16->16
+@未升级2校正后 1103G offset_s 1108 old_s 251114, base_s 272780
+*轨道1103G, 偏移1108,下一个应答器1701,位置22027,绝对位置 295610
+
+ Next_block中目标制动变化16 ->15
+*进入新轨 1101G 轨长 33581 base_s 295917 total_s274253 
+
+
+ 2018-11-13  12:17:45
+收到BLS Id:1701,上一BLS:11701.
+接收时 offset_s 173  total_s 274424  speed 856;
+本应答器距上次校准时的距离22202。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 274424,可走行距离 175200
+@RM B1701
+ total_s 274424 speed 856; offset_s:173 ->
+time_stamp 4403757 com_offset_s 0 23135
+target_brake 15->16
+ total_s 274424 speed 856; offset_s:23135 ->
+time_stamp 4403757 com_offset_s 0 23135
+target_brake 16->16
+@未升级2校正后 1103G offset_s 23135 old_s 251289, base_s 272780
+*轨道1103G, 偏移23135,下一个应答器1619,位置33636,绝对位置 329246
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 1101G 轨长 33581 base_s 295917 total_s274509 
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 1023G 轨长 55351 base_s 329498 total_s308044 
+
+
+ 2018-11-13  12:18:19
+收到BLS Id:1619,上一BLS:1701.
+接收时 offset_s 289  total_s 308296  speed 844;
+本应答器距上次校准时的距离33872。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 308296,可走行距离 175200
+@RM B1619
+ total_s 308296 speed 844; offset_s:289 ->
+time_stamp 4439338 com_offset_s 0 33634
+target_brake 14->15
+ total_s 308296 speed 844; offset_s:33634 ->
+time_stamp 4439338 com_offset_s 0 33634
+target_brake 15->15
+@未升级2校正后 1101G offset_s 33634 old_s 274662, base_s 295917
+*轨道1101G, 偏移33634,下一个应答器11611,位置27998,绝对位置 357244
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 1023G 轨长 55351 base_s 329498 total_s308381 
+
+
+ 2018-11-13  12:18:51
+收到BLS Id:11611,上一BLS:1619.
+接收时 offset_s 28123  total_s 336366  speed 1171;
+本应答器距上次校准时的距离28070。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 336366,可走行距离 175200
+@RM B11611
+ total_s 336366 speed 1171; offset_s:28123 ->
+time_stamp 4470280 com_offset_s 23 28074
+target_brake 14->15
+ total_s 336366 speed 1171; offset_s:28074 ->
+time_stamp 4470280 com_offset_s 23 28074
+target_brake 15->15
+@未升级2校正后 1023G offset_s 28074 old_s 308292, base_s 329498
+*轨道1023G, 偏移28074,下一个应答器1617,位置27283,绝对位置 384550
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 1021G 轨长 44115 base_s 384849 total_s363759 
+
+
+ 2018-11-13  12:19:10
+收到BLS Id:1617,上一BLS:11611.
+接收时 offset_s 260  total_s 363903  speed 1422;
+本应答器距上次校准时的距离27537。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 363903,可走行距离 175200
+@RM B1617
+ total_s 363903 speed 1422; offset_s:260 ->
+time_stamp 4490241 com_offset_s 0 55357
+target_brake 14->16
+ total_s 363903 speed 1422; offset_s:55357 ->
+time_stamp 4490241 com_offset_s 0 55357
+target_brake 16->16
+@未升级2校正后 1023G offset_s 55357 old_s 308546, base_s 329498
+*轨道1023G, 偏移55357,下一个应答器1615,位置44137,绝对位置 428687
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 1021G 轨长 44115 base_s 384849 total_s364044 
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 1019G 轨长 69757 base_s 428964 total_s408116 
+
+
+ 2018-11-13  12:19:40
+收到BLS Id:1615,上一BLS:1617.
+接收时 offset_s 255  total_s 408267  speed 1506;
+本应答器距上次校准时的距离44364。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 408267,可走行距离 175200
+@RM B1615
+ total_s 408267 speed 1506; offset_s:255 ->
+time_stamp 4520160 com_offset_s 60 44203
+target_brake 14->15
+ total_s 408267 speed 1506; offset_s:44203 ->
+time_stamp 4520160 com_offset_s 60 44203
+target_brake 15->15
+@未升级2校正后 1021G offset_s 44203 old_s 364064, base_s 384849
+*轨道1021G, 偏移44203,下一个应答器11609,位置35317,绝对位置 464064
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 1019G 轨长 69757 base_s 428964 total_s408417 
+
+
+ 2018-11-13  12:20:7
+收到BLS Id:11609,上一BLS:1615.
+接收时 offset_s 35735  total_s 443914  speed 1168;
+本应答器距上次校准时的距离35647。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 443914,可走行距离 175200
+@RM B11609
+ total_s 443914 speed 1168; offset_s:35735 ->
+time_stamp 4546637 com_offset_s 0 35405
+target_brake 14->15
+ total_s 443914 speed 1168; offset_s:35405 ->
+time_stamp 4546637 com_offset_s 0 35405
+target_brake 15->15
+@未升级2校正后 1019G offset_s 35405 old_s 408509, base_s 428964
+*轨道1019G, 偏移35405,下一个应答器1613,位置34351,绝对位置 498415
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 1017G 轨长 43987 base_s 498721 total_s478272 
+
+
+ 2018-11-13  12:20:41
+收到BLS Id:1613,上一BLS:11609.
+接收时 offset_s 195  total_s 478461  speed 949;
+本应答器距上次校准时的距离34547。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 478461,可走行距离 175200
+@RM B1613
+ total_s 478461 speed 949; offset_s:195 ->
+time_stamp 4580686 com_offset_s 13 69769
+target_brake 14->16
+ total_s 478461 speed 949; offset_s:69769 ->
+time_stamp 4580686 com_offset_s 13 69769
+target_brake 16->16
+@未升级2校正后 1019G offset_s 69769 old_s 408692, base_s 428964
+*轨道1019G, 偏移69769,下一个应答器1611,位置43995,绝对位置 542423
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 1017G 轨长 43987 base_s 498721 total_s478556 
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 1015G 轨长 25436 base_s 542708 total_s522487 
+
+
+ 2018-11-13  12:21:27
+收到BLS Id:1611,上一BLS:1613.
+接收时 offset_s 367  total_s 522803  speed 1055;
+本应答器距上次校准时的距离44342。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 522803,可走行距离 175200
+@RM B1611
+ total_s 522803 speed 1055; offset_s:367 ->
+time_stamp 4627068 com_offset_s 33 44040
+target_brake 14->15
+ total_s 522803 speed 1055; offset_s:44040 ->
+time_stamp 4627068 com_offset_s 33 44040
+target_brake 15->15
+@未升级2校正后 1017G offset_s 44040 old_s 478763, base_s 498721
+*轨道1017G, 偏移44040,下一个应答器1609,位置35131,绝对位置 577587
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 1015G 轨长 25436 base_s 542708 total_s522908 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 1027G 轨长 9733 base_s 568144 total_s548263 
+
+ Next_block中目标制动变化13 ->12
+*进入新轨 1013G 轨长 15791 base_s 577877 total_s557950 
+
+
+ 2018-11-13  12:22:4
+收到BLS Id:1609,上一BLS:1611.
+接收时 offset_s 265  total_s 558184  speed 780;
+本应答器距上次校准时的距离35381。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 558184,可走行距离 175200
+@RM B1609
+ total_s 558184 speed 780; offset_s:265 ->
+time_stamp 4664090 com_offset_s 7 9755
+target_brake 12->14
+ total_s 558184 speed 780; offset_s:9755 ->
+time_stamp 4664090 com_offset_s 7 9755
+target_brake 14->14
+@未升级2校正后 1027G offset_s 9755 old_s 548429, base_s 568144
+*轨道1027G, 偏移9755,下一个应答器1607,位置16389,绝对位置 593983
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化14 ->13
+*进入新轨 1013G 轨长 15791 base_s 577877 total_s558262 
+
+ Next_block中目标制动变化13 ->12
+*进入新轨 1011G 轨长 21434 base_s 593668 total_s573971 
+
+
+ 2018-11-13  12:22:25
+收到BLS Id:1607,上一BLS:1609.
+接收时 offset_s 787  total_s 574740  speed 768;
+本应答器距上次校准时的距离16556。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ cur.lamp:RED  OverLap: 0 1-Y
+ 更新应答器，位置 574740,可走行距离 175200
+@RM B1607
+ total_s 574740 speed 768; offset_s:787 ->
+time_stamp 4685266 com_offset_s 26 646
+target_brake 12->14
+ total_s 574740 speed 768; offset_s:646 ->
+time_stamp 4685266 com_offset_s 26 646
+target_brake 14->14
+@未升级2校正后 1011G offset_s 646 old_s 574094, base_s 593668
+*轨道1011G, 偏移646,下一个应答器11605,位置324,绝对位置 594333
+
+
+ 2018-11-13  12:22:26
+收到BLS Id:11605,上一BLS:1607.
+接收时 offset_s 954  total_s 575048  speed 767;
+本应答器距上次校准时的距离308。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ 更新应答器，位置 575048,可走行距离 175200
+@RM B11605
+ total_s 575048 speed 767; offset_s:954 ->
+time_stamp 4685695 com_offset_s 3 973
+target_brake 14->16
+ total_s 575048 speed 767; offset_s:973 ->
+time_stamp 4685695 com_offset_s 3 973
+target_brake 16->16
+@未升级2校正后 1011G offset_s 973 old_s 574075, base_s 593668
+*轨道1011G, 偏移973,下一个应答器1605,位置20448,绝对位置 614784
+
+ Next_block中目标制动变化16 ->15
+*进入新轨 1007G 轨长 22504 base_s 615102 total_s595560 
+
+
+ 2018-11-13  12:22:53
+收到BLS Id:1605,上一BLS:11605.
+接收时 offset_s 195  total_s 595704  speed 722;
+本应答器距上次校准时的距离20656。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 595704,可走行距离 175200
+@RM B1605
+ total_s 595704 speed 722; offset_s:195 ->
+time_stamp 4713306 com_offset_s 0 21421
+target_brake 15->16
+ total_s 595704 speed 722; offset_s:21421 ->
+time_stamp 4713306 com_offset_s 0 21421
+target_brake 16->16
+@未升级2校正后 1011G offset_s 21421 old_s 574283, base_s 593668
+*轨道1011G, 偏移21421,下一个应答器1603,位置22541,绝对位置 637325
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 1007G 轨长 22504 base_s 615102 total_s595777 
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 1001G 轨长 9238 base_s 637606 total_s618259 
+
+
+ 2018-11-13  12:23:16
+收到BLS Id:1603,上一BLS:1605.
+接收时 offset_s 154  total_s 618375  speed 1160;
+本应答器距上次校准时的距离22671。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 618375,可走行距离 175200
+@RM B1603
+ total_s 618375 speed 1160; offset_s:154 ->
+time_stamp 4736456 com_offset_s 0 22528
+target_brake 14->15
+ total_s 618375 speed 1160; offset_s:22528 ->
+time_stamp 4736456 com_offset_s 0 22528
+target_brake 15->15
+@未升级2校正后 1007G offset_s 22528 old_s 595847, base_s 615102
+*轨道1007G, 偏移22528,下一个应答器1601,位置38993,绝对位置 676318
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 1001G 轨长 9238 base_s 637606 total_s618491 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 1025G 轨长 29777 base_s 646844 total_s627672 
+
+ Next_block中目标制动变化13 ->12
+*进入新轨 F19G 轨长 24375 base_s 676621 total_s657465 
+
+
+ 2018-11-13  12:23:47
+收到BLS Id:1601,上一BLS:1603.
+接收时 offset_s 229  total_s 657595  speed 1296;
+本应答器距上次校准时的距离39220。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 657595,可走行距离 175200
+@RM B1601
+ total_s 657595 speed 1296; offset_s:229 ->
+time_stamp 4766885 com_offset_s 19 29798
+target_brake 12->14
+ total_s 657595 speed 1296; offset_s:29798 ->
+time_stamp 4766885 com_offset_s 19 29798
+target_brake 14->14
+@未升级2校正后 1025G offset_s 29798 old_s 627797, base_s 646844
+*轨道1025G, 偏移29798,下一个应答器1513,位置24378,绝对位置 700715
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化14 ->13
+*进入新轨 F19G 轨长 24375 base_s 676621 total_s657724 
+
+ Next_block中目标制动变化13 ->12
+*进入新轨 F17G 轨长 25874 base_s 700996 total_s682069 
+
+
+ 2018-11-13  12:24:5
+收到BLS Id:1513,上一BLS:1601.
+接收时 offset_s 257  total_s 682206  speed 1362;
+本应答器距上次校准时的距离24611。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 682206,可走行距离 175200
+@RM B1513
+ total_s 682206 speed 1362; offset_s:257 ->
+time_stamp 4784944 com_offset_s 0 24399
+target_brake 12->15
+ total_s 682206 speed 1362; offset_s:24399 ->
+time_stamp 4784944 com_offset_s 0 24399
+target_brake 15->15
+@未升级2校正后 0F19G offset_s 24399 old_s 657807, base_s 676621
+*轨道0F19G, 偏移24399,下一个应答器1511,位置25839,绝对位置 726554
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 F17G 轨长 25874 base_s 700996 total_s682342 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 F15G 轨长 62305 base_s 726870 total_s708144 
+
+
+ 2018-11-13  12:24:24
+收到BLS Id:1511,上一BLS:1513.
+接收时 offset_s 88  total_s 708144  speed 1382;
+本应答器距上次校准时的距离25938。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 708144,可走行距离 175200
+@RM B1511
+ total_s 708144 speed 1382; offset_s:88 ->
+time_stamp 4803702 com_offset_s 0 25863
+target_brake 13->15
+ total_s 708144 speed 1382; offset_s:25863 ->
+time_stamp 4803702 com_offset_s 0 25863
+target_brake 15->15
+@未升级2校正后 0F17G offset_s 25863 old_s 682281, base_s 700996
+*轨道0F17G, 偏移25863,下一个应答器11505,位置31440,绝对位置 757994
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 F15G 轨长 62305 base_s 726870 total_s708283 
+
+
+ 2018-11-13  12:24:46
+收到BLS Id:11505,上一BLS:1511.
+接收时 offset_s 31574  total_s 739729  speed 1429;
+本应答器距上次校准时的距离31585。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 739729,可走行距离 175200
+@RM B11505
+ total_s 739729 speed 1429; offset_s:31574 ->
+time_stamp 4826288 com_offset_s 17 31446
+target_brake 14->15
+ total_s 739729 speed 1429; offset_s:31446 ->
+time_stamp 4826288 com_offset_s 17 31446
+target_brake 15->15
+@未升级2校正后 0F15G offset_s 31446 old_s 708283, base_s 726870
+*轨道0F15G, 偏移31446,下一个应答器1509,位置30855,绝对位置 788866
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 F13G 轨长 35778 base_s 789175 total_s770672 
+
+
+ 2018-11-13  12:25:8
+收到BLS Id:1509,上一BLS:11505.
+接收时 offset_s 238  total_s 770826  speed 1548;
+本应答器距上次校准时的距离31097。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 770826,可走行距离 175200
+@RM B1509
+ total_s 770826 speed 1548; offset_s:238 ->
+time_stamp 4847849 com_offset_s 0 62301
+target_brake 14->16
+ total_s 770826 speed 1548; offset_s:62301 ->
+time_stamp 4847849 com_offset_s 0 62301
+target_brake 16->16
+@未升级2校正后 0F15G offset_s 62301 old_s 708525, base_s 726870
+*轨道0F15G, 偏移62301,下一个应答器1507,位置35832,绝对位置 824698
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 F13G 轨长 35778 base_s 789175 total_s770981 
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 F11G 轨长 19869 base_s 824953 total_s806622 
+
+
+ 2018-11-13  12:25:32
+收到BLS Id:1507,上一BLS:1509.
+接收时 offset_s 154  total_s 806762  speed 1408;
+本应答器距上次校准时的距离35936。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 806762,可走行距离 175200
+@RM B1507
+ total_s 806762 speed 1408; offset_s:154 ->
+time_stamp 4872200 com_offset_s 0 35828
+target_brake 14->15
+ total_s 806762 speed 1408; offset_s:35828 ->
+time_stamp 4872200 com_offset_s 0 35828
+target_brake 15->15
+@未升级2校正后 0F13G offset_s 35828 old_s 770934, base_s 789175
+*轨道0F13G, 偏移35828,下一个应答器1505,位置19819,绝对位置 844517
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 F11G 轨长 19869 base_s 824953 total_s806903 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 F07G 轨长 46161 base_s 844822 total_s826626 
+
+
+ 2018-11-13  12:25:47
+收到BLS Id:1505,上一BLS:1507.
+接收时 offset_s 165  total_s 826746  speed 1196;
+本应答器距上次校准时的距离19984。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 826746,可走行距离 175200
+@RM B1505
+ total_s 826746 speed 1196; offset_s:165 ->
+time_stamp 4887395 com_offset_s 5 19874
+target_brake 13->15
+ total_s 826746 speed 1196; offset_s:19874 ->
+time_stamp 4887395 com_offset_s 5 19874
+target_brake 15->15
+@未升级2校正后 0F11G offset_s 19874 old_s 806872, base_s 824953
+*轨道0F11G, 偏移19874,下一个应答器11503,位置5298,绝对位置 849820
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 F07G 轨长 46161 base_s 844822 total_s826865 
+
+
+ 2018-11-13  12:25:52
+收到BLS Id:11503,上一BLS:1505.
+接收时 offset_s 5327  total_s 832068  speed 1172;
+本应答器距上次校准时的距离5322。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 832068,可走行距离 175200
+@RM B11503
+ total_s 832068 speed 1172; offset_s:5327 ->
+time_stamp 4891896 com_offset_s 4 5307
+target_brake 14->15
+ total_s 832068 speed 1172; offset_s:5307 ->
+time_stamp 4891896 com_offset_s 4 5307
+target_brake 15->15
+@未升级2校正后 0F07G offset_s 5307 old_s 826761, base_s 844822
+*轨道0F07G, 偏移5307,下一个应答器1503,位置40890,绝对位置 890714
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 F05G 轨长 15091 base_s 890983 total_s872996 
+
+
+ 2018-11-13  12:26:35
+收到BLS Id:1503,上一BLS:11503.
+接收时 offset_s 420  total_s 873342  speed 863;
+本应答器距上次校准时的距离41274。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 873342,可走行距离 175200
+@RM B1503
+ total_s 873342 speed 863; offset_s:420 ->
+time_stamp 4934951 com_offset_s 0 46197
+target_brake 14->16
+ total_s 873342 speed 863; offset_s:46197 ->
+time_stamp 4934951 com_offset_s 0 46197
+target_brake 16->16
+@未升级2校正后 0F07G offset_s 46197 old_s 827145, base_s 844822
+*轨道0F07G, 偏移46197,下一个应答器1501,位置15668,绝对位置 906382
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 F05G 轨长 15091 base_s 890983 total_s873429 
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 F01G 轨长 23074 base_s 906074 total_s888415 
+
+
+ 2018-11-13  12:26:51
+收到BLS Id:1501,上一BLS:1503.
+接收时 offset_s 715  total_s 889112  speed 1158;
+本应答器距上次校准时的距离15770。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ cur.lamp:RED  OverLap: 0 1-Y
+ 更新应答器，位置 889112,可走行距离 175200
+@RM B1501
+ total_s 889112 speed 1158; offset_s:715 ->
+time_stamp 4950755 com_offset_s 0 613
+target_brake 14->14
+ total_s 889112 speed 1158; offset_s:613 ->
+time_stamp 4950755 com_offset_s 0 613
+target_brake 14->14
+@未升级2校正后 0F01G offset_s 613 old_s 888499, base_s 906074
+*轨道0F01G, 偏移613,下一个应答器11501,位置375,绝对位置 906757
+
+
+ 2018-11-13  12:26:51
+收到BLS Id:11501,上一BLS:1501.
+接收时 offset_s 960  total_s 889459  speed 1156;
+本应答器距上次校准时的距离347。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ 更新应答器，位置 889459,可走行距离 175200
+@RM B11501
+ total_s 889459 speed 1156; offset_s:960 ->
+time_stamp 4951075 com_offset_s 28 1016
+target_brake 14->16
+ total_s 889459 speed 1156; offset_s:1016 ->
+time_stamp 4951075 com_offset_s 28 1016
+target_brake 16->16
+@未升级2校正后 0F01G offset_s 1016 old_s 888443, base_s 906074
+*轨道0F01G, 偏移1016,下一个应答器1415,位置22090,绝对位置 928875
+
+ Next_block中目标制动变化16 ->15
+*进入新轨 E13G 轨长 48567 base_s 929148 total_s911569 
+
+
+ 2018-11-13  12:27:10
+收到BLS Id:1415,上一BLS:11501.
+接收时 offset_s 177  total_s 911694  speed 1253;
+本应答器距上次校准时的距离22235。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 911694,可走行距离 175200
+@RM B1415
+ total_s 911694 speed 1253; offset_s:177 ->
+time_stamp 4970052 com_offset_s 0 23106
+target_brake 15->16
+ total_s 911694 speed 1253; offset_s:23106 ->
+time_stamp 4970052 com_offset_s 0 23106
+target_brake 16->16
+@未升级2校正后 0F01G offset_s 23106 old_s 888588, base_s 906074
+*轨道0F01G, 偏移23106,下一个应答器1413,位置48586,绝对位置 977461
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 E13G 轨长 48567 base_s 929148 total_s911820 
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 E11G 轨长 54936 base_s 977715 total_s960306 
+
+
+ 2018-11-13  12:27:42
+收到BLS Id:1413,上一BLS:1415.
+接收时 offset_s 407  total_s 960636  speed 1650;
+本应答器距上次校准时的距离48942。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 960636,可走行距离 175200
+@RM B1413
+ total_s 960636 speed 1650; offset_s:407 ->
+time_stamp 5002071 com_offset_s 47 48665
+target_brake 14->15
+ total_s 960636 speed 1650; offset_s:48665 ->
+time_stamp 5002071 com_offset_s 47 48665
+target_brake 15->15
+@未升级2校正后 0E13G offset_s 48665 old_s 911971, base_s 929148
+*轨道0E13G, 偏移48665,下一个应答器11407,位置27606,绝对位置 1005114
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 E11G 轨长 54936 base_s 977715 total_s960801 
+
+
+ 2018-11-13  12:27:59
+收到BLS Id:11407,上一BLS:1413.
+接收时 offset_s 27945  total_s 988483  speed 1587;
+本应答器距上次校准时的距离27847。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 988483,可走行距离 175200
+@RM B11407
+ total_s 988483 speed 1587; offset_s:27945 ->
+time_stamp 5019276 com_offset_s 38 27742
+target_brake 14->15
+ total_s 988483 speed 1587; offset_s:27742 ->
+time_stamp 5019276 com_offset_s 38 27742
+target_brake 15->15
+@未升级2校正后 0E11G offset_s 27742 old_s 960741, base_s 977715
+*轨道0E11G, 偏移27742,下一个应答器1411,位置27240,绝对位置 1032392
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 E09G 轨长 51701 base_s 1032651 total_s1015811 
+
+
+ 2018-11-13  12:28:16
+收到BLS Id:1411,上一BLS:11407.
+接收时 offset_s 295  total_s 1015972  speed 1608;
+本应答器距上次校准时的距离27489。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1015972,可走行距离 175200
+@RM B1411
+ total_s 1015972 speed 1608; offset_s:295 ->
+time_stamp 5036188 com_offset_s 19 55001
+target_brake 14->16
+ total_s 1015972 speed 1608; offset_s:55001 ->
+time_stamp 5036188 com_offset_s 19 55001
+target_brake 16->16
+@未升级2校正后 0E11G offset_s 55001 old_s 960971, base_s 977715
+*轨道0E11G, 偏移55001,下一个应答器11405,位置26583,绝对位置 1058994
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 E09G 轨长 51701 base_s 1032651 total_s1016132 
+
+
+ 2018-11-13  12:28:33
+收到BLS Id:11405,上一BLS:1411.
+接收时 offset_s 26894  total_s 1042801  speed 1534;
+本应答器距上次校准时的距离26829。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 1042801,可走行距离 175200
+@RM B11405
+ total_s 1042801 speed 1534; offset_s:26894 ->
+time_stamp 5053037 com_offset_s 0 26648
+target_brake 15->15
+ total_s 1042801 speed 1534; offset_s:26648 ->
+time_stamp 5053037 com_offset_s 0 26648
+target_brake 15->15
+@未升级2校正后 0E09G offset_s 26648 old_s 1016153, base_s 1032651
+*轨道0E09G, 偏移26648,下一个应答器1409,位置25130,绝对位置 1084124
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 E07G 轨长 50012 base_s 1084352 total_s1067963 
+
+
+ 2018-11-13  12:28:49
+收到BLS Id:1409,上一BLS:11405.
+接收时 offset_s 109  total_s 1067963  speed 1536;
+本应答器距上次校准时的距离25162。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1067963,可走行距离 175200
+@RM B1409
+ total_s 1067963 speed 1536; offset_s:109 ->
+time_stamp 5069403 com_offset_s 0 51778
+target_brake 14->16
+ total_s 1067963 speed 1536; offset_s:51778 ->
+time_stamp 5069403 com_offset_s 0 51778
+target_brake 16->16
+@未升级2校正后 0E09G offset_s 51778 old_s 1016185, base_s 1032651
+*轨道0E09G, 偏移51778,下一个应答器11403,位置25220,绝对位置 1109344
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 E07G 轨长 50012 base_s 1084352 total_s1068117 
+
+
+ 2018-11-13  12:29:6
+收到BLS Id:11403,上一BLS:1409.
+接收时 offset_s 25508  total_s 1093394  speed 1506;
+本应答器距上次校准时的距离25431。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 1093394,可走行距离 175200
+@RM B11403
+ total_s 1093394 speed 1506; offset_s:25508 ->
+time_stamp 5085537 com_offset_s 0 25297
+target_brake 15->15
+ total_s 1093394 speed 1506; offset_s:25297 ->
+time_stamp 5085537 com_offset_s 0 25297
+target_brake 15->15
+@未升级2校正后 0E07G offset_s 25297 old_s 1068097, base_s 1084352
+*轨道0E07G, 偏移25297,下一个应答器1407,位置24728,绝对位置 1134072
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 E05G 轨长 23265 base_s 1134364 total_s1118140 
+
+
+ 2018-11-13  12:29:24
+收到BLS Id:1407,上一BLS:11403.
+接收时 offset_s 154  total_s 1118263  speed 1228;
+本应答器距上次校准时的距离24869。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1118263,可走行距离 175200
+@RM B1407
+ total_s 1118263 speed 1228; offset_s:154 ->
+time_stamp 5103938 com_offset_s 0 50025
+target_brake 14->16
+ total_s 1118263 speed 1228; offset_s:50025 ->
+time_stamp 5103938 com_offset_s 0 50025
+target_brake 16->16
+@未升级2校正后 0E07G offset_s 50025 old_s 1068238, base_s 1084352
+*轨道0E07G, 偏移50025,下一个应答器1405,位置23240,绝对位置 1157312
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 E05G 轨长 23265 base_s 1134364 total_s1118385 
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 E03G 轨长 17238 base_s 1157629 total_s1141588 
+
+
+ 2018-11-13  12:29:44
+收到BLS Id:1405,上一BLS:1407.
+接收时 offset_s 73  total_s 1141588  speed 1009;
+本应答器距上次校准时的距离23325。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+应答器在防护列表内
+ 更新应答器，位置 1141588,可走行距离 157800
+@RM B1405
+ total_s 1141588 speed 1009; offset_s:73 ->
+time_stamp 5124291 com_offset_s 9 23262
+target_brake 14->15
+ total_s 1141588 speed 1009; offset_s:23262 ->
+time_stamp 5124291 com_offset_s 9 23262
+target_brake 15->15
+@未升级2校正后 0E05G offset_s 23262 old_s 1118326, base_s 1134364
+*轨道0E05G, 偏移23262,下一个应答器1403,位置17845,绝对位置 1175166
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 E03G 轨长 17238 base_s 1157629 total_s1141689 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 E01G 轨长 24538 base_s 1174867 total_s1158870 
+
+
+ 2018-11-13  12:30:5
+收到BLS Id:1403,上一BLS:1405.
+接收时 offset_s 813  total_s 1159642  speed 773;
+本应答器距上次校准时的距离18054。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ cur.lamp:RED  OverLap: 0 1-Y
+应答器在防护列表内
+ 更新应答器，位置 1159642,可走行距离 140000
+@RM B1403
+ total_s 1159642 speed 773; offset_s:813 ->
+time_stamp 5144980 com_offset_s 15 619
+target_brake 13->14
+ total_s 1159642 speed 773; offset_s:619 ->
+time_stamp 5144980 com_offset_s 15 619
+target_brake 14->14
+@未升级2校正后 0E01G offset_s 619 old_s 1159023, base_s 1174867
+*轨道0E01G, 偏移619,下一个应答器11401,位置350,绝对位置 1175531
+
+
+ 2018-11-13  12:30:5
+收到BLS Id:11401,上一BLS:1403.
+接收时 offset_s 1005  total_s 1160028  speed 772;
+本应答器距上次校准时的距离386。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+应答器在防护列表内
+ 更新应答器，位置 1160028,可走行距离 139600
+@RM B11401
+ total_s 1160028 speed 772; offset_s:1005 ->
+time_stamp 5145454 com_offset_s 0 969
+target_brake 14->16
+ total_s 1160028 speed 772; offset_s:969 ->
+time_stamp 5145454 com_offset_s 0 969
+target_brake 16->16
+@未升级2校正后 0E01G offset_s 969 old_s 1159059, base_s 1174867
+*轨道0E01G, 偏移969,下一个应答器1401,位置23574,绝对位置 1199105
+
+ Next_block中目标制动变化16 ->15
+*进入新轨 D19G 轨长 39755 base_s 1199405 total_s1183673 
+
+
+ 2018-11-13  12:30:35
+收到BLS Id:1401,上一BLS:11401.
+接收时 offset_s 76  total_s 1183673  speed 782;
+本应答器距上次校准时的距离23645。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+应答器在防护列表内
+ 更新应答器，位置 1183673,可走行距离 116000
+@RM B1401
+ total_s 1183673 speed 782; offset_s:76 ->
+time_stamp 5175367 com_offset_s 25 24568
+target_brake 15->16
+ total_s 1183673 speed 782; offset_s:24568 ->
+time_stamp 5175367 com_offset_s 25 24568
+target_brake 16->16
+@未升级2校正后 0E01G offset_s 24568 old_s 1159105, base_s 1174867
+*轨道0E01G, 偏移24568,下一个应答器1311,位置39747,绝对位置 1238877
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 D19G 轨长 39755 base_s 1199405 total_s1183751 
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 D17G 轨长 21549 base_s 1239160 total_s1223478 
+
+
+ 2018-11-13  12:31:14
+收到BLS Id:1311,上一BLS:1401.
+接收时 offset_s 289  total_s 1223687  speed 1055;
+本应答器距上次校准时的距离40014。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ cur.lamp:RED  OverLap: 0 1-Y
+应答器在防护列表内
+ 更新应答器，位置 1223687,可走行距离 76300
+@RM B1311
+ total_s 1223687 speed 1055; offset_s:289 ->
+time_stamp 5213552 com_offset_s 0 39777
+target_brake 14->15
+ total_s 1223687 speed 1055; offset_s:39777 ->
+time_stamp 5213552 com_offset_s 0 39777
+target_brake 15->15
+@未升级2校正后 0D19G offset_s 39777 old_s 1183910, base_s 1199405
+*轨道0D19G, 偏移39777,下一个应答器1309,位置21555,绝对位置 1260432
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 D17G 轨长 21549 base_s 1239160 total_s1223791 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 D13G 轨长 51389 base_s 1260709 total_s1245309 
+
+
+ 2018-11-13  12:31:34
+收到BLS Id:1309,上一BLS:1311.
+接收时 offset_s 205  total_s 1245419  speed 1096;
+本应答器距上次校准时的距离21732。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+应答器在防护列表内
+ 更新应答器，位置 1245419,可走行距离 54700
+@RM B1309
+ total_s 1245419 speed 1096; offset_s:205 ->
+time_stamp 5233638 com_offset_s 0 21577
+target_brake 13->15
+ total_s 1245419 speed 1096; offset_s:21577 ->
+time_stamp 5233638 com_offset_s 0 21577
+target_brake 15->15
+@未升级2校正后 0D17G offset_s 21577 old_s 1223842, base_s 1239160
+*轨道0D17G, 偏移21577,下一个应答器11305,位置15922,绝对位置 1276354
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 D13G 轨长 51389 base_s 1260709 total_s1245529 
+
+
+ 2018-11-13  12:31:48
+收到BLS Id:11305,上一BLS:1309.
+接收时 offset_s 16095  total_s 1261486  speed 1074;
+本应答器距上次校准时的距离16067。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 1261486,可走行距离 175200
+@RM B11305
+ total_s 1261486 speed 1074; offset_s:16095 ->
+time_stamp 5248416 com_offset_s 0 15950
+target_brake 14->15
+ total_s 1261486 speed 1074; offset_s:15950 ->
+time_stamp 5248416 com_offset_s 0 15950
+target_brake 15->15
+@未升级2校正后 0D13G offset_s 15950 old_s 1245536, base_s 1260709
+*轨道0D13G, 偏移15950,下一个应答器1307,位置35415,绝对位置 1311769
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 D11G 轨长 42718 base_s 1312098 total_s1296981 
+
+
+ 2018-11-13  12:32:20
+收到BLS Id:1307,上一BLS:11305.
+接收时 offset_s 173  total_s 1297098  speed 1174;
+本应答器距上次校准时的距离35612。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1297098,可走行距离 175200
+@RM B1307
+ total_s 1297098 speed 1174; offset_s:173 ->
+time_stamp 5280370 com_offset_s 35 51400
+target_brake 14->16
+ total_s 1297098 speed 1174; offset_s:51400 ->
+time_stamp 5280370 com_offset_s 35 51400
+target_brake 16->16
+@未升级2校正后 0D13G offset_s 51400 old_s 1245698, base_s 1260709
+*轨道0D13G, 偏移51400,下一个应答器1305,位置42672,绝对位置 1354476
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 D11G 轨长 42718 base_s 1312098 total_s1297215 
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 D09G 轨长 21661 base_s 1354816 total_s1339873 
+
+
+ 2018-11-13  12:32:59
+收到BLS Id:1305,上一BLS:1307.
+接收时 offset_s 265  total_s 1340070  speed 980;
+本应答器距上次校准时的距离42972。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1340070,可走行距离 175200
+@RM B1305
+ total_s 1340070 speed 980; offset_s:265 ->
+time_stamp 5319175 com_offset_s 24 42707
+target_brake 14->15
+ total_s 1340070 speed 980; offset_s:42707 ->
+time_stamp 5319175 com_offset_s 24 42707
+target_brake 15->15
+@未升级2校正后 0D11G offset_s 42707 old_s 1297363, base_s 1312098
+*轨道0D11G, 偏移42707,下一个应答器1303,位置21665,绝对位置 1376165
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 D09G 轨长 21661 base_s 1354816 total_s1340167 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 D05G 轨长 54841 base_s 1376477 total_s1361792 
+
+
+ 2018-11-13  12:33:24
+收到BLS Id:1303,上一BLS:1305.
+接收时 offset_s 201  total_s 1361943  speed 763;
+本应答器距上次校准时的距离21873。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1361943,可走行距离 175200
+@RM B1303
+ total_s 1361943 speed 763; offset_s:201 ->
+time_stamp 5343864 com_offset_s 27 21681
+target_brake 13->15
+ total_s 1361943 speed 763; offset_s:21681 ->
+time_stamp 5343864 com_offset_s 27 21681
+target_brake 15->15
+@未升级2校正后 0D09G offset_s 21681 old_s 1340262, base_s 1354816
+*轨道0D09G, 偏移21681,下一个应答器11301,位置8163,绝对位置 1384355
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 D05G 轨长 54841 base_s 1376477 total_s1362018 
+
+
+ 2018-11-13  12:33:36
+收到BLS Id:11301,上一BLS:1303.
+接收时 offset_s 8254  total_s 1370177  speed 599;
+本应答器距上次校准时的距离8234。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 1370177,可走行距离 175200
+@RM B11301
+ total_s 1370177 speed 599; offset_s:8254 ->
+time_stamp 5355955 com_offset_s 0 8183
+target_brake 14->15
+ total_s 1370177 speed 599; offset_s:8183 ->
+time_stamp 5355955 com_offset_s 0 8183
+target_brake 15->15
+@未升级2校正后 0D05G offset_s 8183 old_s 1361994, base_s 1376477
+*轨道0D05G, 偏移8183,下一个应答器1301,位置46668,绝对位置 1431023
+
+系统零速
+^零速信号（停稳信号）反馈9 
+*列车停稳 1
+*zero_spd_msg
+zero: cur.rollback_s 0, total_s 1396369, origin_s 1396369
+^允许开左门反馈5 
+^允许开右门反馈6 
+从输入板得到的车轮方向 2(2正,1反) 128
+车轮方向变化 2(2正转,1反转),total_s 1396374_MOVE forward
+FORE: cur.rollback_s 0, total_s 1396374, origin_s 1396374
+^允许开左门反馈5 
+^允许开右门反馈6 
+系统非零速
+^零速信号（停稳信号）反馈9 
+系统零速
+^零速信号（停稳信号）反馈9 
+系统非零速
+^零速信号（停稳信号）反馈9 
+ Next_block中目标制动变化15 ->14
+*进入新轨 D03G 轨长 19526 base_s 1431318 total_s1416841 
+
+
+ 2018-11-13  12:36:57
+收到BLS Id:1301,上一BLS:11301.
+接收时 offset_s 214  total_s 1417049  speed 234;
+本应答器距上次校准时的距离46872。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1417049,可走行距离 175200
+@RM B1301
+ total_s 1417049 speed 234; offset_s:214 ->
+time_stamp 5557097 com_offset_s 0 54851
+target_brake 14->16
+ total_s 1417049 speed 234; offset_s:54851 ->
+time_stamp 5557097 com_offset_s 0 54851
+target_brake 16->16
+@未升级2校正后 0D05G offset_s 54851 old_s 1362198, base_s 1376477
+*轨道0D05G, 偏移54851,下一个应答器1213,位置41699,绝对位置 1472722
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 D03G 轨长 19526 base_s 1431318 total_s1417074 
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 D01G 轨长 22212 base_s 1450844 total_s1436585 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 C11G 轨长 38348 base_s 1473056 total_s1458885 
+
+
+ 2018-11-13  12:38:10
+收到BLS Id:1213,上一BLS:1301.
+接收时 offset_s 232  total_s 1459009  speed 1195;
+本应答器距上次校准时的距离41960。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1459009,可走行距离 175200
+@RM B1213
+ total_s 1459009 speed 1195; offset_s:232 ->
+time_stamp 5629583 com_offset_s 20 22203
+target_brake 13->14
+ total_s 1459009 speed 1195; offset_s:22203 ->
+time_stamp 5629583 com_offset_s 20 22203
+target_brake 14->14
+@未升级2校正后 0D01G offset_s 22203 old_s 1436806, base_s 1450844
+*轨道0D01G, 偏移22203,下一个应答器1211,位置38335,绝对位置 1511077
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化14 ->13
+*进入新轨 C11G 轨长 38348 base_s 1473056 total_s1459129 
+
+ Next_block中目标制动变化13 ->12
+*进入新轨 C09G 轨长 43819 base_s 1511404 total_s1497475 
+
+
+ 2018-11-13  12:38:35
+收到BLS Id:1211,上一BLS:1213.
+接收时 offset_s 280  total_s 1497646  speed 1707;
+本应答器距上次校准时的距离38637。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1497646,可走行距离 175200
+@RM B1211
+ total_s 1497646 speed 1707; offset_s:280 ->
+time_stamp 5655275 com_offset_s 42 38368
+target_brake 12->15
+ total_s 1497646 speed 1707; offset_s:38368 ->
+time_stamp 5655275 com_offset_s 42 38368
+target_brake 15->15
+@未升级2校正后 0C11G offset_s 38368 old_s 1459278, base_s 1473056
+*轨道0C11G, 偏移38368,下一个应答器1209,位置43818,绝对位置 1554937
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 C09G 轨长 43819 base_s 1511404 total_s1497816 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 C07G 轨长 32699 base_s 1555223 total_s1541493 
+
+
+ 2018-11-13  12:39:1
+收到BLS Id:1209,上一BLS:1211.
+接收时 offset_s 390  total_s 1541835  speed 1711;
+本应答器距上次校准时的距离44189。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1541835,可走行距离 175200
+@RM B1209
+ total_s 1541835 speed 1711; offset_s:390 ->
+time_stamp 5680984 com_offset_s 27 43865
+target_brake 13->15
+ total_s 1541835 speed 1711; offset_s:43865 ->
+time_stamp 5680984 com_offset_s 27 43865
+target_brake 15->15
+@未升级2校正后 0C09G offset_s 43865 old_s 1497970, base_s 1511404
+*轨道0C09G, 偏移43865,下一个应答器1207,位置32650,绝对位置 1587614
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 C07G 轨长 32699 base_s 1555223 total_s1542006 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 C05G 轨长 25853 base_s 1587922 total_s1574511 
+
+
+ 2018-11-13  12:39:21
+收到BLS Id:1207,上一BLS:1209.
+接收时 offset_s 339  total_s 1574827  speed 1586;
+本应答器距上次校准时的距离32992。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1574827,可走行距离 175200
+@RM B1207
+ total_s 1574827 speed 1586; offset_s:339 ->
+time_stamp 5700656 com_offset_s 0 32696
+target_brake 13->15
+ total_s 1574827 speed 1586; offset_s:32696 ->
+time_stamp 5700656 com_offset_s 0 32696
+target_brake 15->15
+@未升级2校正后 0C07G offset_s 32696 old_s 1542131, base_s 1555223
+*轨道0C07G, 偏移32696,下一个应答器1205,位置25874,绝对位置 1613488
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 C05G 轨长 25853 base_s 1587922 total_s1574985 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 C03G 轨长 29257 base_s 1613775 total_s1600692 
+
+
+ 2018-11-13  12:39:39
+收到BLS Id:1205,上一BLS:1207.
+接收时 offset_s 139  total_s 1600822  speed 1300;
+本应答器距上次校准时的距离25995。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1600822,可走行距离 175200
+@RM B1205
+ total_s 1600822 speed 1300; offset_s:139 ->
+time_stamp 5718981 com_offset_s 24 25895
+target_brake 13->15
+ total_s 1600822 speed 1300; offset_s:25895 ->
+time_stamp 5718981 com_offset_s 24 25895
+target_brake 15->15
+@未升级2校正后 0C05G offset_s 25895 old_s 1574927, base_s 1587922
+*轨道0C05G, 偏移25895,下一个应答器1203,位置29255,绝对位置 1642767
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 C03G 轨长 29257 base_s 1613775 total_s1600950 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 C01G 轨长 20932 base_s 1643032 total_s1630105 
+
+
+ 2018-11-13  12:40:8
+收到BLS Id:1203,上一BLS:1205.
+接收时 offset_s 227  total_s 1630264  speed 785;
+本应答器距上次校准时的距离29442。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1630264,可走行距离 175200
+@RM B1203
+ total_s 1630264 speed 785; offset_s:227 ->
+time_stamp 5748304 com_offset_s 0 29297
+target_brake 13->15
+ total_s 1630264 speed 785; offset_s:29297 ->
+time_stamp 5748304 com_offset_s 0 29297
+target_brake 15->15
+@未升级2校正后 0C03G offset_s 29297 old_s 1600967, base_s 1613775
+*轨道0C03G, 偏移29297,下一个应答器1201,位置20894,绝对位置 1663661
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 C01G 轨长 20932 base_s 1643032 total_s1630344 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 B35G 轨长 32668 base_s 1663964 total_s1651268 
+
+
+ 2018-11-13  12:40:30
+收到BLS Id:1201,上一BLS:1203.
+接收时 offset_s 112  total_s 1651268  speed 1115;
+本应答器距上次校准时的距离21004。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1651268,可走行距离 175200
+@RM B1201
+ total_s 1651268 speed 1115; offset_s:112 ->
+time_stamp 5769603 com_offset_s 0 20934
+target_brake 13->15
+ total_s 1651268 speed 1115; offset_s:20934 ->
+time_stamp 5769603 com_offset_s 0 20934
+target_brake 15->15
+@未升级2校正后 0C01G offset_s 20934 old_s 1630334, base_s 1643032
+*轨道0C01G, 偏移20934,下一个应答器1129,位置32641,绝对位置 1696302
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 B35G 轨长 32668 base_s 1663964 total_s1651380 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 B33G 轨长 29169 base_s 1696632 total_s1684006 
+
+
+ 2018-11-13  12:40:55
+收到BLS Id:1129,上一BLS:1201.
+接收时 offset_s 215  total_s 1684149  speed 1429;
+本应答器距上次校准时的距离32881。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1684149,可走行距离 175200
+@RM B1129
+ total_s 1684149 speed 1429; offset_s:215 ->
+time_stamp 5794588 com_offset_s 17 32660
+target_brake 13->15
+ total_s 1684149 speed 1429; offset_s:32660 ->
+time_stamp 5794588 com_offset_s 17 32660
+target_brake 15->15
+@未升级2校正后 0B35G offset_s 32660 old_s 1651489, base_s 1663964
+*轨道0B35G, 偏移32660,下一个应答器1127,位置29217,绝对位置 1725536
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 B33G 轨长 29169 base_s 1696632 total_s1684291 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 B31G 轨长 28423 base_s 1725801 total_s1713430 
+
+
+ 2018-11-13  12:41:16
+收到BLS Id:1127,上一BLS:1129.
+接收时 offset_s 232  total_s 1713558  speed 1272;
+本应答器距上次校准时的距离29409。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1713558,可走行距离 175200
+@RM B1127
+ total_s 1713558 speed 1272; offset_s:232 ->
+time_stamp 5816400 com_offset_s 0 29209
+target_brake 13->15
+ total_s 1713558 speed 1272; offset_s:29209 ->
+time_stamp 5816400 com_offset_s 0 29209
+target_brake 15->15
+@未升级2校正后 0B33G offset_s 29209 old_s 1684349, base_s 1696632
+*轨道0B33G, 偏移29209,下一个应答器1125,位置28394,绝对位置 1753930
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 B31G 轨长 28423 base_s 1725801 total_s1713684 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 B29G 轨长 27739 base_s 1754224 total_s1742007 
+
+
+ 2018-11-13  12:41:41
+收到BLS Id:1125,上一BLS:1127.
+接收时 offset_s 293  total_s 1742234  speed 1134;
+本应答器距上次校准时的距离28676。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1742234,可走行距离 175200
+@RM B1125
+ total_s 1742234 speed 1134; offset_s:293 ->
+time_stamp 5840546 com_offset_s 0 28434
+target_brake 13->15
+ total_s 1742234 speed 1134; offset_s:28434 ->
+time_stamp 5840546 com_offset_s 0 28434
+target_brake 15->15
+@未升级2校正后 0B31G offset_s 28434 old_s 1713800, base_s 1725801
+*轨道0B31G, 偏移28434,下一个应答器1123,位置27779,绝对位置 1781709
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 B29G 轨长 27739 base_s 1754224 total_s1742348 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 B27G 轨长 51111 base_s 1781963 total_s1770007 
+
+
+ 2018-11-13  12:42:4
+收到BLS Id:1123,上一BLS:1125.
+接收时 offset_s 171  total_s 1770133  speed 1253;
+本应答器距上次校准时的距离27899。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1770133,可走行距离 175200
+@RM B1123
+ total_s 1770133 speed 1253; offset_s:171 ->
+time_stamp 5864373 com_offset_s 33 27823
+target_brake 13->15
+ total_s 1770133 speed 1253; offset_s:27823 ->
+time_stamp 5864373 com_offset_s 33 27823
+target_brake 15->15
+@未升级2校正后 0B29G offset_s 27823 old_s 1742310, base_s 1754224
+*轨道0B29G, 偏移27823,下一个应答器11113,位置23402,绝对位置 1805144
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 B27G 轨长 51111 base_s 1781963 total_s1770259 
+
+
+ 2018-11-13  12:42:21
+收到BLS Id:11113,上一BLS:1123.
+接收时 offset_s 23718  total_s 1793767  speed 1548;
+本应答器距上次校准时的距离23634。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 1793767,可走行距离 175200
+@RM B11113
+ total_s 1793767 speed 1548; offset_s:23718 ->
+time_stamp 5880941 com_offset_s 0 23486
+target_brake 14->15
+ total_s 1793767 speed 1548; offset_s:23486 ->
+time_stamp 5880941 com_offset_s 0 23486
+target_brake 15->15
+@未升级2校正后 0B27G offset_s 23486 old_s 1770281, base_s 1781963
+*轨道0B27G, 偏移23486,下一个应答器1121,位置27562,绝对位置 1832706
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 B25G 轨长 24055 base_s 1833074 total_s1821471 
+
+
+ 2018-11-13  12:42:41
+收到BLS Id:1121,上一BLS:11113.
+接收时 offset_s 79  total_s 1821471  speed 1080;
+本应答器距上次校准时的距离27704。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1821471,可走行距离 175200
+@RM B1121
+ total_s 1821471 speed 1080; offset_s:79 ->
+time_stamp 5901205 com_offset_s 0 51048
+target_brake 14->16
+ total_s 1821471 speed 1080; offset_s:51048 ->
+time_stamp 5901205 com_offset_s 0 51048
+target_brake 16->16
+@未升级2校正后 0B27G offset_s 51048 old_s 1770423, base_s 1781963
+*轨道0B27G, 偏移51048,下一个应答器11111,位置17934,绝对位置 1850640
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 B25G 轨长 24055 base_s 1833074 total_s1821578 
+
+
+ 2018-11-13  12:43:3
+收到BLS Id:11109,上一BLS:1121.
+接收时 offset_s 18314  total_s 1839848  speed 780;
+本应答器距上次校准时的距离18377。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 1839848,可走行距离 175200
+@RM B11109
+@ received B11109 in Mode> rm_pos diff with expected B11111
+rm应答器无效,降rm_unpos
+ total_s 1839848 speed 780; offset_s:18314 ->
+time_stamp 5922573 com_offset_s 21 8449
+target_brake 15->15
+ total_s 1839848 speed 780; offset_s:8449 ->
+time_stamp 5922573 com_offset_s 21 18172
+target_brake 15->16
+RM next balise list, current B11109
+B1121, 18193
+B1121, 18193
+B1121, 18193
+B1117, 7839
+B1117, 7839
+B1117, 7839
+Index 0, 1121
+向在数组rm_blocks中第0个元素插入轨23
+
+
+ 2018-11-13  12:43:13
+收到BLS Id:1117,上一BLS:11109.
+接收时 offset_s 18172  total_s 1847816  speed 765;
+本应答器距上次校准时的距离7968。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1847816,可走行距离 175200
+@RM B1117
+is_second_balise_avail
+
+is_second_balise_avail i:3
+
+@RM 第二个应答器距第一个 7968 应在 7080 到 8598内
+@RM第2个应答器 方向 下行
+向在数组rm_blocks中第1个元素插入轨23
+
+ total_s 1847816 speed 765; offset_s:18172 ->
+time_stamp 5932844 com_offset_s 0 26011
+target_brake 16->16
+升pos时当前轨23,偏移26011,额外轨道数1
+
+依次压入27
+
+ total_s 1847816 speed 765; offset_s:26011 ->
+time_stamp 5932844 com_offset_s 42 26053
+target_brake 16->16
+升pos时当前轨23,偏移26053,额外轨道数1
+
+依次压入27
+
+@未升级校位 0B23G offset_s 26053 old_s 1821763, base_s 1833074
+*轨道0B23G, 偏移26053,下一个应答器1113,位置44158,绝对位置 1902980
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 B19G 轨长 44125 base_s 1859043 total_s1847893 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 B17G 轨长 20090 base_s 1903168 total_s1891929 
+
+
+ 2018-11-13  12:44:10
+收到BLS Id:1113,上一BLS:1117.
+接收时 offset_s 399  total_s 1892256  speed 815;
+本应答器距上次校准时的距离44440。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1892256,可走行距离 175200
+@RM B1113
+ total_s 1892256 speed 815; offset_s:399 ->
+time_stamp 5990273 com_offset_s 22 44264
+target_brake 13->14
+ total_s 1892256 speed 815; offset_s:44264 ->
+time_stamp 5990273 com_offset_s 22 44264
+target_brake 14->15
+@未升级2校正后 0B19G offset_s 44264 old_s 1847992, base_s 1903168
+*轨道0B19G, 偏移44264,下一个应答器1111,位置20556,绝对位置 1967683
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 B17G 轨长 20090 base_s 1947293 total_s1892335 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 B13G 轨长 986 base_s 1967383 total_s1912264 
+
+
+ 2018-11-13  12:44:33
+收到BLS Id:1111,上一BLS:1113.
+接收时 offset_s 823  total_s 1913030  speed 849;
+本应答器距上次校准时的距离20774。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ cur.lamp:RED  OverLap: 0 1-Y
+ 更新应答器，位置 1913030,可走行距离 175200
+@RM B1111
+ total_s 1913030 speed 849; offset_s:823 ->
+time_stamp 6013207 com_offset_s 0 605
+target_brake 13->14
+ total_s 1913030 speed 849; offset_s:605 ->
+time_stamp 6013207 com_offset_s 0 605
+target_brake 14->14
+@未升级2校正后 0B13G offset_s 605 old_s 1912425, base_s 1967383
+*轨道0B13G, 偏移605,下一个应答器11107,位置396,绝对位置 1968079
+
+
+ 2018-11-13  12:44:34
+收到BLS Id:11107,上一BLS:1111.
+接收时 offset_s 940  total_s 1913365  speed 838;
+本应答器距上次校准时的距离335。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ 更新应答器，位置 1913365,可走行距离 175200
+@RM B11107
+ total_s 1913365 speed 838; offset_s:940 ->
+time_stamp 6013674 com_offset_s 21 1022
+target_brake 14->16
+ total_s 1913365 speed 838; offset_s:1022 ->
+time_stamp 6013674 com_offset_s 21 1022
+target_brake 16->16
+@未升级2校正后 0B13G offset_s 1022 old_s 1912343, base_s 1967383
+*轨道0B13G, 偏移1022,下一个应答器11105,位置4910,绝对位置 1973010
+
+ Next_block中目标制动变化16 ->15
+*进入新轨 B07G 轨长 24476 base_s 1968369 total_s1913448 
+
+
+ 2018-11-13  12:44:40
+收到BLS Id:11103,上一BLS:11107.
+接收时 offset_s 5231  total_s 1918560  speed 720;
+本应答器距上次校准时的距离5195。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ 更新应答器，位置 1918560,可走行距离 175200
+@RM B11103
+@ received B11103 in Mode> rm_pos diff with expected B11105
+rm应答器无效,降rm_unpos
+ total_s 1918560 speed 720; offset_s:5231 ->
+time_stamp 6020377 com_offset_s 16 6861
+target_brake 15->15
+ total_s 1918560 speed 720; offset_s:6861 ->
+time_stamp 6020377 com_offset_s 16 5211
+target_brake 15->16
+RM next balise list, current B11103
+B11107, 5164
+B11107, 5164
+B11107, 5164
+B1109, 6823
+B1109, 6823
+B1109, 6823
+Index 3, 1109
+向在数组rm_blocks中第0个元素插入轨9
+
+
+ 2018-11-13  12:44:51
+收到BLS Id:1109,上一BLS:11103.
+接收时 offset_s 5211  total_s 1925476  speed 664;
+本应答器距上次校准时的距离6916。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ cur.lamp:RED  OverLap: 0 1-Y
+ 更新应答器，位置 1925476,可走行距离 175200
+@RM B1109
+is_second_balise_avail
+
+is_second_balise_avail i:3
+
+@RM 第二个应答器距第一个 6916 应在 6085 到 7561内
+@RM第2个应答器 方向 下行
+向在数组rm_blocks中第1个元素插入轨5
+
+ total_s 1925476 speed 664; offset_s:5211 ->
+time_stamp 6030672 com_offset_s 18 622
+target_brake 16->16
+轨18不在数组rm_blocks中
+
+升pos时当前轨5,偏移622,额外轨道数3
+
+依次压入15
+
+依次压入13
+
+依次压入9
+
+ total_s 1925476 speed 664; offset_s:622 ->
+time_stamp 6030672 com_offset_s 18 622
+target_brake 16->16
+升pos时当前轨5,偏移622,额外轨道数3
+
+依次压入15
+
+依次压入13
+
+依次压入9
+
+@未升级校位 0B05G offset_s 622 old_s 1924854, base_s 1968369
+*轨道0B05G, 偏移622,下一个应答器11101,位置306,绝对位置 1968992
+
+
+ 2018-11-13  12:44:51
+收到BLS Id:11101,上一BLS:1109.
+接收时 offset_s 954  total_s 1925808  speed 664;
+本应答器距上次校准时的距离332。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ 更新应答器，位置 1925808,可走行距离 175200
+@RM B11101
+ total_s 1925808 speed 664; offset_s:954 ->
+time_stamp 6031158 com_offset_s 0 928
+target_brake 15->16
+  已达到可搜索的最后一轨，结果不可信
+ total_s 1925808 speed 664; offset_s:928 ->
+time_stamp 6031158 com_offset_s 0 928
+target_brake 16->16
+@未升级2校正后 0B05G offset_s 928 old_s 1924880, base_s 1968369
+*轨道0B05G, 偏移928,下一个应答器1105,位置12134,绝对位置 1981126
+
+ Next_block中目标制动变化16 ->15
+*进入新轨 B03G 轨长 30674 base_s 1981420 total_s1937951 
+
+
+ 2018-11-13  12:45:8
+收到BLS Id:1105,上一BLS:11101.
+接收时 offset_s 97  total_s 1938028  speed 751;
+本应答器距上次校准时的距离12220。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1938028,可走行距离 175200
+@RM B1105
+ total_s 1938028 speed 751; offset_s:97 ->
+time_stamp 6047741 com_offset_s 0 13062
+target_brake 15->16
+ total_s 1938028 speed 751; offset_s:13062 ->
+time_stamp 6047741 com_offset_s 0 13062
+target_brake 16->16
+@未升级2校正后 0B05G offset_s 13062 old_s 1924966, base_s 1968369
+*轨道0B05G, 偏移13062,下一个应答器1103,位置30679,绝对位置 2011805
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 B03G 轨长 30674 base_s 1981420 total_s1938103 
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 A23G 轨长 40929 base_s 2012094 total_s1968752 
+
+
+ 2018-11-13  12:45:35
+收到BLS Id:1103,上一BLS:1105.
+接收时 offset_s 215  total_s 1968906  speed 1528;
+本应答器距上次校准时的距离30878。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 1968906,可走行距离 175200
+@RM B1103
+ total_s 1968906 speed 1528; offset_s:215 ->
+time_stamp 6075310 com_offset_s 0 30690
+target_brake 14->15
+ total_s 1968906 speed 1528; offset_s:30690 ->
+time_stamp 6075310 com_offset_s 0 30690
+target_brake 15->15
+@未升级2校正后 0B03G offset_s 30690 old_s 1938216, base_s 1981420
+*轨道0B03G, 偏移30690,下一个应答器1019,位置40945,绝对位置 2052750
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 A23G 轨长 40929 base_s 2012094 total_s1969059 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 A19G 轨长 40843 base_s 2053023 total_s2009824 
+
+
+ 2018-11-13  12:45:58
+收到BLS Id:1019,上一BLS:1103.
+接收时 offset_s 209  total_s 2010028  speed 2034;
+本应答器距上次校准时的距离41122。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2010028,可走行距离 175200
+@RM B1019
+ total_s 2010028 speed 2034; offset_s:209 ->
+time_stamp 6098164 com_offset_s 73 41034
+target_brake 13->15
+ total_s 2010028 speed 2034; offset_s:41034 ->
+time_stamp 6098164 com_offset_s 73 41034
+target_brake 15->15
+@未升级2校正后 0A23G offset_s 41034 old_s 1968994, base_s 2012094
+*轨道0A23G, 偏移41034,下一个应答器1015,位置40766,绝对位置 2093589
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 A19G 轨长 40843 base_s 2053023 total_s2010233 
+
+ 切牵引 :  1   超速切牵引 
+^全常用制动反馈3 
+^切除牵引反馈4 
+^切除牵引反馈4 
+^全常用制动反馈3 
+ Next_block中目标制动变化14 ->13
+*进入新轨 A15G 轨长 27995 base_s 2093866 total_s2050817 
+
+
+ 2018-11-13  12:46:18
+收到BLS Id:1015,上一BLS:1019.
+接收时 offset_s 452  total_s 2051218  speed 2010;
+本应答器距上次校准时的距离41190。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2051218,可走行距离 175200
+@RM B1015
+ total_s 2051218 speed 2010; offset_s:452 ->
+time_stamp 6118224 com_offset_s 0 40871
+target_brake 13->15
+ total_s 2051218 speed 2010; offset_s:40871 ->
+time_stamp 6118224 com_offset_s 0 40871
+target_brake 15->15
+@未升级2校正后 0A19G offset_s 40871 old_s 2010347, base_s 2053023
+*轨道0A19G, 偏移40871,下一个应答器1011,位置27895,绝对位置 2121484
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 A15G 轨长 27995 base_s 2093866 total_s2051419 
+
+
+ 2018-11-13  12:46:32
+收到BLS Id:1011,上一BLS:1015.
+接收时 offset_s 27942  total_s 2079132  speed 1974;
+本应答器距上次校准时的距离27914。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2079132,可走行距离 175200
+@RM B1011
+ total_s 2079132 speed 1974; offset_s:27942 ->
+time_stamp 6132299 com_offset_s 1 27924
+target_brake 14->15
+ total_s 2079132 speed 1974; offset_s:27924 ->
+time_stamp 6132299 com_offset_s 1 27924
+target_brake 15->15
+@未升级2校正后 0A15G offset_s 27924 old_s 2051208, base_s 2093866
+*轨道0A15G, 偏移27924,下一个应答器1007,位置28279,绝对位置 2149764
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 A11G 轨长 28184 base_s 2121861 total_s2079331 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 A05G 轨长 39480 base_s 2150045 total_s2107404 
+
+
+ 2018-11-13  12:46:48
+收到BLS Id:1007,上一BLS:1011.
+接收时 offset_s 317  total_s 2107704  speed 1511;
+本应答器距上次校准时的距离28572。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2107704,可走行距离 175200
+@RM B1007
+ total_s 2107704 speed 1511; offset_s:317 ->
+time_stamp 6148438 com_offset_s 0 28208
+target_brake 13->15
+ total_s 2107704 speed 1511; offset_s:28208 ->
+time_stamp 6148438 com_offset_s 0 28208
+target_brake 15->15
+@未升级2校正后 0A11G offset_s 28208 old_s 2079496, base_s 2121861
+*轨道0A11G, 偏移28208,下一个应答器11003,位置7921,绝对位置 2157685
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 A05G 轨长 39480 base_s 2150045 total_s2107853 
+
+
+ 2018-11-13  12:46:54
+收到BLS Id:11003,上一BLS:1007.
+接收时 offset_s 7947  total_s 2115627  speed 1209;
+本应答器距上次校准时的距离7923。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 2115627,可走行距离 175200
+@RM B11003
+ total_s 2115627 speed 1209; offset_s:7947 ->
+time_stamp 6154379 com_offset_s 25 7970
+target_brake 14->15
+ total_s 2115627 speed 1209; offset_s:7970 ->
+time_stamp 6154379 com_offset_s 25 7970
+target_brake 15->15
+@未升级2校正后 0A05G offset_s 7970 old_s 2107657, base_s 2150045
+*轨道0A05G, 偏移7970,下一个应答器1003,位置31506,绝对位置 2189216
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 927G 轨长 12214 base_s 2189525 total_s2147228 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 925G 轨长 43091 base_s 2201739 total_s2159404 
+
+
+ 2018-11-13  12:47:43
+收到BLS Id:1003,上一BLS:11003.
+接收时 offset_s 5687  total_s 2165038  speed 1005;
+本应答器距上次校准时的距离49411。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2165038,可走行距离 175200
+@RM B1003
+ balise location invalid  09025G actual offset_s 5687, expected offset_s 309, win 1588
+base_s = 2201739; offset_s = 5687; cur.blnext_pos_abs = 2189216;
+rm应答器无效,降rm_unpos
+ total_s 2165038 speed 1005; offset_s:5687 ->
+time_stamp 6203333 com_offset_s 0 614
+target_brake 13->14
+ total_s 2165038 speed 1005; offset_s:614 ->
+time_stamp 6203333 com_offset_s 67 39543
+target_brake 14->16
+RM next balise list, current B1003
+B11003, 31531
+B11003, 31531
+B11003, 31531
+B917, 55254
+B917, 55254
+B917, 55254
+Index 3, 917
+向在数组rm_blocks中第0个元素插入轨5
+
+
+ 2018-11-13  12:48:12
+收到BLS Id:917,上一BLS:1003.
+接收时 offset_s 39543  total_s 2203085  speed 1673;
+本应答器距上次校准时的距离38047。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2203085,可走行距离 175200
+@RM B917
+is_second_balise_avail
+
+is_second_balise_avail i:3
+
+@RM 第二个应答器距第一个 38047 应在 53894 到 56614内
+@ RM 第2应答器无效
+
+ total_s 2203085 speed 1673; offset_s:39543 ->
+time_stamp 6232347 com_offset_s 0 598
+target_brake 16->16
+ total_s 2203085 speed 1673; offset_s:598 ->
+time_stamp 6232347 com_offset_s 88 43191
+target_brake 16->16
+RM next balise list, current B917
+B1003, 55321
+B1003, 55321
+B1003, 55321
+B10907, 34214
+B10907, 34214
+B10907, 34214
+Index 0, 1003
+向在数组rm_blocks中第0个元素插入轨25
+
+
+ 2018-11-13  12:48:31
+收到BLS Id:10907,上一BLS:917.
+接收时 offset_s 43191  total_s 2237686  speed 1866;
+本应答器距上次校准时的距离34601。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 2237686,可走行距离 175200
+@RM B10907
+is_second_balise_avail
+
+is_second_balise_avail i:3
+
+@RM 第二个应答器距第一个 34601 应在 32922 到 35506内
+@RM第2个应答器 方向 下行
+向在数组rm_blocks中第1个元素插入轨17
+
+ total_s 2237686 speed 1866; offset_s:43191 ->
+time_stamp 6251215 com_offset_s 0 34314
+target_brake 16->16
+升pos时当前轨17,偏移34314,额外轨道数1
+
+依次压入25
+
+ total_s 2237686 speed 1866; offset_s:34314 ->
+time_stamp 6251215 com_offset_s 158 34472
+target_brake 16->16
+升pos时当前轨17,偏移34472,额外轨道数1
+
+依次压入25
+
+@未升级校位 0917G offset_s 34472 old_s 2203214, base_s 2201739
+*轨道0917G, 偏移34472,下一个应答器913,位置33402,绝对位置 2269308
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 913G 轨长 54582 base_s 2269585 total_s2271192 
+
+
+ 2018-11-13  12:48:51
+收到BLS Id:913,上一BLS:10907.
+接收时 offset_s 289  total_s 2271349  speed 1584;
+本应答器距上次校准时的距离33663。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2271349,可走行距离 175200
+@RM B913
+ total_s 2271349 speed 1584; offset_s:289 ->
+time_stamp 6270892 com_offset_s 12 67886
+target_brake 14->15
+ total_s 2271349 speed 1584; offset_s:67886 ->
+time_stamp 6270892 com_offset_s 12 67886
+target_brake 15->16
+@未升级2校正后 0917G offset_s 67886 old_s 2203463, base_s 2269585
+*轨道0917G, 偏移67886,下一个应答器10905,位置27448,绝对位置 2364614
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 913G 轨长 54582 base_s 2337431 total_s2271507 
+
+
+ 2018-11-13  12:49:10
+收到BLS Id:10905,上一BLS:913.
+接收时 offset_s 27709  total_s 2299018  speed 1433;
+本应答器距上次校准时的距离27669。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 2299018,可走行距离 175200
+@RM B10905
+ total_s 2299018 speed 1433; offset_s:27709 ->
+time_stamp 6289905 com_offset_s 0 27488
+target_brake 15->15
+ total_s 2299018 speed 1433; offset_s:27488 ->
+time_stamp 6289905 com_offset_s 0 27488
+target_brake 15->15
+@未升级2校正后 0913G offset_s 27488 old_s 2271530, base_s 2337431
+*轨道0913G, 偏移27488,下一个应答器907,位置27099,绝对位置 2391713
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 905G 轨长 41143 base_s 2392013 total_s2326229 
+
+
+ 2018-11-13  12:49:30
+收到BLS Id:907,上一BLS:10905.
+接收时 offset_s 234  total_s 2326346  speed 1181;
+本应答器距上次校准时的距离27328。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2326346,可走行距离 175200
+@RM B907
+ total_s 2326346 speed 1181; offset_s:234 ->
+time_stamp 6309658 com_offset_s 0 54587
+target_brake 14->16
+ total_s 2326346 speed 1181; offset_s:54587 ->
+time_stamp 6309658 com_offset_s 0 54587
+target_brake 16->16
+@未升级2校正后 0913G offset_s 54587 old_s 2271759, base_s 2337431
+*轨道0913G, 偏移54587,下一个应答器10903,位置5595,绝对位置 2397308
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 905G 轨长 41143 base_s 2392013 total_s2326461 
+
+
+ 2018-11-13  12:49:35
+收到BLS Id:10903,上一BLS:907.
+接收时 offset_s 5638  total_s 2331979  speed 1005;
+本应答器距上次校准时的距离5633。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 2331979,可走行距离 175200
+@RM B10903
+ total_s 2331979 speed 1005; offset_s:5638 ->
+time_stamp 6314896 com_offset_s 4 5604
+target_brake 15->15
+ total_s 2331979 speed 1005; offset_s:5604 ->
+time_stamp 6314896 com_offset_s 4 5604
+target_brake 15->15
+@未升级2校正后 0905G offset_s 5604 old_s 2326375, base_s 2392013
+*轨道0905G, 偏移5604,下一个应答器903,位置35515,绝对位置 2432827
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 833G 轨长 12438 base_s 2433156 total_s2367548 
+
+
+ 2018-11-13  12:50:29
+收到BLS Id:903,上一BLS:10903.
+接收时 offset_s 289  total_s 2367807  speed 644;
+本应答器距上次校准时的距离35828。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2367807,可走行距离 175200
+@RM B903
+ total_s 2367807 speed 644; offset_s:289 ->
+time_stamp 6369185 com_offset_s 9 41128
+target_brake 14->16
+ total_s 2367807 speed 644; offset_s:41128 ->
+time_stamp 6369185 com_offset_s 9 41128
+target_brake 16->16
+@未升级2校正后 0905G offset_s 41128 old_s 2326679, base_s 2392013
+*轨道0905G, 偏移41128,下一个应答器815,位置38081,绝对位置 2470917
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 833G 轨长 12438 base_s 2433156 total_s2367872 
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 831G 轨长 25576 base_s 2445594 total_s2380319 
+
+系统零速
+^零速信号（停稳信号）反馈9 
+*列车停稳 1
+*zero_spd_msg
+zero: cur.rollback_s 0, total_s 2404476, origin_s 2404476
+^允许开左门反馈5 
+^允许开右门反馈6 
+从输入板得到的车轮方向 2(2正,1反) 128
+车轮方向变化 2(2正转,1反转),total_s 2404480_MOVE forward
+FORE: cur.rollback_s 0, total_s 2404480, origin_s 2404480
+^允许开左门反馈5 
+^允许开右门反馈6 
+系统非零速
+^零速信号（停稳信号）反馈9 
+ Next_block中目标制动变化14 ->13
+*进入新轨 825G 轨长 45939 base_s 2471170 total_s2405862 
+
+
+ 2018-11-13  12:52:6
+收到BLS Id:815,上一BLS:903.
+接收时 offset_s 261  total_s 2406097  speed 390;
+本应答器距上次校准时的距离38290。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2406097,可走行距离 175200
+@RM B815
+ total_s 2406097 speed 390; offset_s:261 ->
+time_stamp 6465597 com_offset_s 1 25629
+target_brake 13->14
+ total_s 2406097 speed 390; offset_s:25629 ->
+time_stamp 6465597 com_offset_s 1 25629
+target_brake 14->14
+@未升级2校正后 0831G offset_s 25629 old_s 2380468, base_s 2445594
+*轨道0831G, 偏移25629,下一个应答器811,位置45894,绝对位置 2516812
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化14 ->13
+*进入新轨 825G 轨长 45939 base_s 2471170 total_s2406139 
+
+^列车外部紧急状态15,16 
+紧急制动或挂起原因代码23
+
+byte = 2,bit = 6,reason = 22
+
+! MSG_EB_TRAIN_EXTRN_EB           
+紧急制动或挂起原因代码63
+
+byte = 7,bit = 6,reason = 62
+
+! OVER_SPEED
+ 切牵引 :  1   超速切牵引 
+^紧急制动反馈1,2 
+^全常用制动反馈3 
+^切除牵引反馈4 
+*列车停稳 1
+*zero_spd_msg
+zero: cur.rollback_s 0, total_s 2450020, origin_s 2450020
+^允许开左门反馈5 
+^允许开右门反馈6 
+系统零速
+^零速信号（停稳信号）反馈9 
+^ATP确认按钮7,8 
+^紧急制动反馈1,2 
+^全常用制动反馈3 
+^切除牵引反馈4 
+^ATP确认按钮7,8 
+^ATP确认按钮7,8 
+^列车外部紧急状态15,16 
+从输入板得到的车轮方向 2(2正,1反) 128
+车轮方向变化 2(2正转,1反转),total_s 2450020_MOVE forward
+FORE: cur.rollback_s 0, total_s 2450020, origin_s 2450020
+^允许开左门反馈5 
+^允许开右门反馈6 
+系统非零速
+^零速信号（停稳信号）反馈9 
+ Next_block中目标制动变化13 ->12
+*进入新轨 817G 轨长 43931 base_s 2517109 total_s2452017 
+
+
+ 2018-11-13  12:54:22
+收到BLS Id:811,上一BLS:815.
+接收时 offset_s 223  total_s 2452206  speed 467;
+本应答器距上次校准时的距离46109。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2452206,可走行距离 175200
+@RM B811
+ total_s 2452206 speed 467; offset_s:223 ->
+time_stamp 6602140 com_offset_s 0 45947
+target_brake 12->15
+ total_s 2452206 speed 467; offset_s:45947 ->
+time_stamp 6602140 com_offset_s 0 45947
+target_brake 15->15
+@未升级2校正后 0825G offset_s 45947 old_s 2406259, base_s 2471170
+*轨道0825G, 偏移45947,下一个应答器10811,位置10112,绝对位置 2526924
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 817G 轨长 43931 base_s 2517109 total_s2452254 
+
+
+ 2018-11-13  12:54:42
+收到BLS Id:10809,上一BLS:811.
+接收时 offset_s 10626  total_s 2462824  speed 541;
+本应答器距上次校准时的距离10618。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 2462824,可走行距离 175200
+@RM B10809
+@ received B10809 in Mode> rm_pos diff with expected B10811
+rm应答器无效,降rm_unpos
+ total_s 2462824 speed 541; offset_s:10626 ->
+time_stamp 6621763 com_offset_s 20 5055
+target_brake 14->15
+ total_s 2462824 speed 541; offset_s:5055 ->
+time_stamp 6621763 com_offset_s 20 10580
+target_brake 15->16
+RM next balise list, current B10809
+B811, 10532
+B811, 10532
+B811, 10532
+B803, 35943
+B803, 35943
+B803, 35943
+Index 3, 803
+向在数组rm_blocks中第0个元素插入轨15
+
+
+ 2018-11-13  12:55:39
+收到BLS Id:803,上一BLS:10809.
+接收时 offset_s 10580  total_s 2499130  speed 743;
+本应答器距上次校准时的距离36306。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2499130,可走行距离 175200
+@RM B803
+is_second_balise_avail
+
+is_second_balise_avail i:3
+
+@RM 第二个应答器距第一个 36306 应在 34617 到 37269内
+@RM第2个应答器 方向 下行
+向在数组rm_blocks中第1个元素插入轨13
+
+ total_s 2499130 speed 743; offset_s:10580 ->
+time_stamp 6679225 com_offset_s 0 31538
+target_brake 16->8
+轨19不在数组rm_blocks中
+
+升pos时当前轨13,偏移31538,额外轨道数0
+
+ total_s 2499130 speed 743; offset_s:31538 ->
+time_stamp 6679225 com_offset_s 0 31538
+target_brake 8->8
+轨19不在数组rm_blocks中
+
+升pos时当前轨13,偏移31538,额外轨道数0
+
+@未升级校位 0813G offset_s 31538 old_s 2467592, base_s 2517109
+*轨道0813G, 偏移31538,下一个应答器10807,位置5681,绝对位置 2554023
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 807G 轨长 22372 base_s 2548637 total_s2499204 
+
+
+ 2018-11-13  12:55:47
+收到BLS Id:10807,上一BLS:803.
+接收时 offset_s 5577  total_s 2504697  speed 759;
+本应答器距上次校准时的距离5567。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 2504697,可走行距离 175200
+@RM B10807
+ total_s 2504697 speed 759; offset_s:5577 ->
+time_stamp 6686601 com_offset_s 0 5691
+target_brake 14->15
+  已达到可搜索的最后一轨，结果不可信
+ total_s 2504697 speed 759; offset_s:5691 ->
+time_stamp 6686601 com_offset_s 0 5691
+target_brake 15->15
+@未升级2校正后 0807G offset_s 5691 old_s 2499006, base_s 2548637
+*轨道0807G, 偏移5691,下一个应答器801,位置19304,绝对位置 2573327
+
+ Next_block中目标制动变化15 ->14
+*进入新轨 801G 轨长 2539 base_s 2571009 total_s2521440 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 719G 轨长 62450 base_s 2573548 total_s2523976 
+
+
+ 2018-11-13  12:56:11
+收到BLS Id:801,上一BLS:10807.
+接收时 offset_s 246  total_s 2524163  speed 933;
+本应答器距上次校准时的距离19466。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2524163,可走行距离 175200
+@RM B801
+ total_s 2524163 speed 933; offset_s:246 ->
+time_stamp 6711319 com_offset_s 0 2623
+target_brake 13->15
+ total_s 2524163 speed 933; offset_s:2623 ->
+time_stamp 6711319 com_offset_s 0 2623
+target_brake 15->15
+@未升级2校正后 0801G offset_s 2623 old_s 2521540, base_s 2571009
+*轨道0801G, 偏移2623,下一个应答器10713,位置5782,绝对位置 2579109
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 719G 轨长 62450 base_s 2573548 total_s2524257 
+
+
+ 2018-11-13  12:56:17
+收到BLS Id:10713,上一BLS:801.
+接收时 offset_s 5779  total_s 2529858  speed 1050;
+本应答器距上次校准时的距离5695。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 2529858,可走行距离 175200
+@RM B10713
+ total_s 2529858 speed 1050; offset_s:5779 ->
+time_stamp 6717067 com_offset_s 34 5900
+target_brake 14->15
+ total_s 2529858 speed 1050; offset_s:5900 ->
+time_stamp 6717067 com_offset_s 34 5900
+target_brake 15->15
+@未升级2校正后 0719G offset_s 5900 old_s 2523958, base_s 2573548
+*轨道0719G, 偏移5900,下一个应答器10707,位置27466,绝对位置 2606609
+
+
+ 2018-11-13  12:56:39
+收到BLS Id:10707,上一BLS:10713.
+接收时 offset_s 33484  total_s 2557442  speed 1397;
+本应答器距上次校准时的距离27584。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 2557442,可走行距离 175200
+@RM B10707
+ total_s 2557442 speed 1397; offset_s:33484 ->
+time_stamp 6738862 com_offset_s 53 33419
+target_brake 15->16
+ total_s 2557442 speed 1397; offset_s:33419 ->
+time_stamp 6738862 com_offset_s 53 33419
+target_brake 16->16
+@未升级2校正后 0719G offset_s 33419 old_s 2524023, base_s 2573548
+*轨道0719G, 偏移33419,下一个应答器711,位置29060,绝对位置 2635722
+
+ Next_block中目标制动变化16 ->15
+*进入新轨 713G 轨长 31805 base_s 2635998 total_s2586502 
+
+
+ 2018-11-13  12:57:0
+收到BLS Id:711,上一BLS:10707.
+接收时 offset_s 302  total_s 2586775  speed 1369;
+本应答器距上次校准时的距离29333。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2586775,可走行距离 175200
+@RM B711
+ total_s 2586775 speed 1369; offset_s:302 ->
+time_stamp 6760021 com_offset_s 0 62479
+target_brake 15->16
+ total_s 2586775 speed 1369; offset_s:62479 ->
+time_stamp 6760021 com_offset_s 0 62479
+target_brake 16->16
+@未升级2校正后 0719G offset_s 62479 old_s 2524296, base_s 2573548
+*轨道0719G, 偏移62479,下一个应答器703,位置31757,绝对位置 2667479
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化16 ->15
+*进入新轨 713G 轨长 31805 base_s 2635998 total_s2586911 
+
+^列车外部紧急状态15,16 
+紧急制动或挂起原因代码23
+
+byte = 2,bit = 6,reason = 22
+
+! MSG_EB_TRAIN_EXTRN_EB           
+紧急制动或挂起原因代码63
+
+byte = 7,bit = 6,reason = 62
+
+! OVER_SPEED
+ 切牵引 :  1   超速切牵引 
+^紧急制动反馈1,2 
+^全常用制动反馈3 
+^切除牵引反馈4 
+*列车停稳 1
+*zero_spd_msg
+zero: cur.rollback_s 0, total_s 2595489, origin_s 2595489
+^允许开左门反馈5 
+^允许开右门反馈6 
+系统零速
+^零速信号（停稳信号）反馈9 
+^ATP确认按钮7,8 
+^紧急制动反馈1,2 
+^全常用制动反馈3 
+^切除牵引反馈4 
+^列车外部紧急状态15,16 
+^ATP确认按钮7,8 
+从输入板得到的车轮方向 2(2正,1反) 128
+车轮方向变化 2(2正转,1反转),total_s 2595489_MOVE forward
+FORE: cur.rollback_s 0, total_s 2595489, origin_s 2595489
+^允许开左门反馈5 
+^允许开右门反馈6 
+系统非零速
+^零速信号（停稳信号）反馈9 
+ Next_block中目标制动变化15 ->14
+*进入新轨 705G 轨长 29806 base_s 2667803 total_s2618674 
+
+
+ 2018-11-13  12:58:5
+收到BLS Id:703,上一BLS:711.
+接收时 offset_s 123  total_s 2618674  speed 1263;
+本应答器距上次校准时的距离31899。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2618674,可走行距离 175200
+@RM B703
+ total_s 2618674 speed 1263; offset_s:123 ->
+time_stamp 6825028 com_offset_s 0 31786
+target_brake 14->15
+ total_s 2618674 speed 1263; offset_s:31786 ->
+time_stamp 6825028 com_offset_s 0 31786
+target_brake 15->15
+@未升级2校正后 0713G offset_s 31786 old_s 2586888, base_s 2635998
+*轨道0713G, 偏移31786,下一个应答器605,位置46704,绝对位置 2714183
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 705G 轨长 29806 base_s 2667803 total_s2618804 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 605G 轨长 16838 base_s 2697609 total_s2648513 
+
+ Next_block中目标制动变化13 ->12
+*进入新轨 603G 轨长 30678 base_s 2714447 total_s2665400 
+
+
+ 2018-11-13  12:58:54
+收到BLS Id:605,上一BLS:703.
+接收时 offset_s 320  total_s 2665657  speed 858;
+本应答器距上次校准时的距离46983。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2665657,可走行距离 175200
+@RM B605
+ total_s 2665657 speed 858; offset_s:320 ->
+time_stamp 6874439 com_offset_s 0 16879
+target_brake 12->14
+ total_s 2665657 speed 858; offset_s:16879 ->
+time_stamp 6874439 com_offset_s 0 16879
+target_brake 14->14
+@未升级2校正后 0605G offset_s 16879 old_s 2648778, base_s 2697609
+*轨道0605G, 偏移16879,下一个应答器603,位置30661,绝对位置 2744844
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化14 ->13
+*进入新轨 603G 轨长 30678 base_s 2714447 total_s2665744 
+
+ Next_block中目标制动变化13 ->12
+*进入新轨 601G 轨长 37240 base_s 2745125 total_s2696394 
+
+
+ 2018-11-13  12:59:20
+收到BLS Id:603,上一BLS:605.
+接收时 offset_s 244  total_s 2696538  speed 1451;
+本应答器距上次校准时的距离30881。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2696538,可走行距离 175200
+@RM B603
+ total_s 2696538 speed 1451; offset_s:244 ->
+time_stamp 6899953 com_offset_s 0 30702
+target_brake 12->15
+ total_s 2696538 speed 1451; offset_s:30702 ->
+time_stamp 6899953 com_offset_s 0 30702
+target_brake 15->15
+@未升级2校正后 0603G offset_s 30702 old_s 2665836, base_s 2714447
+*轨道0603G, 偏移30702,下一个应答器601,位置37213,绝对位置 2782057
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 601G 轨长 37240 base_s 2745125 total_s2696683 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 511G 轨长 27361 base_s 2782365 total_s2733841 
+
+
+ 2018-11-13  12:59:55
+收到BLS Id:601,上一BLS:603.
+接收时 offset_s 195  total_s 2733949  speed 1071;
+本应答器距上次校准时的距离37411。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2733949,可走行距离 175200
+@RM B601
+ total_s 2733949 speed 1071; offset_s:195 ->
+time_stamp 6934568 com_offset_s 34 37271
+target_brake 13->15
+ total_s 2733949 speed 1071; offset_s:37271 ->
+time_stamp 6934568 com_offset_s 34 37271
+target_brake 15->15
+@未升级2校正后 0601G offset_s 37271 old_s 2696678, base_s 2745125
+*轨道0601G, 偏移37271,下一个应答器511,位置27306,绝对位置 2809397
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 511G 轨长 27361 base_s 2782365 total_s2734058 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 509G 轨长 40889 base_s 2809726 total_s2761426 
+
+
+ 2018-11-13  13:0:15
+收到BLS Id:511,上一BLS:601.
+接收时 offset_s 147  total_s 2761426  speed 1609;
+本应答器距上次校准时的距离27477。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2761426,可走行距离 175200
+@RM B511
+ total_s 2761426 speed 1609; offset_s:147 ->
+time_stamp 6954599 com_offset_s 1 27338
+target_brake 13->15
+ total_s 2761426 speed 1609; offset_s:27338 ->
+time_stamp 6954599 com_offset_s 1 27338
+target_brake 15->15
+@未升级2校正后 0511G offset_s 27338 old_s 2734088, base_s 2782365
+*轨道0511G, 偏移27338,下一个应答器509,位置40955,绝对位置 2850353
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 509G 轨长 40889 base_s 2809726 total_s2761588 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 507G 轨长 24670 base_s 2850615 total_s2802342 
+
+
+ 2018-11-13  13:0:37
+收到BLS Id:509,上一BLS:511.
+接收时 offset_s 392  total_s 2802730  speed 1940;
+本应答器距上次校准时的距离41304。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2802730,可走行距离 175200
+@RM B509
+ total_s 2802730 speed 1940; offset_s:392 ->
+time_stamp 6977259 com_offset_s 0 40932
+target_brake 13->15
+ total_s 2802730 speed 1940; offset_s:40932 ->
+time_stamp 6977259 com_offset_s 0 40932
+target_brake 15->15
+@未升级2校正后 0509G offset_s 40932 old_s 2761798, base_s 2809726
+*轨道0509G, 偏移40932,下一个应答器507,位置24609,绝对位置 2874962
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 507G 轨长 24670 base_s 2850615 total_s2802924 
+
+ 切牵引 :  1   超速切牵引 
+^全常用制动反馈3 
+^切除牵引反馈4 
+ Next_block中目标制动变化14 ->13
+*进入新轨 505G 轨长 37584 base_s 2875285 total_s2827404 
+
+
+ 2018-11-13  13:0:49
+收到BLS Id:507,上一BLS:509.
+接收时 offset_s 47  total_s 2827404  speed 2094;
+本应答器距上次校准时的距离24674。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2827404,可走行距离 175200
+@RM B507
+ total_s 2827404 speed 2094; offset_s:47 ->
+time_stamp 6989489 com_offset_s 23 24675
+target_brake 13->15
+ total_s 2827404 speed 2094; offset_s:24675 ->
+time_stamp 6989489 com_offset_s 23 24675
+target_brake 15->15
+@未升级2校正后 0507G offset_s 24675 old_s 2802729, base_s 2850615
+*轨道0507G, 偏移24675,下一个应答器505,位置37581,绝对位置 2912566
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 505G 轨长 37584 base_s 2875285 total_s2827614 
+
+^切除牵引反馈4 
+^全常用制动反馈3 
+ Next_block中目标制动变化14 ->13
+*进入新轨 503G 轨长 23260 base_s 2912869 total_s2865076 
+
+
+ 2018-11-13  13:1:8
+收到BLS Id:505,上一BLS:507.
+接收时 offset_s 287  total_s 2865270  speed 1950;
+本应答器距上次校准时的距离37866。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2865270,可走行距离 175200
+@RM B505
+ total_s 2865270 speed 1950; offset_s:287 ->
+time_stamp 7008369 com_offset_s 60 37646
+target_brake 13->15
+ total_s 2865270 speed 1950; offset_s:37646 ->
+time_stamp 7008369 com_offset_s 60 37646
+target_brake 15->15
+@未升级2校正后 0505G offset_s 37646 old_s 2827624, base_s 2875285
+*轨道0505G, 偏移37646,下一个应答器503,位置23165,绝对位置 2935791
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 503G 轨长 23260 base_s 2912869 total_s2865464 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 501G 轨长 38574 base_s 2936129 total_s2888576 
+
+
+ 2018-11-13  13:1:20
+收到BLS Id:503,上一BLS:505.
+接收时 offset_s 108  total_s 2888576  speed 1876;
+本应答器距上次校准时的距离23306。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2888576,可走行距离 175200
+@RM B503
+ total_s 2888576 speed 1876; offset_s:108 ->
+time_stamp 7020491 com_offset_s 16 23243
+target_brake 13->15
+ total_s 2888576 speed 1876; offset_s:23243 ->
+time_stamp 7020491 com_offset_s 16 23243
+target_brake 15->15
+@未升级2校正后 0503G offset_s 23243 old_s 2865333, base_s 2912869
+*轨道0503G, 偏移23243,下一个应答器501,位置38589,绝对位置 2974396
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 501G 轨长 38574 base_s 2936129 total_s2888762 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 411G 轨长 31272 base_s 2974703 total_s2927216 
+
+
+ 2018-11-13  13:1:48
+收到BLS Id:501,上一BLS:503.
+接收时 offset_s 377  total_s 2927544  speed 1086;
+本应答器距上次校准时的距离38968。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2927544,可走行距离 175200
+@RM B501
+ total_s 2927544 speed 1086; offset_s:377 ->
+time_stamp 7047517 com_offset_s 0 38572
+target_brake 13->15
+ total_s 2927544 speed 1086; offset_s:38572 ->
+time_stamp 7047517 com_offset_s 0 38572
+target_brake 15->15
+@未升级2校正后 0501G offset_s 38572 old_s 2888972, base_s 2936129
+*轨道0501G, 偏移38572,下一个应答器411,位置31295,绝对位置 3005691
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 411G 轨长 31272 base_s 2974703 total_s2927657 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 409G 轨长 20896 base_s 3005975 total_s2958876 
+
+
+ 2018-11-13  13:2:11
+收到BLS Id:411,上一BLS:501.
+接收时 offset_s 218  total_s 2959036  speed 1599;
+本应答器距上次校准时的距离31492。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2959036,可走行距离 175200
+@RM B411
+ total_s 2959036 speed 1599; offset_s:218 ->
+time_stamp 7070540 com_offset_s 0 31293
+target_brake 13->15
+ total_s 2959036 speed 1599; offset_s:31293 ->
+time_stamp 7070540 com_offset_s 0 31293
+target_brake 15->15
+@未升级2校正后 0411G offset_s 31293 old_s 2927743, base_s 2974703
+*轨道0411G, 偏移31293,下一个应答器409,位置20923,绝对位置 3026614
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 409G 轨长 20896 base_s 3005975 total_s2959197 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 407G 轨长 36488 base_s 3026871 total_s2979934 
+
+
+ 2018-11-13  13:2:23
+收到BLS Id:409,上一BLS:411.
+接收时 offset_s 204  total_s 2980115  speed 1811;
+本应答器距上次校准时的距离21079。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 2980115,可走行距离 175200
+@RM B409
+ total_s 2980115 speed 1811; offset_s:204 ->
+time_stamp 7082817 com_offset_s 0 20944
+target_brake 13->15
+ total_s 2980115 speed 1811; offset_s:20944 ->
+time_stamp 7082817 com_offset_s 0 20944
+target_brake 15->15
+@未升级2校正后 0409G offset_s 20944 old_s 2959171, base_s 3005975
+*轨道0409G, 偏移20944,下一个应答器407,位置36478,绝对位置 3063092
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 407G 轨长 36488 base_s 3026871 total_s2980296 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 405G 轨长 27464 base_s 3063359 total_s3016565 
+
+
+ 2018-11-13  13:2:42
+收到BLS Id:407,上一BLS:409.
+接收时 offset_s 191  total_s 3016746  speed 1816;
+本应答器距上次校准时的距离36631。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 3016746,可走行距离 175200
+@RM B407
+ total_s 3016746 speed 1816; offset_s:191 ->
+time_stamp 7102281 com_offset_s 34 36560
+target_brake 13->15
+ total_s 3016746 speed 1816; offset_s:36560 ->
+time_stamp 7102281 com_offset_s 34 36560
+target_brake 15->15
+@未升级2校正后 0407G offset_s 36560 old_s 2980186, base_s 3026871
+*轨道0407G, 偏移36560,下一个应答器405,位置27388,绝对位置 3090514
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 405G 轨长 27464 base_s 3063359 total_s3016928 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 403G 轨长 27119 base_s 3090823 total_s3044223 
+
+
+ 2018-11-13  13:2:59
+收到BLS Id:405,上一BLS:407.
+接收时 offset_s 229  total_s 3044367  speed 1454;
+本应答器距上次校准时的距离27621。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 3044367,可走行距离 175200
+@RM B405
+ total_s 3044367 speed 1454; offset_s:229 ->
+time_stamp 7118767 com_offset_s 47 27507
+target_brake 13->15
+ total_s 3044367 speed 1454; offset_s:27507 ->
+time_stamp 7118767 com_offset_s 47 27507
+target_brake 15->15
+@未升级2校正后 0405G offset_s 27507 old_s 3016860, base_s 3063359
+*轨道0405G, 偏移27507,下一个应答器403,位置27063,绝对位置 3117624
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 403G 轨长 27119 base_s 3090823 total_s3044512 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 401G 轨长 27710 base_s 3117942 total_s3071470 
+
+
+ 2018-11-13  13:3:26
+收到BLS Id:403,上一BLS:405.
+接收时 offset_s 290  total_s 3071733  speed 655;
+本应答器距上次校准时的距离27366。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 3071733,可走行距离 175200
+@RM B403
+ total_s 3071733 speed 655; offset_s:290 ->
+time_stamp 7146409 com_offset_s 0 27106
+target_brake 13->15
+ total_s 3071733 speed 655; offset_s:27106 ->
+time_stamp 7146409 com_offset_s 0 27106
+target_brake 15->15
+@未升级2校正后 0403G offset_s 27106 old_s 3044627, base_s 3090823
+*轨道0403G, 偏移27106,下一个应答器401,位置27789,绝对位置 3145413
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 401G 轨长 27710 base_s 3117942 total_s3071798 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 331G 轨长 41447 base_s 3145652 total_s3099563 
+
+
+ 2018-11-13  13:3:51
+收到BLS Id:401,上一BLS:403.
+接收时 offset_s 259  total_s 3099715  speed 1505;
+本应答器距上次校准时的距离27982。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 3099715,可走行距离 175200
+@RM B401
+ total_s 3099715 speed 1505; offset_s:259 ->
+time_stamp 7171119 com_offset_s 0 27776
+target_brake 13->15
+ total_s 3099715 speed 1505; offset_s:27776 ->
+time_stamp 7171119 com_offset_s 0 27776
+target_brake 15->15
+@未升级2校正后 0401G offset_s 27776 old_s 3071939, base_s 3117942
+*轨道0401G, 偏移27776,下一个应答器327,位置41383,绝对位置 3186796
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 331G 轨长 41447 base_s 3145652 total_s3099866 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 329G 轨长 23650 base_s 3187099 total_s3141127 
+
+
+ 2018-11-13  13:4:15
+收到BLS Id:327,上一BLS:401.
+接收时 offset_s 227  total_s 3141323  speed 1920;
+本应答器距上次校准时的距离41608。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 3141323,可走行距离 175200
+@RM B327
+ total_s 3141323 speed 1920; offset_s:227 ->
+time_stamp 7194549 com_offset_s 0 41449
+target_brake 13->15
+ total_s 3141323 speed 1920; offset_s:41449 ->
+time_stamp 7194549 com_offset_s 0 41449
+target_brake 15->15
+@未升级2校正后 0331G offset_s 41449 old_s 3099874, base_s 3145652
+*轨道0331G, 偏移41449,下一个应答器325,位置23680,绝对位置 3210476
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 329G 轨长 23650 base_s 3187099 total_s3141514 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 327G 轨长 31520 base_s 3210749 total_s3165099 
+
+
+ 2018-11-13  13:4:27
+收到BLS Id:325,上一BLS:327.
+接收时 offset_s 128  total_s 3165099  speed 1778;
+本应答器距上次校准时的距离23776。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 3165099,可走行距离 175200
+@RM B325
+ total_s 3165099 speed 1778; offset_s:128 ->
+time_stamp 7207272 com_offset_s 49 23731
+target_brake 13->15
+ total_s 3165099 speed 1778; offset_s:23731 ->
+time_stamp 7207272 com_offset_s 49 23731
+target_brake 15->15
+@未升级2校正后 0329G offset_s 23731 old_s 3141368, base_s 3187099
+*轨道0329G, 偏移23731,下一个应答器323,位置31420,绝对位置 3241945
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 327G 轨长 31520 base_s 3210749 total_s3165276 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 325G 轨长 23626 base_s 3242269 total_s3196574 
+
+
+ 2018-11-13  13:4:47
+收到BLS Id:323,上一BLS:325.
+接收时 offset_s 324  total_s 3196862  speed 1442;
+本应答器距上次校准时的距离31763。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 3196862,可走行距离 175200
+@RM B323
+ total_s 3196862 speed 1442; offset_s:324 ->
+time_stamp 7227431 com_offset_s 0 31501
+target_brake 13->15
+ total_s 3196862 speed 1442; offset_s:31501 ->
+time_stamp 7227431 com_offset_s 0 31501
+target_brake 15->15
+@未升级2校正后 0327G offset_s 31501 old_s 3165361, base_s 3210749
+*轨道0327G, 偏移31501,下一个应答器321,位置23692,绝对位置 3265637
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 325G 轨长 23626 base_s 3242269 total_s3197006 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 323G 轨长 27229 base_s 3265895 total_s3220565 
+
+
+ 2018-11-13  13:5:4
+收到BLS Id:321,上一BLS:323.
+接收时 offset_s 198  total_s 3220705  speed 1391;
+本应答器距上次校准时的距离23843。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 3220705,可走行距离 175200
+@RM B321
+ total_s 3220705 speed 1391; offset_s:198 ->
+time_stamp 7244344 com_offset_s 0 23673
+target_brake 13->15
+ total_s 3220705 speed 1391; offset_s:23673 ->
+time_stamp 7244344 com_offset_s 0 23673
+target_brake 15->15
+@未升级2校正后 0325G offset_s 23673 old_s 3197032, base_s 3242269
+*轨道0325G, 偏移23673,下一个应答器319,位置27170,绝对位置 3292807
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 323G 轨长 27229 base_s 3265895 total_s3220843 
+
+ Next_block中目标制动变化14 ->13
+*进入新轨 321G 轨长 25673 base_s 3293124 total_s3247918 
+
+
+ 2018-11-13  13:5:25
+收到BLS Id:319,上一BLS:321.
+接收时 offset_s 144  total_s 3248031  speed 1135;
+本应答器距上次校准时的距离27326。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 3248031,可走行距离 175200
+@RM B319
+ total_s 3248031 speed 1135; offset_s:144 ->
+time_stamp 7265199 com_offset_s 1 27218
+target_brake 13->14
+ total_s 3248031 speed 1135; offset_s:27218 ->
+time_stamp 7265199 com_offset_s 1 27218
+target_brake 14->14
+@未升级2校正后 0323G offset_s 27218 old_s 3220813, base_s 3265895
+*轨道0323G, 偏移27218,下一个应答器317,位置25703,绝对位置 3318511
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化14 ->13
+*进入新轨 321G 轨长 25673 base_s 3293124 total_s3248144 
+
+ Next_block中目标制动变化13 ->12
+*进入新轨 319G 轨长 24679 base_s 3318797 total_s3273716 
+
+
+ 2018-11-13  13:6:11
+收到BLS Id:317,上一BLS:319.
+接收时 offset_s 250  total_s 3273965  speed 622;
+本应答器距上次校准时的距离25934。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 3273965,可走行距离 175200
+@RM B317
+ total_s 3273965 speed 622; offset_s:250 ->
+time_stamp 7311271 com_offset_s 18 25710
+target_brake 12->13
+ total_s 3273965 speed 622; offset_s:25710 ->
+time_stamp 7311271 com_offset_s 18 25710
+target_brake 13->13
+@未升级2校正后 0321G offset_s 25710 old_s 3248255, base_s 3293124
+*轨道0321G, 偏移25710,下一个应答器315,位置24622,绝对位置 3343151
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化13 ->12
+*进入新轨 319G 轨长 24679 base_s 3318797 total_s3274027 
+
+ Next_block中目标制动变化12 ->11
+*进入新轨 311G 轨长 42695 base_s 3343476 total_s3298611 
+
+
+ 2018-11-13  13:6:52
+收到BLS Id:315,上一BLS:317.
+接收时 offset_s 163  total_s 3298770  speed 525;
+本应答器距上次校准时的距离24805。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+应答器在防护列表内
+ 更新应答器，位置 3298770,可走行距离 175200
+@RM B315
+ total_s 3298770 speed 525; offset_s:163 ->
+time_stamp 7351865 com_offset_s 18 24677
+target_brake 11->12
+ total_s 3298770 speed 525; offset_s:24677 ->
+time_stamp 7351865 com_offset_s 18 24677
+target_brake 12->12
+@未升级2校正后 0319G offset_s 24677 old_s 3274093, base_s 3318797
+*轨道0319G, 偏移24677,下一个应答器10309,位置8358,绝对位置 3351527
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化12 ->11
+*进入新轨 311G 轨长 42695 base_s 3343476 total_s3298821 
+
+
+ 2018-11-13  13:7:9
+收到BLS Id:10307,上一BLS:315.
+接收时 offset_s 8151  total_s 3306923  speed 477;
+本应答器距上次校准时的距离8153。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+应答器在防护列表内
+ 更新应答器，位置 3306923,可走行距离 167100
+@RM B10307
+@ received B10307 in Mode> rm_pos diff with expected B10309
+rm应答器无效,降rm_unpos
+ total_s 3306923 speed 477; offset_s:8151 ->
+time_stamp 7369264 com_offset_s 17 4227
+target_brake 11->11
+ total_s 3306923 speed 477; offset_s:4227 ->
+time_stamp 7369264 com_offset_s 17 8150
+target_brake 11->16
+RM next balise list, current B10307
+B315, 8136
+B315, 8136
+B315, 8136
+B313, 33538
+B313, 33538
+B313, 33538
+Index 3, 313
+向在数组rm_blocks中第0个元素插入轨13
+
+
+ 2018-11-13  13:8:1
+收到BLS Id:313,上一BLS:10307.
+接收时 offset_s 8150  total_s 3340671  speed 1014;
+本应答器距上次校准时的距离33748。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+应答器在防护列表内
+ 更新应答器，位置 3340671,可走行距离 133500
+@RM B313
+is_second_balise_avail
+
+is_second_balise_avail i:3
+
+@RM 第二个应答器距第一个 33748 应在 32264 到 34812内
+@RM第2个应答器 方向 下行
+向在数组rm_blocks中第1个元素插入轨15
+
+ total_s 3340671 speed 1014; offset_s:8150 ->
+time_stamp 7421300 com_offset_s 0 29955
+target_brake 16->16
+升pos时当前轨15,偏移29955,额外轨道数2
+
+依次压入30
+
+依次压入17
+
+ total_s 3340671 speed 1014; offset_s:29955 ->
+time_stamp 7421300 com_offset_s 0 29955
+target_brake 16->16
+升pos时当前轨15,偏移29955,额外轨道数2
+
+依次压入30
+
+依次压入17
+
+@未升级校位 0315G offset_s 29955 old_s 3310716, base_s 3343476
+*轨道0315G, 偏移29955,下一个应答器10305,位置26550,绝对位置 3399676
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化15 ->14
+*进入新轨 309G 轨长 51657 base_s 3373433 total_s3340774 
+
+
+ 2018-11-13  13:8:22
+收到BLS Id:10305,上一BLS:313.
+接收时 offset_s 26717  total_s 3367390  speed 1529;
+本应答器距上次校准时的距离26719。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+应答器在防护列表内
+ 更新应答器，位置 3367390,可走行距离 107000
+@RM B10305
+ total_s 3367390 speed 1529; offset_s:26717 ->
+time_stamp 7442189 com_offset_s 16 26564
+target_brake 14->12
+ total_s 3367390 speed 1529; offset_s:26564 ->
+time_stamp 7442189 com_offset_s 16 26564
+target_brake 12->12
+@未升级2校正后 0309G offset_s 26564 old_s 3340826, base_s 3373433
+*轨道0309G, 偏移26564,下一个应答器309,位置25140,绝对位置 3424832
+
+ Next_block中目标制动变化12 ->11
+*进入新轨 305G 轨长 54597 base_s 3425090 total_s3392536 
+
+
+ 2018-11-13  13:8:37
+收到BLS Id:309,上一BLS:10305.
+接收时 offset_s 224  total_s 3392707  speed 1705;
+本应答器距上次校准时的距离25317。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+应答器在防护列表内
+ 更新应答器，位置 3392707,可走行距离 81800
+@RM B309
+ total_s 3392707 speed 1705; offset_s:224 ->
+time_stamp 7457377 com_offset_s 39 51743
+target_brake 11->12
+ total_s 3392707 speed 1705; offset_s:51743 ->
+time_stamp 7457377 com_offset_s 39 51743
+target_brake 12->12
+@未升级2校正后 0309G offset_s 51743 old_s 3340964, base_s 3373433
+*轨道0309G, 偏移51743,下一个应答器10301,位置27165,绝对位置 3452036
+
+ 收到防护区域外绿灯，转RM2
+ Next_block中目标制动变化12 ->11
+*进入新轨 305G 轨长 54597 base_s 3425090 total_s3392878 
+
+
+ 2018-11-13  13:8:53
+收到BLS Id:10301,上一BLS:309.
+接收时 offset_s 27486  total_s 3420107  speed 1696;
+本应答器距上次校准时的距离27400。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+应答器在防护列表内
+ 更新应答器，位置 3420107,可走行距离 54600
+@RM B10301
+ total_s 3420107 speed 1696; offset_s:27486 ->
+time_stamp 7473493 com_offset_s 11 27262
+target_brake 11->11
+ total_s 3420107 speed 1696; offset_s:27262 ->
+time_stamp 7473493 com_offset_s 11 27262
+target_brake 11->11
+@未升级2校正后 0305G offset_s 27262 old_s 3392845, base_s 3425090
+*轨道0305G, 偏移27262,下一个应答器305,位置27348,绝对位置 3479395
+
+ Next_block中目标制动变化11 ->10
+*进入新轨 301G 轨长 40238 base_s 3479687 total_s3447518 
+
+
+ 2018-11-13  13:9:10
+收到BLS Id:305,上一BLS:10301.
+接收时 offset_s 224  total_s 3447666  speed 1490;
+本应答器距上次校准时的距离27559。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 3447666,可走行距离 175200
+@RM B305
+ total_s 3447666 speed 1490; offset_s:224 ->
+time_stamp 7490504 com_offset_s 0 54610
+target_brake 10->11
+应答器在列表内
+@SSSSSSSS_SM
+@ SM处理B305
+@位置校正前 0305G  offseld_s 54610, base_s 3393056
+ total_s 3447666 speed 1490; offset_s:54610 ->
+time_stamp 7490504 com_offset_s 0 54610
+target_brake 11->11
+@位置校正后 0305G offset_s 54610 old_s 3393056, base_s 3425090GREEN 
+应答器:B301 B217 B213 B211 B10221 B207 B209 B10236 B10218 B204 B10209 B10204 
+选择第2个主应答器B217
+@目标轨道 239G
+sm_balise_get目标制动11->3
+*移动授权ma 81259, 位于 0239G
+ 区间停车点 
+*no_overlap,ma为 79759, 位于 0239G终点,-1500cm
+ 区间停车点 
+*轨道0305G, 偏移54610,下一个应答器301,位置40272,绝对位置 3519667
+
+应答器在列表内
+ Next_block中目标制动变化3 ->2
+*进入新轨 301G 轨长 40238 base_s 3479687 total_s3447814 
+
+限速转换7  RM_LIMIT             ->1 BLOCK_LIMIT
+清除折返标志
+限速转换1  BLOCK_LIMIT  ->5 TARGET_LIMIT
+关闭TWC
+*列车停稳 1
+*zero_spd_msg
+zero: cur.rollback_s 0, total_s 3484864, origin_s 3484864
+清除折返标志
+^允许开左门反馈5 
+^允许开右门反馈6 
+系统零速
+^零速信号（停稳信号）反馈9 
+从输入板得到的车轮方向 2(2正,1反) 128
+车轮方向变化 2(2正转,1反转),total_s 3484866_MOVE forward
+FORE: cur.rollback_s 0, total_s 3484866, origin_s 3484866
+^允许开左门反馈5 
+^允许开右门反馈6 
+系统非零速
+关闭TWC
+^零速信号（停稳信号）反馈9 
+关闭TWC
+系统零速
+^零速信号（停稳信号）反馈9 
+*列车停稳 1
+*zero_spd_msg
+zero: cur.rollback_s 0, total_s 3487357, origin_s 3487357
+清除折返标志
+^允许开左门反馈5 
+^允许开右门反馈6 
+从输入板得到的车轮方向 2(2正,1反) 128
+车轮方向变化 2(2正转,1反转),total_s 3487362_MOVE forward
+FORE: cur.rollback_s 0, total_s 3487362, origin_s 3487362
+^允许开左门反馈5 
+^允许开右门反馈6 
+系统非零速
+关闭TWC
+^零速信号（停稳信号）反馈9 
+ Next_block中目标制动变化2 ->1
+*进入新轨 239G 轨长 41034 base_s 3519925 total_s3487902 
+
+清除折返标志
+限速转换5  TARGET_LIMIT ->1 BLOCK_LIMIT
+@ B301 Lost!!!, location 02039G, offset_s 1178 cm 
+
+@ Main balise Lost!!! 
+紧急制动或挂起原因代码35
+
+byte = 4,bit = 2,reason = 34
+
+! MSG_EB_BALISE_LOST              
+^紧急制动反馈1,2 
+紧急制动或挂起原因代码63
+
+byte = 7,bit = 6,reason = 62
+
+! OVER_SPEED
+ 切牵引 :  1   超速切牵引 
+^全常用制动反馈3 
+^切除牵引反馈4 
+^列车外部紧急状态15,16 
+紧急制动或挂起原因代码23
+
+byte = 2,bit = 6,reason = 22
+
+! MSG_EB_TRAIN_EXTRN_EB           
+*列车停稳 1
+*zero_spd_msg
+zero: cur.rollback_s 0, total_s 3489536, origin_s 3489536
+^允许开左门反馈5 
+^允许开右门反馈6 
+系统零速
+^零速信号（停稳信号）反馈9 
+^ATP确认按钮7,8 
+^紧急制动反馈1,2 
+^全常用制动反馈3 
+^切除牵引反馈4 
+^列车外部紧急状态15,16 
+^ATP确认按钮7,8 
+^ATP确认按钮7,8 
+从输入板得到的车轮方向 2(2正,1反) 128
+车轮方向变化 2(2正转,1反转),total_s 3489537_MOVE forward
+FORE: cur.rollback_s 0, total_s 3489537, origin_s 3489537
+^允许开左门反馈5 
+^允许开右门反馈6 
+系统非零速
+^零速信号（停稳信号）反馈9 
+系统零速
+^零速信号（停稳信号）反馈9 
+*列车停稳 1
+*zero_spd_msg
+zero: cur.rollback_s 0, total_s 3511719, origin_s 3511719
+^允许开左门反馈5 
+^允许开右门反馈6 
+从输入板得到的车轮方向 2(2正,1反) 128
+车轮方向变化 2(2正转,1反转),total_s 3511725_MOVE forward
+FORE: cur.rollback_s 0, total_s 3511725, origin_s 3511725
+^允许开左门反馈5 
+^允许开右门反馈6 
+系统非零速
+^零速信号（停稳信号）反馈9 
+系统零速
+^零速信号（停稳信号）反馈9 
+*列车停稳 1
+*zero_spd_msg
+zero: cur.rollback_s 0, total_s 3528141, origin_s 3528141
+^允许开左门反馈5 
+^允许开右门反馈6 
+从输入板得到的车轮方向 2(2正,1反) 128
+车轮方向变化 2(2正转,1反转),total_s 3528147_MOVE forward
+FORE: cur.rollback_s 0, total_s 3528147, origin_s 3528147
+^允许开左门反馈5 
+^允许开右门反馈6 
+系统非零速
+^零速信号（停稳信号）反馈9 
+
+ 2018-11-13  13:18:31
+收到BLS Id:217,上一BLS:305.
+接收时 offset_s 1178  total_s 3529679  speed 254;
+本应答器距上次校准时的距离82013。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 3529679,可走行距离 175200
+@RM B217
+ total_s 3529679 speed 254; offset_s:1178 ->
+time_stamp 8051231 com_offset_s 0 608
+target_brake 1->1
+ total_s 3529679 speed 254; offset_s:608 ->
+time_stamp 8051231 com_offset_s 17 41053
+target_brake 1->16
+RM next balise list, current B217
+B301, 40989
+B301, 40989
+B301, 40989
+B213, 15234
+B213, 15234
+B213, 15234
+Index 0, 301
+向在数组rm_blocks中第0个元素插入轨39
+
+应答器在列表内
+
+ 2018-11-13  13:19:25
+收到BLS Id:213,上一BLS:217.
+接收时 offset_s 41053  total_s 3544999  speed 291;
+本应答器距上次校准时的距离15320。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ cur.lamp:RED  OverLap: 0 1-Y
+ 更新应答器，位置 3544999,可走行距离 175200
+@RM B213
+is_second_balise_avail
+
+is_second_balise_avail i:3
+
+@RM 第二个应答器距第一个 15320 应在 14328 到 16140内
+@RM第2个应答器 方向 下行
+向在数组rm_blocks中第1个元素插入轨31
+
+ total_s 3544999 speed 291; offset_s:41053 ->
+time_stamp 8105284 com_offset_s 4 605
+target_brake 16->12
+轨33不在数组rm_blocks中
+
+升pos时当前轨31,偏移605,额外轨道数0
+
+  已达到可搜索的最后一轨，结果不可信
+ total_s 3544999 speed 291; offset_s:605 ->
+time_stamp 8105284 com_offset_s 4 605
+target_brake 12->12
+轨33不在数组rm_blocks中
+
+升pos时当前轨31,偏移605,额外轨道数0
+
+@未升级校位 0231G offset_s 605 old_s 3544394, base_s 3519925
+*轨道0231G, 偏移605,下一个应答器211,位置12873,绝对位置 3533098
+
+应答器在列表内
+ 收到防护区域内红灯或固定应答器，转RM1
+应答器在列表内
+系统零速
+^零速信号（停稳信号）反馈9 
+*列车停稳 1
+*zero_spd_msg
+zero: cur.rollback_s 0, total_s 3556112, origin_s 3556112
+^允许开左门反馈5 
+^允许开右门反馈6 
+从输入板得到的车轮方向 2(2正,1反) 128
+车轮方向变化 2(2正转,1反转),total_s 3556119_MOVE forward
+FORE: cur.rollback_s 0, total_s 3556119, origin_s 3556119
+^允许开左门反馈5 
+^允许开右门反馈6 
+系统非零速
+^零速信号（停稳信号）反馈9 
+ Next_block中目标制动变化15 ->14
+*进入新轨 221G 轨长 34889 base_s 3533441 total_s3557913 
+
+
+ 2018-11-13  13:25:4
+收到BLS Id:211,上一BLS:213.
+接收时 offset_s 101  total_s 3558011  speed 244;
+本应答器距上次校准时的距离13012。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 3558011,可走行距离 175200
+@RM B211
+ total_s 3558011 speed 244; offset_s:101 ->
+time_stamp 8444144 com_offset_s 0 13478
+target_brake 14->6
+  已达到可搜索的最后一轨，结果不可信
+应答器在列表内
+@SSSSSSSS_SM
+@ SM处理B211
+@位置校正前 0231G  offseld_s 13478, base_s 3544533
+ total_s 3558011 speed 244; offset_s:13478 ->
+time_stamp 8444144 com_offset_s 0 13478
+target_brake 6->6
+@位置校正后 0231G offset_s 13478 old_s 3544533, base_s 3533441GREEN 
+应答器:B10221 B207 B209 B10236 B10218 B204 B10209 B10204 
+第2个主应答器不存在,搜索进路终点
+@目标轨道空
+sm_balise_get目标制动6->7
+*移动授权ma 92240, 位于 0204G
+ 区间停车点 
+*no_overlap,ma为 92240, 位于 0204G终点,-0cm
+ 区间停车点 
+*轨道0231G, 偏移13478,下一个应答器10221,位置31812,绝对位置 3578426
+
+应答器在列表内
+限速转换7  RM_LIMIT             ->1 BLOCK_LIMIT
+ Next_block中目标制动变化7 ->6
+*进入新轨 221G 轨长 34889 base_s 3546957 total_s3558060 
+
+清除折返标志
+限速转换1  BLOCK_LIMIT  ->5 TARGET_LIMIT
+
+ 2018-11-13  13:26:47
+收到BLS Id:10221,上一BLS:211.
+接收时 offset_s 31963  total_s 3590012  speed 289;
+本应答器距上次校准时的距离32001。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ 更新应答器，位置 3590012,可走行距离 175200
+@ SM处理B10221
+@位置校正前 0221G  offseld_s 31963, base_s 3558049
+ total_s 3590012 speed 289; offset_s:31963 ->
+time_stamp 8546700 com_offset_s 0 31774
+target_brake 6->6
+@位置校正后 0221G offset_s 31774 old_s 3558238, base_s 3546957
+*移动授权ma 60428, 位于 0204G
+ 区间停车点 
+*no_overlap,ma为 60428, 位于 0204G终点,-0cm
+ 区间停车点 
+@无源应答器
+*轨道0221G, 偏移31774,下一个应答器207,位置3430,绝对位置 3581856
+
+ Next_block中目标制动变化6 ->5
+*进入新轨 240G 轨长 280 base_s 3581846 total_s3593139 
+
+清除折返标志
+
+ 2018-11-13  13:26:57
+收到BLS Id:207,上一BLS:10221.
+接收时 offset_s 215  total_s 3593342  speed 288;
+本应答器距上次校准时的距离3330。
+
+雷达脉冲0.Q_SIGNALASPECT:2
+
+ cur.lamp:GREEN  OverLap: 0 1-Y
+ 更新应答器，位置 3593342,可走行距离 175200
+@ SM处理B207
+@位置校正前 0240G  offseld_s 215, base_s 3593127
+ total_s 3593342 speed 288; offset_s:215 ->
+time_stamp 8557302 com_offset_s 0 315
+target_brake 5->5
+@位置校正后 0240G offset_s 315 old_s 3593027, base_s 3581846GREEN 
+按照进路搜索应答器
+cur.uncertain_balise.nbl_pt[0] 209
+
+按照进路搜索应答器
+按照进路搜索应答器
+结束搜索
+-------当前处于确定状态-------
+应答器:B209 B10236 B10218 B204 B10209 B10204 
+第2个主应答器不存在,搜索进路终点
+@目标轨道空
+sm_balise_get目标制动5->5
+*移动授权ma 56998, 位于 0204G
+ 区间停车点 
+*no_overlap,ma为 56998, 位于 0204G终点,-0cm
+ 区间停车点 
+*轨道0240G, 偏移315,下一个应答器209,位置1217,绝对位置 3583073
+
+ Next_block中目标制动变化5 ->4
+*进入新轨 219G 轨长 639 base_s 3582126 total_s3593370 
+
+清除折返标志
+ Next_block中目标制动变化4 ->3
+*进入新轨 238G 轨长 3344 base_s 3582765 total_s3593962 
+
+清除折返标志
+限速转换5  TARGET_LIMIT ->1 BLOCK_LIMIT
+
+ 2018-11-13  13:27:2
+收到BLS Id:209,上一BLS:207.
+接收时 offset_s 896  total_s 3594842  speed 328;
+本应答器距上次校准时的距离1500。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ 更新应答器，位置 3594842,可走行距离 175200
+@ SM处理B209
+@位置校正前 0238G  offseld_s 896, base_s 3593946
+ total_s 3594842 speed 328; offset_s:896 ->
+time_stamp 8562213 com_offset_s 0 613
+target_brake 3->3
+@位置校正后 0238G offset_s 613 old_s 3594229, base_s 3582765
+*移动授权ma 55781, 位于 0204G
+ 区间停车点 
+*no_overlap,ma为 55781, 位于 0204G终点,-0cm
+ 区间停车点 
+@无源应答器
+*轨道0238G, 偏移613,下一个应答器10236,位置2570,绝对位置 3585643
+
+
+ 2018-11-13  13:27:11
+收到BLS Id:10236,上一BLS:209.
+接收时 offset_s 3149  total_s 3597378  speed 318;
+本应答器距上次校准时的距离2536。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ 更新应答器，位置 3597378,可走行距离 175200
+@ SM处理B10236
+@位置校正前 0238G  offseld_s 3149, base_s 3594229
+ total_s 3597378 speed 318; offset_s:3149 ->
+time_stamp 8570518 com_offset_s 0 3183
+target_brake 3->3
+@位置校正后 0238G offset_s 3183 old_s 3594195, base_s 3582765GREEN 
+按照进路搜索应答器
+cur.uncertain_balise.nbl_pt[0] 10220
+
+按照进路搜索应答器
+cur.uncertain_balise.nbl_pt[1] 10218
+
+按照进路搜索应答器
+cur.uncertain_balise.nbl_pt[2] 10217
+
+结束搜索
+-------进入不确定状态-------
+应答器:B10218 B204 B10209 B10204 
+第2个主应答器不存在,搜索进路终点
+@目标轨道空
+sm_balise_get目标制动3->3
+*移动授权ma 53211, 位于 0204G
+ 区间停车点 
+*no_overlap,ma为 53211, 位于 0204G终点,-0cm
+ 区间停车点 
+*轨道0238G, 偏移3183,下一个应答器10218,位置19115,绝对位置 3604758
+
+ Next_block中目标制动变化3 ->2
+*进入新轨 211G 轨长 30227 base_s 3586109 total_s3597544 
+
+清除折返标志
+
+ 2018-11-13  13:28:11
+收到BLS Id:10217,上一BLS:10236.
+接收时 offset_s 18742  total_s 3616281  speed 320;
+本应答器距上次校准时的距离18903。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ 更新应答器，位置 3616281,可走行距离 175200
+@ SM处理B10217
+______________不确定进路上收到应答器______
+ 选取列表中的B10217
+ 距离上一个不确定进路应答器为18903cm, 应为18786 +- 978
+在处理不确定进路的情况下，定位于0216G
+cycles:0 block：02021G
+cycles:1 block：02031G
+cycles:2 block：02021G
+cycles:3 block：02040G
+cycles:4 block：02019G
+cycles:5 block：02038G
+cycles:6 block：02011G
+重新搜索定位轨道 2,cnt1
+重新搜索定位轨道 1,cnt2
+RW_block为7,find_block_index为5
+重新定位轨道后的轨道列表
+cycles:0 block：02021G
+cycles:1 block：02031G
+cycles:2 block：02021G
+cycles:3 block：02040G
+cycles:4 block：02019G
+cycles:5 block：02038G
+cycles:6 block：02016G
+@位置校正前 0216G  offseld_s 18320, base_s 3597539
+ total_s 3616281 speed 320; offset_s:18320 ->
+time_stamp 8631159 com_offset_s 13 18638
+target_brake 2->3
+@位置校正后 0216G offset_s 18638 old_s 3597643, base_s 3586109GREEN 
+按照进路搜索应答器
+cur.uncertain_balise.nbl_pt[0] 10214
+
+按照进路搜索应答器
+cur.uncertain_balise.nbl_pt[1] 10215
+
+按照进路搜索应答器
+结束搜索
+-------进入不确定状态-------
+应答器:B10215 B203 B10208 B10203 
+第2个主应答器不存在,搜索进路终点
+@目标轨道空
+sm_balise_get目标制动3->3
+*移动授权ma 34412, 位于 0203G
+ 区间停车点 
+*no_overlap,ma为 34412, 位于 0203G终点,-0cm
+ 区间停车点 
+*轨道0216G, 偏移18638,下一个应答器10215,位置4505,绝对位置 3608947
+
+ Next_block中目标制动变化3 ->2
+*进入新轨 210G 轨长 11530 base_s 3604806 total_s3616344 
+
+清除折返标志
+
+ 2018-11-13  13:28:27
+收到BLS Id:10215,上一BLS:10217.
+接收时 offset_s 4448  total_s 3620788  speed 252;
+本应答器距上次校准时的距离4507。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ 更新应答器，位置 3620788,可走行距离 175200
+@ SM处理B10215
+______________不确定进路上收到应答器______
+ 选取列表中的B10215
+ 距离上一个不确定进路应答器为4507cm, 应为4505 +- 690
+在处理不确定进路的情况下，定位于0210G
+cycles:0 block：02021G
+cycles:1 block：02031G
+cycles:2 block：02021G
+cycles:3 block：02040G
+cycles:4 block：02019G
+cycles:5 block：02038G
+cycles:6 block：02016G
+cycles:7 block：02010G
+重新搜索定位轨道 2,cnt1
+重新搜索定位轨道 1,cnt2
+RW_block为8,find_block_index为6
+重新定位轨道后的轨道列表
+cycles:0 block：02021G
+cycles:1 block：02031G
+cycles:2 block：02021G
+cycles:3 block：02040G
+cycles:4 block：02019G
+cycles:5 block：02038G
+cycles:6 block：02016G
+cycles:7 block：02010G
+@位置校正前 0210G  offseld_s 4141, base_s 3616340
+ total_s 3620788 speed 252; offset_s:4141 ->
+time_stamp 8647014 com_offset_s 21 4467
+target_brake 2->2
+@位置校正后 0210G offset_s 4467 old_s 3616321, base_s 3604806GREEN 
+应答器:B203 B10208 B10203 
+第2个主应答器不存在,搜索进路终点
+@目标轨道空
+sm_balise_get目标制动2->2
+*移动授权ma 29886, 位于 0203G
+ 区间停车点 
+*no_overlap,ma为 29886, 位于 0203G终点,-0cm
+ 区间停车点 
+*轨道0210G, 偏移4467,下一个应答器203,位置7693,绝对位置 3616661
+
+ Next_block中目标制动变化2 ->1
+*进入新轨 203G 轨长 22823 base_s 3616336 total_s3627859 
+
+清除折返标志
+
+ 2018-11-13  13:29:0
+收到BLS Id:203,上一BLS:10215.
+接收时 offset_s 655  total_s 3628506  speed 114;
+本应答器距上次校准时的距离7718。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ 更新应答器，位置 3628506,可走行距离 175200
+@ SM处理B203
+@位置校正前 0203G  offseld_s 655, base_s 3627851
+ total_s 3628506 speed 114; offset_s:655 ->
+time_stamp 8680032 com_offset_s 0 630
+target_brake 1->1
+@位置校正后 0203G offset_s 630 old_s 3627876, base_s 3616336
+*移动授权ma 22193, 位于 0203G
+ 区间停车点 
+*no_overlap,ma为 22193, 位于 0203G终点,-0cm
+ 区间停车点 
+@无源应答器
+*轨道0203G, 偏移630,下一个应答器10208,位置284,绝对位置 3616945
+
+
+ 2018-11-13  13:29:3
+收到BLS Id:10208,上一BLS:203.
+接收时 offset_s 919  total_s 3628795  speed 108;
+本应答器距上次校准时的距离289。
+
+雷达脉冲0.Q_SIGNALASPECT:1
+
+ 更新应答器，位置 3628795,可走行距离 175200
+@ SM处理B10208
+@位置校正前 0203G  offseld_s 919, base_s 3627876
+ total_s 3628795 speed 108; offset_s:919 ->
+time_stamp 8682619 com_offset_s 0 914
+target_brake 1->1
+@位置校正后 0203G offset_s 914 old_s 3627881, base_s 3616336
+*移动授权ma 21909, 位于 0203G
+ 区间停车点 
+*no_overlap,ma为 21909, 位于 0203G终点,-0cm
+ 区间停车点 
+@无源应答器
+*轨道0203G, 偏移914,下一个应答器10203,位置19827,绝对位置 3636772
+
+限速转换1  BLOCK_LIMIT  ->5 TARGET_LIMIT
+ 切牵引 :  1   超速切牵引 
+^全常用制动反馈3 
+^切除牵引反馈4 
+^全常用制动反馈3 
+^切除牵引反馈4 
+关闭TWC
+系统零速
+^零速信号（停稳信号）反馈9 
+*列车停稳 1
+*zero_spd_msg
+zero: cur.rollback_s 0, total_s 3649166, origin_s 3649166
+清除折返标志
+^允许开左门反馈5 
+^允许开右门反馈6 
+从输入板得到的车轮方向 2(2正,1反) 128
+车轮方向变化 2(2正转,1反转),total_s 3649171_MOVE forward
+FORE: cur.rollback_s 0, total_s 3649171, origin_s 3649171
+^允许开左门反馈5 
+^允许开右门反馈6 
+@ B10203 Lost!!!, location 02003G, offset_s 21452 cm 
+
+@ Lost the first normal balise!!
+Balsie Lost EB_BLAISE_ID_BUMPER
+
+紧急制动或挂起原因代码59
+
+byte = 7,bit = 2,reason = 58
+
+! 0
+紧急制动或挂起原因代码63
+
+byte = 7,bit = 6,reason = 62
+
+! OVER_SPEED
+ 切牵引 :  1   超速切牵引 
+^紧急制动反馈1,2 
+^全常用制动反馈3 
+^切除牵引反馈4 
+系统非零速
+^列车外部紧急状态15,16 
+紧急制动或挂起原因代码23
+
+byte = 2,bit = 6,reason = 22
+
+! MSG_EB_TRAIN_EXTRN_EB           
+^零速信号（停稳信号）反馈9 
+*列车停稳 1
+*zero_spd_msg
+zero: cur.rollback_s 0, total_s 3649424, origin_s 3649424
+^允许开左门反馈5 
+^允许开右门反馈6 
+系统零速
+^零速信号（停稳信号）反馈9 
+^ATP确认按钮7,8 
+^全常用制动反馈3 
+^切除牵引反馈4 
+^紧急制动反馈1,2 
+^ATP确认按钮7,8 
+^司机钥匙开关1,2 首尾维护配置LCOM_0 @ 
+首尾维护配置RCOM_0 
+
+EOF

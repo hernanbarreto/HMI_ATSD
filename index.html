@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HMI-ATSD-SARMIENTO - ADIFSE</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			html, body {
+				height: 100%;
+			}
+			
+			body {
+				background-color: #000000;
+				margin: 0;
+				font-family: Helvetica, sans-serif;;
+				overflow: hidden;
+			}
+
+			a {
+			  color: #ffffff;
+			}
+
+			#info {
+				position: absolute;
+				width: 100%;
+				color: #ffffff;
+				padding: 5px;
+				font-family: Monospace;
+				font-size: 13px;
+				font-weight: bold;
+				text-align: center;
+				z-index: 1;
+			}
+
+			#menu {
+				position: absolute;
+				bottom: 20px;
+				width: 100%;
+				text-align: center;
+			}
+			
+			.label {
+  				position: relative;
+  				z-index: 1;
+				padding: 1px;
+  				border-radius: 10px;
+				color: rgba(127,255,255,1);
+  				text-align: center; 
+  				font-size: 12px;
+				font-weight: bold;
+				font-family: "Courier New";
+				background-color: rgba(0,255,255,0.2);
+				top: 1px;
+				outline: 1px solid rgba(127,255,255,0.75);
+				border: 1px;
+				cursor: pointer;
+			}
+
+		</style>
+
+    	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    	<link rel="stylesheet" type="text/css" href="css/jquery.slidein.css">
+    	<link rel="stylesheet" type="text/css" href="css/sample-slidein.css">
+
+    	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+   		<script type="text/javascript" src="js/jquery.slidein.js"></script>
+		
+    	<script type="text/javascript">
+
+        		$(document).ready (function ()  // on document ready is important so the host elements are loaded
+        		{
+            	 $("#panel").slidein ({ peek: 0, open: false, speed: 200, opacity: 0.8, position: 0, breadth: window.innerWidth-200 });  // example setting intial options
+        		});
+
+    	</script>
+
+    	<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+    	<link rel="stylesheet" type="text/css" href="css/RedRowTable.css">
+
+    	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    	<script type="text/javascript">
+
+				$(document).ready(function() {
+    			 $('#tabla').dataTable( {
+				 "order": [[ 9, "desc" ]],				 
+//				 "order": [[ 1, "desc" ]],				 
+    			 "createdRow": function( row, data, dataIndex ) {
+             	  		if ( (data[7] == "EB_RED")||(data[7] == "LOST") ) $(row).addClass('red');      
+    			  },
+    			  "columnDefs": [
+        		    {"className": "dt-center", "targets": "_all"},
+					{"targets": [ 9 ], "visible": false, "searchable": false}
+      			  ],
+				  columns: [
+            	  	{ title: "DATE" },
+            	  	{ title: "TIME" },
+            	  	{ title: "TRAIN" },
+            		{ title: "HEAD" },
+            		{ title: "STATUS HEAD" },            		
+					{ title: "VERSION ATP" },//ej. BLS
+            		{ title: "VERSION MAP" },//ej. NUMBER
+            		{ title: "TYPE EVENT" },//ej. ASPECT
+            		{ title: "SUBTYPE EVENT" },//ej. cm acum
+            		{ title: "ID" },//ej. cm acum
+        		  ]
+    			 } );
+				} );
+				
+    	</script>
+				
+	</head>
+	<body>
+		<div id="container"></div>
+		<div id="info">
+			<a>HMI-ATSD-SARMIENTO</a> - ADIFSE
+		</div>
+		<script type="text/javascript" src="build/three.js"></script>
+		<script src="js/controls/OrbitControls.js"></script>
+		<script src="js/loaders/SVGLoader.js"></script>
+		<script src="js/renderers/CSS2DRenderer.js"></script>
+		<script src="js/libs/dat.gui.min.js"></script>
+		<script src="d3/d3.v3.min.js"></script>
+		<script src="js/Tween.js"></script>
+		<script>
+						
+			const fitX = 1507.4917342852143;
+			const fitY = 459.5487988847845;
+			const fitZ = 451.2499999999873;
+			
+			const onceX = 416.6365729825114;
+			const onceY = 1034.9771776918753;
+			const onceZ = 118.91344262766346;
+
+			const caballitoX = 1278.156209083498;
+			const caballitoY = 1034.9771776918753;
+			const caballitoZ = 161.76677248685047;
+
+			const floresX = 2004.038087326403;
+			const floresY = 1034.9771776918753;
+			const floresZ = 87.41230736189632;
+
+			const florestaX = 2473.60543975152;
+			const florestaY = 1034.9771776918753;
+			const florestaZ = 87.41230736189632;
+
+			const luroX = 2868.568633380128;
+			const luroY = 1034.9771776918753;
+			const luroZ = 87.41230736189632;
+			
+			const liniersX = 614.4749346565587;
+			const liniersY = 697.0642231429588;
+			const liniersZ =  170.28081314405253;
+
+			const ciudadelaX = 1421.109877996359;
+			const ciudadelaY = 697.0642231429588;
+			const ciudadelaZ =  96.85574222924745;
+
+			const rmejiaX = 1951.1312766484677;
+			const rmejiaY = 697.0642231429588;
+			const rmejiaZ =  96.85574222924745;
+			
+			const haedoX = 2600.1577032489536;
+			const haedoY = 697.0642231429588;
+			const haedoZ =  125.17204487122343;
+
+			const moronX = 387.16867012235764;
+			const moronY = 242.14006325471345;
+			const moronZ =  96.85574222924726;
+
+			const castelarX = 1466.6703354299775;
+			const castelarY = 242.14006325471345;
+			const castelarZ =  231.64561507986824;
+
+			const ituzaingoX = 2497.2226488396514;
+			const ituzaingoY = 191.09678026758255;
+			const ituzaingoZ =  96.85574222924686;
+
+			const paduaX = 418.32629512706905;
+			const paduaY = -118.77502862035085;
+			const paduaZ =  107.31938197146428;
+
+			const merloX = 1231.815454998685;
+			const merloY = -116.24663159957645;
+			const merloZ =  153.67843386250524;
+			
+			const preyX = 1941.625736271946;
+			const preyY = -129.41207138719633;
+			const preyZ =  87.41230736189473;
+
+			const morenoX = 2545.617490339113;
+			const morenoY = -129.41207138719633;
+			const morenoZ = 107.3193819714638;
+			
+			var cantTrenes = 25;
+			var columnasTablaTR = 7;
+			var columnasTablaEV = 9;
+			//variables de dibujo			
+			var matrizTC1 = [ ], matrizTC2 = [ ];	   
+
+			var pathData = [ ];
+			var estadoAnt =[ ];
+			var TC_OFF = 0xbbbbbb;
+			var TC1_ON = 0x66ff66;
+			var TC2_ON = 0x00ccff;
+			var TC1 = '<-';
+			var TC2 = '->';
+			
+			var seguirTrenN = [ ];
+			
+			var tablaEVAnt = [ ];
+			
+			for (var i = 0; i < cantTrenes*columnasTablaTR; i ++ ) {
+				estadoAnt[i] = -1;
+				
+				if (i <= cantTrenes){
+				   if ( i == 0){
+				   	  seguirTrenN.push ('-');
+				   	  seguirTrenN[ '-' ] = { follow: true, bls: 0, tc_act: 0, tc_ant: 0};
+				   }else{	  
+				   	  seguirTrenN.push ('RC' + String( Math.trunc((i/10)) + String((i)-(10*Math.trunc((i)/10)))));
+				   	  seguirTrenN['RC' + String( Math.trunc((i/10)) + String((i)-(10*Math.trunc((i)/10))))] = { follow: false, bls: 0, tc_act: 0, tc_ant: 0};
+				   }
+				}
+			}
+			
+			var renderer,labelRenderer, stats, scene, group, camera, controls;
+			
+			var raycaster = new THREE.Raycaster();
+			var mouse = new THREE.Vector2(), INTERSECTED_CLK, INTERSECTED_MVE;
+						
+			var clkDinam, n = 0; 
+															
+			d3.tsv("mtxTC1.tsv", function(data) {
+					for (i = 0; i < data.length; i ++ ) {
+						segs = data[i].d0 + "," + data[i].d1 + "," + data[i].d2 + "," + data[i].d3 + "," + data[i].d4 + "," + data[i].d5 + "," + data[i].d6 + "," + data[i].d7 + "," + data[i].d8 + "," + data[i].d9
+						matrizTC1[ String(data[i].bls)] = {
+							seg: segs.split(","),
+							sec: data[i].sec
+						};
+					}
+			});
+			d3.tsv("mtxTC2.tsv", function(data) {
+					for (i = 0; i < data.length; i ++ ) {
+						segs = data[i].d0 + "," + data[i].d1 + "," + data[i].d2 + "," + data[i].d3 + "," + data[i].d4 + "," + data[i].d5 + "," + data[i].d6 + "," + data[i].d7 + "," + data[i].d8 + "," + data[i].d9
+						matrizTC2[ String(data[i].bls)] = {
+							seg: segs.split(","),
+							sec: data[i].sec
+						};
+					}
+			});
+			
+			init();
+			animate();
+				   			
+			//
+			function init(  ) {
+
+				var path;
+				var capl = [ ];
+				var objf = [ ];
+				var objo = [ ];
+				//
+
+				scene = new THREE.Scene();
+//				scene.background = new THREE.Color( 0x555e69 );
+				scene.background = new THREE.Color( 0x000000 );
+
+				group = new THREE.Group();
+				group.scale.multiplyScalar( 1 );
+				group.scale.y *= -1;
+				scene.add( group );	
+
+				camera = new THREE.PerspectiveCamera( 120, window.innerWidth / window.innerHeight, 1, 10000 );
+				camera.position.set( 0, 0, 451.25 );
+				
+				//
+				var loader = new THREE.SVGLoader();
+//				loader.load( 'models/svg/dibujo-1.svg', function ( paths ) {										
+				loader.load( 'models/svg/LU1.svg', function ( paths ) {										
+//				loader.load( 'models/svg/dibujo-3.svg', function ( paths ) {										
+					for ( var i = 0; i < paths.length; i ++ ) {
+						path = paths[ i ];
+												
+						if ((path.layer != undefined) && (!capl.includes(path.layer))){
+					   	   capl.push (path.layer);
+						   objf[ path.layer ] = true;
+						   objo[ path.layer ] = 1;
+						}
+																	
+						var shapes = path.toShapes(true );
+							
+						for ( var j = 0; j < shapes.length; j ++ ) {
+							var shape = shapes[ j ];
+														
+							var geometry = new THREE.ShapeBufferGeometry( shape );
+							var material = new THREE.MeshBasicMaterial( { color: path.color, side: THREE.DoubleSide, depthWrite: true, wireframeLinecap: "rect", wireframeLinejoin: "rect"} );
+							
+							var mesh = new THREE.Mesh( geometry, material );
+							mesh.name = path.id;
+							mesh.layer = path.layer;
+							group.add( mesh );
+
+							//agregado de verificacion de estado de paths
+							if (mesh.layer == "Track"){
+							   pathData[mesh.name] = String(mesh.material.color.getHex());
+							}							
+							//fin agregado verificacion de estado de paths
+							
+							var points = shape.getPoints();
+							var geometryl = new THREE.BufferGeometry().setFromPoints( points );
+							var materiall = new THREE.LineBasicMaterial( { linewidth: 1, linejoin: "rect", linecap: "rect", color: path.color } );
+
+							var line = new THREE.Line( geometryl, materiall );
+							line.name = path.id;
+							line.layer = path.layer;
+							if (line.layer != "Signals")  line.material.visible = false;
+							
+							group.add( line );
+						}						
+					}					
+					
+					createPanel(capl, objf, objo);
+					
+					consultaPhp();
+					
+					//LEO EL ARCHIVO DE DATOS LOGS DEL COM					
+/*					var blsAnt = -1, blsAntColor;
+					fetch('prueba1.txt')
+  						.then(res => res.text())
+  						.then(content => {
+    						let lines = content.split(/\n/);
+							dinamiza(lines);
+							function dinamiza (lines) {													
+					   				 //CABINA ACTIVA
+									 if (((lines[n].indexOf("LCOM_1") >= 0)&&(lines[n+1].indexOf("RCOM_1") >= 0))||((lines[n].indexOf("RCOM_1") >= 0)&&(lines[n+1].indexOf("LCOM_1") >= 0))){
+//									 	console.log("CABINA ACTIVA");
+									 }									 
+									 //CABINA DESACTIVA
+									 if (((lines[n].indexOf("LCOM_0") >= 0)&&(lines[n+1].indexOf("RCOM_0") >= 0))||((lines[n].indexOf("RCOM_0") >= 0)&&(lines[n+1].indexOf("LCOM_0") >= 0))){
+//									 	console.log("CABINA DESACTIVA");									 
+									 }		
+									 
+									 //PASA DE RM A PM
+									 if (lines[n].indexOf("is_second_balise_avail") >= 0){
+//									 	console.log("RM->PM");									 
+									 }									 									 									 
+									 if ( lines[n].indexOf("BLS Id:") >= 0 ){
+									 	// agrego filas a la tabla
+    								 	$('#tabla').dataTable().fnAddData( [
+        							 		"27/11/2018",
+        									"17:55",
+        									"RC14",
+        									"TC1",
+        									"ONCE",
+        									"BLS",
+        									"201",
+        									"GREEN",
+        									"36450" 
+										] );
+
+					 				 // Pregunto si leyó una baliza
+										if (lines[n+6].indexOf("cur.lamp:") >= 0){
+//										   console.log(lines[n].slice(9, lines[n].indexOf(",")) + " BALIZA CONMUTABLE " + lines[n+6].slice(10, lines[n+6].indexOf("O")-2));
+										}
+										else{
+//										   console.log(lines[n].slice(9, lines[n].indexOf(",")) + " BALIZA FIJA");
+										}	
+										//Borro el canton anterior
+					 				 	if (blsAnt != -1){
+						   				   for (l = 0; l < matrizATSD[blsAnt].seg.length; l++){
+						   	   			   	   if (matrizATSD[blsAnt].seg[l] != ""){
+							   	  			   	  scene.traverse( function( node ) {
+    							  				  		if ( node.name ==  matrizATSD[blsAnt].seg[l]) {
+														   node.material.color.setHex( blsAntColor ); 
+    													}
+								   				  });
+												}																
+											}
+											blsAnt = (+lines[n].slice(9, lines[n].indexOf(","))); 					
+										}
+										//Pinto el nuevo cantón					
+					 				 	if (matrizATSD[(+lines[n].slice(9, lines[n].indexOf(",")))] != undefined){
+						   				   for (l = 0; l < matrizATSD[(+lines[n].slice(9, lines[n].indexOf(",")))].seg.length; l++){
+						   	   			   	   if (matrizATSD[(+lines[n].slice(9, lines[n].indexOf(",")))].seg[l] != ""){
+							   	  			   	  scene.traverse( function( node ) {
+    							  				  		if ( node.name ==  matrizATSD[(+lines[n].slice(9, lines[n].indexOf(",")))].seg[l]) {
+														   blsAntColor = node.material.color.getHex();
+														   node.material.color.setHex( 0x00ffff ); 
+    													}
+								   				  });
+												}																
+											}
+											blsAnt = (+lines[n].slice(9, lines[n].indexOf(","))); 					
+										}					
+  									}
+									n = n + 1;
+//									console.log(n);
+									if ( n == lines.length ) stopdinamiza();
+									if ( n > 0 )clkDinam = setTimeout(function(){ dinamiza(lines) }, 1);
+							}
+
+  						});
+*/						
+				} );				
+															
+				// RENDERIZADO				
+				renderer = new THREE.WebGLRenderer({antialias: true});
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight);
+				renderer.sortElements = false;
+				renderer.autoClear = false;
+				document.body.appendChild( renderer.domElement );
+
+				container.appendChild( renderer.domElement );
+
+				labelRenderer = new THREE.CSS2DRenderer();
+				labelRenderer.setSize( window.innerWidth, window.innerHeight );
+				labelRenderer.domElement.style.position = 'absolute';
+				labelRenderer.domElement.style.top = 0;
+				document.body.appendChild( labelRenderer.domElement );
+				
+//				var container = document.getElementById( 'container' );
+//				container.appendChild( renderer.domElement );
+				//
+
+				controls = new THREE.OrbitControls( camera );
+				this.controls.mouseButtons = { LEFT: THREE.MOUSE.RIGHT, MIDDLE: THREE.MOUSE.MIDDLE, RIGHT: THREE.MOUSE.LEFT };
+				controls.screenSpacePanning = true;
+				controls.enableRotate = false;
+				controls.keys = {
+						LEFT: 39, //left arrow
+						UP: 40, // up arrow
+						RIGHT: 37, // right arrow
+						BOTTOM: 38 // down arrow
+				}
+				controls.enableKeys = true;
+				controls.enableDamping = true;
+				controls.dampingFactor = 0.5;				
+				
+				MoveTo(fitX, fitY, fitZ, false);				
+
+				//
+
+				window.addEventListener( 'resize', onWindowResize, false );
+				window.addEventListener( 'mousemove', onMouseMove, false );
+				window.addEventListener( 'click', onMouseClick, false);				
+				window.addEventListener( 'dblclick',  onDoubleClick, false);
+
+			}
+
+/*			
+			//función dinamiza			
+			function stopdinamiza () {
+					 clearTimeout(clkDinam);
+					 n = 0;
+			}
+*/			
+			// PANEL DE CONTROL
+			function createPanel(lay, set, opac) {
+			
+				var panel = new dat.GUI( );
+//				var GUIContainer = document.getElementById('container');
+//				GUIContainer.appendChild(panel.domElement);				
+				
+				// agrego capas
+				var layersFolder = panel.addFolder( 'Layers' );
+
+  				for (var i = 0; i < lay.length; i ++ ) {
+					var folder = layersFolder.addFolder(lay[ i ]);
+					folder.add( set, lay[ i ] ).name('Visible').listen().onChange(function(newValue) {
+						scene.traverse( function( node ) {
+							if (node.layer != undefined) node.visible = set[node.layer];
+						});
+					});
+													
+				}
+
+				//agrego seguimiento de tren
+				var followFolder = panel.addFolder( 'Follow train' );
+				var follow = { Follow: '-'};
+				followFolder.add( follow, 
+								  'Follow', 
+								  [ '-', 
+								  	'RC01', 
+									'RC02', 
+									'RC03', 
+									'RC04', 
+									'RC05', 
+									'RC06', 
+									'RC07', 
+									'RC08', 
+									'RC09', 
+									'RC10', 
+									'RC11', 
+									'RC12', 
+									'RC13', 
+									'RC14', 
+									'RC15', 
+									'RC16', 
+									'RC17', 
+									'RC18', 
+									'RC19', 
+									'RC20', 
+									'RC21', 
+									'RC22', 
+									'RC23', 
+									'RC24', 
+									'RC25' 
+								   ]
+								).listen().onChange(function(newValue) {
+									for (var i = 0; i < cantTrenes; i ++ ) {
+				   						if ( i == 0){
+				   	  					   seguirTrenN[ '-' ].follow = false;
+				   						}else{	  
+				   	  					   seguirTrenN['RC' + String( Math.trunc((i/10)) + String((i)-(10*Math.trunc((i)/10))))].follow = false;
+				   						}
+								   	}
+									seguirTrenN[ newValue ].follow = true;
+									//me fijo si el tren está en la línea
+									if (newValue != '-'){
+									   if (seguirTrenN[ newValue ].bls != 0){
+									   	  var section;
+								   	   	  if ((seguirTrenN[ newValue ].tc_act == 1)||((seguirTrenN[ newValue ].tc_act == 0)&&(seguirTrenN[ newValue ].tc_ant == 1))){
+											 section = matrizTC1[seguirTrenN[ newValue ].bls].sec;
+										  }
+								   	   	  if ((seguirTrenN[ newValue ].tc_act == 2)||((seguirTrenN[ newValue ].tc_act == 0)&&(seguirTrenN[ newValue ].tc_ant == 2))){
+											 section = matrizTC2[seguirTrenN[ newValue ].bls].sec;
+									   	  }
+
+											 switch (section){
+											 		case 'once':
+														 MoveTo (onceX, onceY, onceZ, true);
+														 break;
+											 		case 'caballito':
+														 MoveTo (caballitoX, caballitoY, caballitoZ, true);
+														 break;
+											 		case 'flores':
+														 MoveTo (floresX, floresY, floresZ, true);
+														 break;
+											 		case 'floresta':
+														 MoveTo (florestaX, florestaY, florestaZ, true);
+														 break;
+											 		case 'luro':
+														 MoveTo (luroX, luroY, luroZ, true);
+														 break;
+											 		case 'liniers':
+														 MoveTo (liniersX, liniersY, liniersZ, true);
+														 break;
+											 		case 'ciudadela':
+														 MoveTo (ciudadelaX, ciudadelaY, ciudadelaZ, true);
+														 break;
+											 		case 'rmejia':
+														 MoveTo (rmejiaX, rmejiaY, rmejiaZ, true);
+														 break;
+											 		case 'haedo':
+														 MoveTo (haedoX, haedoY, haedoZ, true);
+														 break;
+											 		case 'moron':
+														 MoveTo (moronX, moronY, moronZ, true);
+														 break;
+											 		case 'castelar':
+														 MoveTo (castelarX, castelarY, castelarZ, true);
+														 break;
+											 		case 'ituzaingo':
+														 MoveTo (ituzaingoX, ituzaingoY, ituzaingoZ, true);
+														 break;
+											 		case 'padua':
+														 MoveTo (paduaX, paduaY, paduaZ, true);
+														 break;
+											 		case 'merlo':
+														 MoveTo (merloX, merloY, merloZ, true);
+														 break;
+											 		case 'prey':
+														 MoveTo (preyX, preyY, preyZ, true);
+														 break;
+											 		case 'moreno':
+														 MoveTo (morenoX, morenoY, morenoZ, true);
+														 break;
+										  	 }
+									   }else{
+									   		 MoveTo (fitX, fitY, fitZ, true);
+									   } 
+								   	}else{
+									   		 MoveTo (fitX, fitY, fitZ, true);
+									}
+				});
+
+				panel.close();
+				
+			}			
+			
+			function onDoubleClick ( event ) {
+						
+				// event.preventDefault();
+
+				mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+    			mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+				raycaster.setFromCamera( mouse, camera );
+				
+				var intersects_CLK = raycaster.intersectObjects( scene.children, true );
+
+				if ( intersects_CLK.length > 0) 
+				{
+				   if ((intersects_CLK[ 0 ].object.name == "text3924-3-0")||(intersects_CLK[ 0 ].object.name == "PLT_ONCE")||(intersects_CLK[ 0 ].object.name == "path980-6")||(intersects_CLK[ 0 ].object.name == "path980")) MoveTo (onceX, onceY, onceZ, true); 
+				   if ((intersects_CLK[ 0 ].object.name == "text3924-3")||(intersects_CLK[ 0 ].object.name == "PLT_CABALLITO")||(intersects_CLK[ 0 ].object.name == "path980-4-8-6")) MoveTo (caballitoX, caballitoY, caballitoZ, true); 
+				   if ((intersects_CLK[ 0 ].object.name == "text3924-2")||(intersects_CLK[ 0 ].object.name == "PLT_FLORES")||(intersects_CLK[ 0 ].object.name == "path980-4-8-0")) MoveTo (floresX, floresY, floresZ, true); 
+				   if ((intersects_CLK[ 0 ].object.name == "text3924-4")||(intersects_CLK[ 0 ].object.name == "PLT_FLORESTA")||(intersects_CLK[ 0 ].object.name == "path980-4-8-0-8")) MoveTo (florestaX, florestaY, florestaZ, true); 
+				   if ((intersects_CLK[ 0 ].object.name == "text3924-6")||(intersects_CLK[ 0 ].object.name == "PLT_V.LURO")) MoveTo (luroX, luroY, luroZ, true); 
+				   if ((intersects_CLK[ 0 ].object.name == "text3924-3-3")||(intersects_CLK[ 0 ].object.name == "PLT_LINIERS")) MoveTo (liniersX, liniersY, liniersZ, true); 
+				   if ((intersects_CLK[ 0 ].object.name == "text3924-3-3-2")||(intersects_CLK[ 0 ].object.name == "PLT_CIUDADELA")) MoveTo (ciudadelaX, ciudadelaY, ciudadelaZ, true); 
+				   if ((intersects_CLK[ 0 ].object.name == "text3924-3-3-2-7")||(intersects_CLK[ 0 ].object.name == "PLT_R.MEJIA")) MoveTo (rmejiaX, rmejiaY, rmejiaZ, true); 
+				   if ((intersects_CLK[ 0 ].object.name == "text3924-3-3-2-8")||(intersects_CLK[ 0 ].object.name == "path980-4-8-6-0-2-1-9")||(intersects_CLK[ 0 ].object.name == "path980-4-8-6-0-2-1-9-7")||(intersects_CLK[ 0 ].object.name == "PLT_HAEDO")) MoveTo (haedoX, haedoY, haedoZ, true); 
+				   if ((intersects_CLK[ 0 ].object.name == "text3924-3-3-2-0")||(intersects_CLK[ 0 ].object.name == "PLT_MORON")||(intersects_CLK[ 0 ].object.name == "path980-4-8-6-0-6")) MoveTo (moronX, moronY, moronZ, true); 
+				   if ((intersects_CLK[ 0 ].object.name == "text3924-3-3-2-0-9")||(intersects_CLK[ 0 ].object.name == "PLT_CASTELAR")||(intersects_CLK[ 0 ].object.name == "path980-4-8-6-0-9-2")||(intersects_CLK[ 0 ].object.name == "path980-4-8-6-0-9-2-7")) MoveTo (castelarX, castelarY, castelarZ, true); 
+				   if ((intersects_CLK[ 0 ].object.name == "text3924-3-3-2-0-4")||(intersects_CLK[ 0 ].object.name == "PLT_ITUZAINGO")) MoveTo (ituzaingoX, ituzaingoY, ituzaingoZ, true); 
+				   if ((intersects_CLK[ 0 ].object.name == "text3924-3-3-2-0-1")||(intersects_CLK[ 0 ].object.name == "PLT_S.A.PADUA")) MoveTo (paduaX, paduaY, paduaZ, true); 
+				   if ((intersects_CLK[ 0 ].object.name == "text3924-3-3-2-0-0")||(intersects_CLK[ 0 ].object.name == "PLT_MERLO")||(intersects_CLK[ 0 ].object.name == "path980-4-8-6-0-9-2-3-1-6-0")) MoveTo (merloX, merloY, merloZ, true); 
+				   if ((intersects_CLK[ 0 ].object.name == "text3924-3-3-2-0-7")||(intersects_CLK[ 0 ].object.name == "PLT_P.DEL_REY")||(intersects_CLK[ 0 ].object.name == "path980-4-8-6-0-9-2-3-1-6-0-9")) MoveTo (preyX, preyY, preyZ, true); 
+				   if ((intersects_CLK[ 0 ].object.name == "text3924-3-3-2-0-47")||(intersects_CLK[ 0 ].object.name == "PLT_MORENO")||(intersects_CLK[ 0 ].object.name == "path980-4-8-6-0-9-2-3-1-6-0-5-03")) MoveTo (morenoX, morenoY, morenoZ, true); 
+				   console.log(intersects_CLK[ 0 ].object.name);				
+
+				}else {
+				   MoveTo (fitX, fitY, fitZ, true);
+				}				
+				
+			}
+			
+			function onMouseClick( event ) {
+			   // event.preventDefault();
+			}
+			
+			function MoveTo(xd, yd, zd, anim) {
+    			if (anim) {
+				   var from = new THREE.Vector3(camera.position.x, camera.position.y,camera.position.z);
+        		   var to = new THREE.Vector3(xd, yd, zd);
+
+        		   var tween = new TWEEN.Tween(from)
+            		   .to(to)
+					   .delay(200)
+            		   .onUpdate( function(){
+            				camera.position.x = from.x;
+            				camera.position.y = from.y;
+            				camera.position.z = from.z;
+              	
+							controls.target.x = from.x;
+							controls.target.y = from.y;
+            			})
+            			.start();
+				}else{				
+					camera.position.x = xd;
+					camera.position.y = yd;
+					camera.position.z = zd;
+
+					controls.target.x = xd;
+					controls.target.y = yd;					  
+				}
+			}
+			
+			function onMouseMove( event ) {	
+/*	
+			   // event.preventDefault();
+
+			   mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+			   mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+
+				raycaster.setFromCamera( mouse, camera );
+				
+				var intersects_MVE = raycaster.intersectObjects( scene.children, true );
+
+				if ( intersects_MVE.length > 0 ) 
+				{
+					if ( INTERSECTED_MVE != intersects_MVE[ 0 ].object ) 
+					{
+					   console.log(intersects_MVE[ 0 ].object.geometry.boundingSphere.center.x);					
+					   console.log(intersects_MVE[ 0 ].object);
+					   if ( INTERSECTED_MVE ) INTERSECTED_MVE.material.color.setHex( INTERSECTED_MVE.currentHex );
+					   INTERSECTED_MVE = intersects_MVE[ 0 ].object;
+					   INTERSECTED_MVE.currentHex = INTERSECTED_MVE.material.color.getHex();
+					   INTERSECTED_MVE.material.color.setHex( 0xff0000 );
+
+					}
+
+				} 
+				else 
+				{
+					if ( INTERSECTED_MVE ) INTERSECTED_MVE.material.color.setHex( INTERSECTED_MVE.currentHex );
+					INTERSECTED_MVE = null;
+
+				}
+*/
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.setPixelRatio(  window.devicePixelRatio );
+				
+				labelRenderer.setSize( window.innerWidth, window.innerHeight );
+			}
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+				render();
+
+			}
+
+			function render() {
+				renderer.render( scene, camera );
+				labelRenderer.render( scene, camera );
+				TWEEN.update();				
+				controls.update();
+			}
+					
+
+			function consultaPhp() {
+    			// Add the scatterplot
+				var respTR;
+ 				var valuesTR;
+
+				var respEV;
+ 				var valuesEV;
+								       		
+				if (window.XMLHttpRequest) {
+            	   	 // code for IE7+, Firefox, Chrome, Opera, Safari
+            	   	 xmlhttpTR = new XMLHttpRequest();
+            	   	 xmlhttpEV = new XMLHttpRequest();					 
+        		} 
+				else {
+            	  	// code for IE6, IE5
+            	  	xmlhttpTR = new ActiveXObject("Microsoft.XMLHTTP");
+            	  	xmlhttpEV = new ActiveXObject("Microsoft.XMLHTTP");
+        		}
+				
+        		xmlhttpTR.onreadystatechange = function() {
+                	respTR =  this.responseText;
+					valuesTR = respTR.split(";");					
+//					console.log(values);
+					//dinamizo la posición de los trenes en tiempo real
+					if (valuesTR.length > 1){
+  				   	   for (var i = 0; i < valuesTR.length; i += columnasTablaTR ) {
+					   	   //verifico si la tabla de valores anteriores se encuentra en -1.
+						   if (estadoAnt[i] == -1) {
+						   	  //si se encuentra en -1, es la primera dinamización y debo dibujar todo.							  
+							  pintaCanton(valuesTR [i+2], valuesTR [i+5], valuesTR [i+3], valuesTR [i+4]);
+
+							  estadoAnt [i]   = valuesTR [i];
+							  estadoAnt [i+1] = valuesTR [i+1];
+							  estadoAnt [i+2] = valuesTR [i+2];
+							  estadoAnt [i+3] = valuesTR [i+3];
+							  estadoAnt [i+4] = valuesTR [i+4];
+							  estadoAnt [i+5] = valuesTR [i+5];
+							  estadoAnt [i+6] = valuesTR [i+6];
+        				   }
+
+						   if ((estadoAnt[i+5] != valuesTR[i+5]) || (estadoAnt[i+3] != valuesTR[i+3]) || (estadoAnt[i+4] != valuesTR[i+4])) {								 
+							  
+							  borraCanton(estadoAnt[i+2], estadoAnt[i+5], estadoAnt[i+3], estadoAnt[i+4], valuesTR [i+5]);									
+							  pintaCanton(valuesTR [i+2], valuesTR [i+5], valuesTR [i+3], valuesTR [i+4]);  
+							  
+							  estadoAnt [i]   = valuesTR [i];
+							  estadoAnt [i+1] = valuesTR [i+1];
+							  estadoAnt [i+3] = valuesTR [i+3];
+							  estadoAnt [i+4] = valuesTR [i+4];
+							  estadoAnt [i+5] = valuesTR [i+5];
+							  estadoAnt [i+6] = valuesTR [i+6];
+						   }								 						   
+						   
+					  }
+				  }
+        		};
+        		xmlhttpTR.open("GET","sarmiento_tr.php",true);
+        		xmlhttpTR.send();				
+  				
+        		xmlhttpEV.onreadystatechange = function() {
+                	respEV =  this.responseText;
+					valuesEV = respEV.split(";");
+					//dinamizo la posición de los trenes en tiempo real
+					if ((valuesEV.length > 1)){
+					   if (tablaEVAnt.length == 0){
+					   //aun no cargue ningun valor, es la primera vez que paso
+  				   	   		 for (var i = 0; i < valuesEV.length; i += columnasTablaEV ) {
+					   	   	 	 // agrego filas a la tabla
+						   	 	 if ((valuesEV[i] != undefined) && (valuesEV[i+1] != undefined)&& (valuesEV[i+2] != undefined) && (valuesEV[i+3] != undefined)&& (valuesEV[i+4] != undefined)&& (valuesEV[i+5] != undefined)&& (valuesEV[i+6] != undefined)&& (valuesEV[i+7] != undefined)&& (valuesEV[i+8] != undefined)){
+    					      	 	tablaEVAnt.push(valuesEV [i]);
+    					      	 	tablaEVAnt.push(valuesEV [i+1]);
+    					      	 	tablaEVAnt.push(valuesEV [i+2]);
+    					      	 	tablaEVAnt.push(valuesEV [i+3]);
+    					      	 	tablaEVAnt.push(valuesEV [i+4]);
+    					      	 	tablaEVAnt.push(valuesEV [i+5]);
+    					      	 	tablaEVAnt.push(valuesEV [i+6]);
+    					      	 	tablaEVAnt.push(valuesEV [i+7]);
+    					      	 	tablaEVAnt.push(valuesEV [i+8]);
+									var num_tren = "RC" + String(parseInt(parseInt(valuesEV [i+2])/10)) + String(parseInt(valuesEV [i+2]) - 10*parseInt(parseInt(valuesEV [i+2])/10))
+									var cabina = "TC" + valuesEV [i+3];
+									var status_cab;
+									if (parseInt(valuesEV [i+4]) == 1) status_cab = "ACTIVE"
+									else status_cab = "DISABLE"
+									$('#tabla').dataTable().fnAddData( [
+        				           		valuesEV [i],
+        						   		valuesEV [i+1],
+        						   		num_tren,
+        						   		cabina,
+        						   		status_cab,
+        						   		valuesEV [i+5],
+        						   		valuesEV [i+6],
+        						   		valuesEV [i+7],
+        						   		valuesEV [i+8],
+										(i/columnasTablaEV)+1 
+						      		] );
+					       	 	}
+					  		 }
+					   	}else{
+						//ya pase, entonces comparo los vectores, si hay diferencia la cargo en la tabla
+  				   	   		 for (var i = 0; i < valuesEV.length; i += columnasTablaEV ) {
+					   	   	 	 // agrego filas a la tabla
+						   	 	 if ((valuesEV[i] != undefined) && (valuesEV[i+1] != undefined)&& (valuesEV[i+2] != undefined) && (valuesEV[i+3] != undefined)&& (valuesEV[i+4] != undefined)&& (valuesEV[i+5] != undefined)&& (valuesEV[i+6] != undefined)&& (valuesEV[i+7] != undefined)&& (valuesEV[i+8] != undefined)){
+    					      	 	if ((tablaEVAnt[i]!=valuesEV [i])||(tablaEVAnt[i+1]!=valuesEV [i+1])||(tablaEVAnt[i+2]!=valuesEV [i+2])||(tablaEVAnt[i+3]!=valuesEV [i+3])||(tablaEVAnt[i+4]!=valuesEV [i+4])||(tablaEVAnt[i+5]!=valuesEV [i+5])||(tablaEVAnt[i+6]!=valuesEV [i+6])||(tablaEVAnt[i+7]!=valuesEV [i+7])||(tablaEVAnt[i+8]!=valuesEV [i+8])){
+									   tablaEVAnt[i] = valuesEV [i];
+									   tablaEVAnt[i+1] = valuesEV [i+1];
+									   tablaEVAnt[i+2] = valuesEV [i+2];
+									   tablaEVAnt[i+3] = valuesEV [i+3];
+									   tablaEVAnt[i+4] = valuesEV [i+4];
+									   tablaEVAnt[i+5] = valuesEV [i+5];
+									   tablaEVAnt[i+6] = valuesEV [i+6];
+									   tablaEVAnt[i+7] = valuesEV [i+7];
+									   tablaEVAnt[i+8] = valuesEV [i+8];
+									   var num_tren = "RC" + String(parseInt(parseInt(valuesEV [i+2])/10)) + String(parseInt(valuesEV [i+2]) - 10*parseInt(parseInt(valuesEV [i+2])/10))
+									   var cabina = "TC" + valuesEV [i+3];
+									   if (parseInt(valuesEV [i+4]) == 1) status_cab = "ACTIVE"
+									   else status_cab = "DISABLE"
+									   $('#tabla').dataTable().fnAddData( [
+        				           			valuesEV [i],
+        						   			valuesEV [i+1],
+        						   			num_tren,
+        						   			cabina,
+        						   			status_cab,
+        						   			valuesEV [i+5],
+        						   			valuesEV [i+6],
+        						   			valuesEV [i+7],
+        						   			valuesEV [i+8], 
+											(i/columnasTablaEV)+1 
+						      			] );
+									}
+					       	 	}
+					  		 }
+						}
+				  	}
+
+        		};
+				xmlhttpEV.open("GET","sarmiento_ev.php?q=SELECT * FROM `sarmiento_ev` WHERE (TYPE='EB_RED' OR TYPE='LOST')",true);
+        		xmlhttpEV.send();				
+				
+				setTimeout(function(){ consultaPhp() }, 200)
+  			}
+			
+			function pintaCanton(tren, bls_act, tc_act, tc_ant){
+					 var matrizTC = [];
+					 var sentTren;
+					 
+					 if ((tc_act == 0)&&(tc_ant == 0)){
+					 	return;
+				     }
+					 
+					 if ((tc_act == 0)&&(tc_ant == 1)){
+					 	matrizTC = matrizTC1;
+				       	sentTren = 0;
+				     }
+
+					 if ((tc_act == 0)&&(tc_ant == 2)){
+					 	matrizTC = matrizTC2;
+				       	sentTren = 0;
+				     }
+						
+					  if ((tc_act == 1)&&(tc_ant == 0)){ 
+						matrizTC = matrizTC1;
+						sentTren = TC1;
+					  }						
+
+					  if ((tc_act == 1)&&(tc_ant == 1)){ 
+						matrizTC = matrizTC1;
+						sentTren = TC1;
+					  }						
+
+					  if ((tc_act == 1)&&(tc_ant == 2)){ 
+						matrizTC = matrizTC2;
+						sentTren = TC1;
+					  }						
+
+					  if ((tc_act == 2)&&(tc_ant == 0)){ 
+						matrizTC = matrizTC2;
+						sentTren = TC2;
+					  }						
+
+					  if ((tc_act == 2)&&(tc_ant == 1)){ 
+						matrizTC = matrizTC1;
+						sentTren = TC2;
+					  }						
+
+					  if ((tc_act == 2)&&(tc_ant == 2)){ 
+						matrizTC = matrizTC2;
+						sentTren = TC2;
+					  }						
+					 
+					  if ((bls_act == 0)){
+					 	return;
+				      }
+
+					 try{
+					 if (matrizTC[+bls_act] != undefined){
+						var pase = false;
+						for (var l = 0; l < matrizTC[+bls_act].seg.length; l++){
+							if (matrizTC[+bls_act].seg[l] != ""){
+							   scene.traverse( function( node ) {
+    						   		if ( (node.name ==  matrizTC[+bls_act].seg[l]) && (node.type == 'Mesh')) {
+									   	   pathData[node.name] += "," + String(tren) + "_" + sentTren;
+										   dinamizaPath(node.name, node);
+										   
+										   if (!pase){
+										   	  var message = 'RC' + String( Math.trunc((+tren/10)) + String((+tren)-(10*Math.trunc((+tren)/10))));
+											  //consulto si hay que seguir al tren
+											  seguirTrenN[message].bls = +bls_act;
+											  seguirTrenN[message].tc_act = +tc_act;
+											  seguirTrenN[message].tc_ant = +tc_ant;
+											  
+									   	  	  if (seguirTrenN[message].follow){
+										  	  	 var section;
+								   	   	  	 	 if ((seguirTrenN[ message ].tc_act == 1)||((seguirTrenN[ message ].tc_act == 0)&&(seguirTrenN[ message ].tc_ant == 1))){
+											 	 	section = matrizTC1[seguirTrenN[ message ].bls].sec;
+										  	 	 }
+								   	   	  	 	 if ((seguirTrenN[ message ].tc_act == 2)||((seguirTrenN[ message ].tc_act == 0)&&(seguirTrenN[ message ].tc_ant == 2))){
+											 	 	section = matrizTC2[seguirTrenN[ message ].bls].sec;
+									   	  	 	 }
+												 
+											 	 switch (section){
+											 			case 'once':
+														 	 MoveTo (onceX, onceY, onceZ, true);
+														 	 break;
+											 			case 'caballito':
+														 	 MoveTo (caballitoX, caballitoY, caballitoZ, true);
+														 	 break;
+											 			case 'flores':
+														 	 MoveTo (floresX, floresY, floresZ, true);
+														 	 break;
+											 			case 'floresta':
+														 	 MoveTo (florestaX, florestaY, florestaZ, true);
+														 	 break;
+											 			case 'luro':
+														 	 MoveTo (luroX, luroY, luroZ, true);
+														 	 break;
+											 			case 'liniers':
+														 	 MoveTo (liniersX, liniersY, liniersZ, true);
+														 	 break;
+											 			case 'ciudadela':
+														 	 MoveTo (ciudadelaX, ciudadelaY, ciudadelaZ, true);
+														 	 break;
+											 			case 'rmejia':
+														 	 MoveTo (rmejiaX, rmejiaY, rmejiaZ, true);
+														 	 break;
+											 			case 'haedo':
+														 	 MoveTo (haedoX, haedoY, haedoZ, true);
+														 	 break;
+											 			case 'moron':
+														 	 MoveTo (moronX, moronY, moronZ, true);
+														 	 break;
+											 			case 'castelar':
+														 	 MoveTo (castelarX, castelarY, castelarZ, true);
+														 	 break;
+											 			case 'ituzaingo':
+														 	 MoveTo (ituzaingoX, ituzaingoY, ituzaingoZ, true);
+														 	 break;
+											 			case 'padua':
+														 	 MoveTo (paduaX, paduaY, paduaZ, true);
+														 	 break;
+											 			case 'merlo':
+														 	 MoveTo (merloX, merloY, merloZ, true);
+														 	 break;
+											 			case 'prey':
+														 	 MoveTo (preyX, preyY, preyZ, true);
+														 	 break;
+											 			case 'moreno':
+														 	 MoveTo (morenoX, morenoY, morenoZ, true);
+														 	 break;
+										  	 	}
+										  	  }
+											  
+											  if (sentTren == TC1) message = sentTren + message;
+											  if (sentTren == TC2) message += sentTren;
+											  											  
+										   	  var trainDiv = document.createElement( 'div' );
+											  trainDiv.className = 'label';
+											  trainDiv.textContent = message;
+											  trainDiv.style.marginTop = '-1em';
+											  var trainLabel = new THREE.CSS2DObject( trainDiv );
+											  trainLabel.position.set( node.geometry.boundingSphere.center.x, 
+											  						   node.geometry.boundingSphere.center.y-2, 
+																	   0 );
+											  trainLabel.name = 'aaa_tren'+node.name
+											  group.add( trainLabel );
+											  pase = true;
+    									   }
+    								 }
+								 });
+							 }																
+						}
+					}					
+					}					
+  				finally {
+    					return;
+  				}  			
+  			}			
+
+
+			function borraCanton(tren, bls_act, tc_act, tc_ant, now){
+					 var matrizTC = [];
+					 var TC1 = '<-';
+					 var TC2 = '->';
+					 var sentTren;
+					 
+					 if ((tc_act == 0)&&(tc_ant == 0)){
+					 	return;
+				     }
+
+					 if ((tc_act == 0)&&(tc_ant == 1)){
+					 	matrizTC = matrizTC1;
+				       	sentTren = 0;
+				     }
+
+					 if ((tc_act == 0)&&(tc_ant == 2)){
+					 	matrizTC = matrizTC2;
+				       	sentTren = 0;
+				     }
+						
+					  if ((tc_act == 1)&&(tc_ant == 0)){ 
+						matrizTC = matrizTC1;
+				       	sentTren = TC1;
+					  }						
+
+					  if ((tc_act == 1)&&(tc_ant == 1)){ 
+						matrizTC = matrizTC1;
+				       	sentTren = TC1;
+					  }						
+
+					  if ((tc_act == 1)&&(tc_ant == 2)){ 
+						matrizTC = matrizTC2;
+				       	sentTren = TC1;
+					  }						
+
+					  if ((tc_act == 2)&&(tc_ant == 0)){ 
+						matrizTC = matrizTC2;
+				       	sentTren = TC2;
+					  }						
+
+					  if ((tc_act == 2)&&(tc_ant == 1)){ 
+						matrizTC = matrizTC1;
+				       	sentTren = TC2;
+					  }						
+
+					  if ((tc_act == 2)&&(tc_ant == 2)){ 
+						matrizTC = matrizTC2;
+				       	sentTren = TC2;
+					  }											 
+					 
+					  if ((bls_act == 0)){
+					 	return;
+				      }
+
+					  var pase = false;
+					  var o;
+					  
+					  try{
+					  if (matrizTC[+bls_act] != undefined){
+					  	 for (var l = 0; l < matrizTC[(+bls_act)].seg.length; l++){
+					  	  	 if (matrizTC[(+bls_act)].seg[l] != ""){
+						  	 	scene.traverse( function( node ) {									 	
+    						 		if (( node.name ==  matrizTC[(+bls_act)].seg[l])&& (node.type == 'Mesh')) {
+									   pathData[node.name] = pathData[node.name].replace("," + String(tren) + "_" + sentTren, "");
+									   dinamizaPath(node.name, node);
+									   									   
+									   //borrar tren_sentTren de la cadena de string
+
+								   	   if (!pase){
+								   	   	  o = group.getObjectByName('aaa_tren'+node.name);
+									  	  pase = true;
+  								   	   }											  
+    								}
+							 	});
+						  	 }																
+					     }
+					     group.remove(o);
+						 if (+now == 0) MoveTo (fitX, fitY, fitZ, true);
+				     }		  
+				     }		  
+  				finally {
+    					return;
+  				}  			
+  			}
+			
+			function dinamizaPath(path, node){							
+				subCadena = pathData[path].split(",");
+				
+				//represento solo el ultimo elemento de la cadena
+				if (subCadena.length == 1){ 
+				   //si no tiene ningun estado, lo pinto con el color del SVG
+				   node.material.color.setHex( parseInt(subCadena[0]) )				   
+				   return;
+				}
+				
+				if (subCadena[subCadena.length - 1].indexOf(TC1) >= 0 ){
+ 				   //pinto el path como TC1_ON
+				   node.material.color.setHex( TC1_ON )
+				   return;
+				}
+				else{
+					 if (subCadena[subCadena.length - 1].indexOf(TC2) >= 0 ){
+ 				   	 	//pinto el path como TC2_ON
+				   		node.material.color.setHex( TC2_ON )
+				   		return;
+					 }
+					 else{
+					 	if (subCadena[subCadena.length - 1].indexOf("_") >= 0 ){
+ 				   	 	   //pinto el path como TC_OFF
+				   		   node.material.color.setHex( TC_OFF )						     
+				   		   return;
+					 	}
+					 }
+				}
+ 			}
+					
+		</script>
+    	<div id="panel">
+			 <table id="tabla" class="display" style="width:50%"></table>		
+		</div>		
+	</body>
+</html>
